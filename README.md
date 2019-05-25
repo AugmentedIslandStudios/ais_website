@@ -11,7 +11,7 @@
 
 Clone the repository
 ```
-git clone https://github.com/Psicodead/Terry-Crews-website.git
+git clone https://github.com/AugmentedIslandStudios/ais_website.git
 ```
 
 Install dependencies
