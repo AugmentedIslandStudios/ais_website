@@ -1,0 +1,21 @@
+#contact-section.section.scrollable.overlay.hidden
+	.content
+		.wrapper
+			.lineTitle
+				h1 Contact us
+			.form-container
+				p.copy.
+					Get in touch and we'll get back to you as soon as we can. We look forward to hearing from you!
+				form#contactForm(autocomplete="nope")
+					span.inputContainer
+						input.disableAutoComplete(type="text" name="name" required placeholder="Name*" autocomplete="false")
+					span.inputContainer
+						input.disableAutoComplete(type="email" name="email" required placeholder="Email*" autocomplete="false")
+					span.inputContainer
+						textarea(name="message" required placeholder="Message*" autocomplete="false")
+					br
+					br
+					span.inputContainer
+						input.disableAutoComplete(type="tel" name="phone" placeholder="Phone: +1 888 888 8888"  minlength="10" maxlength="14" title="Phone number" autocomplete="false")
+						
+					input.submitBtn(type="submit" value="SEND")

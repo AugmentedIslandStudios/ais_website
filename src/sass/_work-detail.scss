@@ -1,0 +1,189 @@
+.work-detail.section{
+	padding: 0;
+	.content{
+		padding-top: 120rem;
+		//background-color: $darkGrey;
+		//position: absolute;
+		//left: 0;
+		//top: 0;
+		width: 100%;
+		height: 100%;
+		//overflow-y: scroll;
+		display: flex;
+		flex-direction: column;
+		.contentWrapper{
+			width: 70%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+			div{
+				margin: 0 auto;
+			}
+			.projectLogo{
+				width: 8%;
+			}
+			.copyWrapper{
+				text-align: center;
+				width: 60%;
+				margin-top: 40rem;
+				h1,h2,p{
+					margin: 0;
+					letter-spacing: 1rem;
+					//white-space: nowrap;
+				}
+				.title{
+					font-size: 80rem;
+				}
+				.client{
+					font-size: 15rem;
+				}
+				.description{
+					margin-top: 50rem;
+					line-height: 20rem;
+					a{
+						text-decoration: underline;
+						font-weight: bold;
+					}
+				}
+			}
+			.photoWrapper{
+				margin-top: 100rem;
+				.pair{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: center;
+					&.around{
+						justify-content: space-around;
+					}
+				}
+				.workPhoto{
+					margin-top: 20rem;
+					&.half{
+						width: 49%;
+						display: inline;
+						align-self: center;
+					}
+					&.center{
+						display: block;
+						margin: 0 auto;
+					}
+				}
+				video{
+					width: 100%;
+					margin: 30px 0;
+					outline: 0;
+					&.half{
+						width: 35%;
+					}
+					&:focus{
+						outline: 0;
+					}
+				}
+				.external{
+					display: flex;
+					flex-direction: column;
+					span{
+						text-align: center;
+						margin: 10px auto;
+						color: #666666;
+						font-size: 12px;
+					}
+					&.small{
+						width: 47%;
+						margin: 0;
+					}
+				}
+			}
+			.goBack{
+				position: fixed;
+				left: 80rem;
+				top: 50%;
+				.container{
+					left: 20rem;
+					cursor: pointer;
+				}
+				h2{
+					line-height: 20rem;
+					font-size: 15rem;
+					&::after, &:after{
+						content: " ";
+						@include transform(translate(-50%, -50%));
+						width: 60%;
+						position: absolute;
+						bottom: -5rem;
+						left: 48%;
+						background-color: white;
+						height: 1rem;
+					} 
+				}
+			}
+		}
+	}
+
+	 //mobile
+	 @media (min-width: 320px) and (max-width: 740px){
+		.content{
+			padding-top: 110rem;
+			.contentWrapper{
+				width: 100%;
+				.projectLogo{
+					width: 30%;
+					display: none;
+				}
+				.copyWrapper{
+					width: 100%;
+					padding: 0 40rem;
+					text-align: left;
+					.title{
+						font-size: 40rem;
+					}
+				}
+				.photoWrapper{
+					margin-top: 50rem;
+					.workPhoto{	
+						width: 100%;
+						left: 50%;
+						@include transform(translateX(-50%));
+						&.half{
+							left: 0;
+							@include transform(none);
+							//align-self: center;
+						}
+					}
+					.external{
+						&.small{
+							width: 80%;
+						}
+					}
+					video{
+						width: 100%;
+						&.half{
+							width: 70%;
+						}
+					}
+				}
+				.goBack{
+					position: absolute;
+					left: 52%;				
+					top: -50rem; //top: 50rem;
+
+					@include transform(translateX(-50%));
+					.container{
+						@include transform(none);
+						left: 0;
+						h2{
+							&:after, &::after{
+								display: none;
+							}
+							margin: 7px;
+							letter-spacing: 4px;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

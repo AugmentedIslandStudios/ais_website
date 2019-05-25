@@ -1,0 +1,84 @@
+.fixed-ui{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	top: 0; left: 0;
+	padding: 100rem;
+	user-select: none;
+	pointer-events: none;
+	&.out{
+		top: -100rem;
+	}
+	.logo, .openMenuBtn, .closeMenuBtn{
+		pointer-events: auto;
+	}
+	.logo{
+		cursor: pointer;
+		position: absolute;
+		top: 50rem; left: 80rem;
+		width: 50rem;
+		img{
+			width: 100%;
+		}
+	}
+	.isotipo{
+		//display: none;
+		position: absolute;
+		left: 150rem;
+		top: 54rem;
+		width: 150rem;
+		overflow: hidden;
+		img{
+			height: 100%;
+			top: 0;
+			//@include transform(translateX(-100%));
+			position: relative;
+			@include transition(transform 600ms);
+		}
+		&.show{
+			//display: block;
+			img{
+				//@include transform(translateX(0));
+			}
+		}
+	}
+	
+	.closeMenuBtn, .openMenuBtn{
+		cursor: pointer;
+		position: absolute;
+		top: 50rem; right: 80rem;
+		width: 50rem;
+		&.hidden{
+			display: none;
+		}
+	}
+	.closeMenuBtn{
+		width: 30rem;
+	}
+	//mobile
+	@media (min-width: 300px) and (max-width: 740px){
+		@include transition(top 0.3s);
+		.logo, .isotipo, .closeMenuBtn, .openMenuBtn{
+			top: 30rem;
+			width: 40rem;
+		}
+		.logo{
+			left: 30rem;
+		}
+		.isotipo{
+			left: 80rem;
+			display: none;
+		}
+		.closeMenuBtn{
+			width: 30rem;
+		}
+		.closeMenuBtn, .openMenuBtn{
+			right: 30rem;
+			//width: 40px;
+		}
+	}
+	@media(max-height: 428px){
+		top: -100rem !important;
+	}
+}

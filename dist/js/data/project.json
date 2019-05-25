@@ -1,0 +1,31 @@
+{
+	"projects":{
+		"work":[
+			{
+				"title": "Monarch Reign AR",
+				"description" : "this is the description of Monarch",
+				"client" : "Monarch Reign swimwear"
+			},
+			{
+				"title": "Come Find Me",
+				"description" : "this is the description of Come Find Me",
+				"client" : "Confidential"
+			},
+			{
+				"title": "Carhartt AR",
+				"description" : "this is the description of Carhartt",
+				"client" : "Carhartt Wineyard"
+			}
+		],
+		"studies":[
+			{
+				"Title": "Horse race ar",
+				"description": "description of the prototype"
+			},
+			{
+				"Title": "XR Horror Game",
+				"description": "description of the prototype XR horror game"
+			}
+		]
+	}
+}
