@@ -58,7 +58,7 @@ gulp.task('convert', function(){
 
  gulp.task('browserify', function() {
     return browserify({entries: ['src/js/index.js']}).transform(babelify.configure({
-        presets : ["es2015"]
+        presets : ["@babel/preset-env"]
         })).bundle()
         // vinyl-source-stream makes the bundle compatible with gulp
         .pipe(source('index.min.js')) // Desired filename
