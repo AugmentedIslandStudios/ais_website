@@ -334,7 +334,7 @@ body {
     pointer-events: none; }
     body .fixed-ui.out {
       top: -100rem; }
-    body .fixed-ui .logo, body .fixed-ui .openMenuBtn, body .fixed-ui .closeMenuBtn {
+    body .fixed-ui .logo, body .fixed-ui .openMenuBtn, body .fixed-ui .closeMenuBtn, body .fixed-ui .phoneNumber > a {
       pointer-events: auto; }
     body .fixed-ui .logo {
       cursor: pointer;
@@ -368,6 +368,30 @@ body {
         display: none; }
     body .fixed-ui .closeMenuBtn {
       width: 30rem; }
+    body .fixed-ui .phoneNumber {
+      position: absolute;
+      bottom: 50rem;
+      right: 83rem;
+      width: auto;
+      height: auto;
+      color: white;
+      font-weight: lighter;
+      font-size: 16rem; }
+      body .fixed-ui .phoneNumber a {
+        cursor: pointer;
+        transition: color 100ms ease-in-out; }
+        body .fixed-ui .phoneNumber a:hover {
+          color: #10cfcf; }
+        body .fixed-ui .phoneNumber a * {
+          display: inline-block;
+          vertical-align: middle; }
+        body .fixed-ui .phoneNumber a img {
+          width: 18rem;
+          height: auto;
+          margin-right: 5rem; }
+        body .fixed-ui .phoneNumber a p {
+          margin: 0 0 1rem 0;
+          padding: 0; }
     @media (min-width: 300px) and (max-width: 740px) {
       body .fixed-ui {
         -moz-transition: top 0.3s;
@@ -385,7 +409,20 @@ body {
         body .fixed-ui .closeMenuBtn {
           width: 30rem; }
         body .fixed-ui .closeMenuBtn, body .fixed-ui .openMenuBtn {
-          right: 30rem; } }
+          right: 30rem; }
+        body .fixed-ui .phoneNumber {
+          position: absolute;
+          top: 31rem;
+          left: 0;
+          width: 100%;
+          height: 20rem;
+          display: flex;
+          justify-content: center;
+          font-size: 15rem; }
+          body .fixed-ui .phoneNumber a img {
+            color: #10cfcf;
+            width: 17rem;
+            margin-right: 3rem; } }
     @media (max-height: 428px) {
       body .fixed-ui {
         top: -100rem !important; } }
