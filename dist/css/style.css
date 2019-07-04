@@ -385,10 +385,6 @@ body {
         body .fixed-ui .phoneNumber a * {
           display: inline-block;
           vertical-align: middle; }
-        body .fixed-ui .phoneNumber a img {
-          width: 18rem;
-          height: auto;
-          margin-right: 5rem; }
         body .fixed-ui .phoneNumber a p {
           margin: 0 0 1rem 0;
           padding: 0; }
@@ -418,11 +414,7 @@ body {
           height: 20rem;
           display: flex;
           justify-content: center;
-          font-size: 15rem; }
-          body .fixed-ui .phoneNumber a img {
-            color: #10cfcf;
-            width: 17rem;
-            margin-right: 3rem; } }
+          font-size: 15rem; } }
     @media (max-height: 428px) {
       body .fixed-ui {
         top: -100rem !important; } }
