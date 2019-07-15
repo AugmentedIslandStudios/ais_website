@@ -48,7 +48,8 @@
 				opacity: 1;
 			}
 			&.one{
-				background-image: url('../assets/images/cfm_featured.jpg');
+				background-position: center top;
+				background-image: url('../assets/images/cfm_featured_2.jpg');
 			}
 			&.two{
 				background-image: url('../assets/images/g2_featured.jpg');
@@ -176,7 +177,7 @@
 		.bg-container{
 			.bg{
 				&.one{
-					background-image: url('../assets/images/cfm_featured_mobile.jpg');
+					background-image: url('../assets/images/cfm_featured_2.jpg');
 				}
 			}
 		}
