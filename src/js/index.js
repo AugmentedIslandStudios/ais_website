@@ -87,6 +87,9 @@ function selectWork(){
 	$('.project.five').hover(()=>{
 		$('.five').addClass('selected');
 	})
+	$('.project.six').hover(()=>{
+		$('.six').addClass('selected');
+	})
 
 	$('.project').click(function(){
 		
@@ -231,6 +234,12 @@ function renderContent(uri){
 		setTimeout(()=>{
 			showSection($('#monarch'));
 		},300)
+		break;
+		case '#filterslenses':
+			hideSection($('.section').not('#filterslenses').not('.hidden'));
+			setTimeout(()=>{
+				showSection($('#filters-lenses'));
+			},300)
 		break;
 		case '#contact':
 			hideSection($('.section').not('#contact-section').not('.hidden'));

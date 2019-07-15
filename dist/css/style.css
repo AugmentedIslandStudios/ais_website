@@ -216,6 +216,8 @@ body {
           background-image: url("../assets/images/carhartt_featured.jpg"); }
         body #work-section .bg-container .bg.five {
           background-image: url("../assets/images/monarch_featured.jpg"); }
+        body #work-section .bg-container .bg.six {
+          background-image: url("../assets/images/filters_featured.jpg"); }
     body #work-section .selector-container {
       width: 100%;
       height: 100%;
@@ -374,7 +376,7 @@ body {
       bottom: 50rem;
       right: 83rem;
       width: auto;
-      height: auto;
+      height: 22rem;
       color: white;
       font-weight: lighter;
       font-size: 16rem; }
@@ -386,13 +388,10 @@ body {
         body .fixed-ui .phoneNumber a * {
           display: inline-block;
           vertical-align: middle; }
-        body .fixed-ui .phoneNumber a #phone-svg {
+        body .fixed-ui .phoneNumber a img {
           width: 22rem;
           height: 22rem;
-          fill: none;
-          stroke: #10cfcf;
-          stroke-miterlimit: 10;
-          stroke-width: 70rem; }
+          margin-right: 5rem; }
         body .fixed-ui .phoneNumber a p {
           margin: 0 0 1rem 0;
           padding: 0; }
@@ -423,10 +422,9 @@ body {
           display: flex;
           justify-content: center;
           font-size: 15rem; }
-          body .fixed-ui .phoneNumber a #phone-svg {
+          body .fixed-ui .phoneNumber a img {
             width: 21rem;
             height: 21rem;
-            stroke-width: 69rem;
             margin-right: 3rem; } }
     @media (max-height: 428px) {
       body .fixed-ui {
@@ -742,6 +740,8 @@ body {
           margin: 0 auto; }
         body .work-detail.section .content .contentWrapper .projectLogo {
           width: 8%; }
+        body .work-detail.section .content .contentWrapper .projectLogo2 {
+          width: 16%; }
         body .work-detail.section .content .contentWrapper .copyWrapper {
           text-align: center;
           width: 60%;
