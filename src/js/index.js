@@ -100,7 +100,6 @@ function selectWork(){
 		},300)
 	})
 
-
 	$('.work-type .opt').click(function(){
 		$('.work-type .opt').removeClass('selected');
 		$(this).addClass('selected');
@@ -114,7 +113,7 @@ function selectWork(){
 function showCategoryWork(){
 	$('.project').removeClass('selected');
 	$('.bg-container .bg').removeClass('selected');
-	$('.two').addClass('selected'); //focus second project
+	//$('.two').addClass('selected'); //focus second project
 	$('#work-section .work-projects').removeClass('hidden');
 	$('#work-section .lab-projects').addClass('hidden');
 	$('#work-section .workOpts').removeClass('hidden');
