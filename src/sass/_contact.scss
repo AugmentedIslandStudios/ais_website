@@ -37,6 +37,8 @@
 			top: 50%;
 			@include transform(translateY(-50%));
 			.copy{
+				font-family: 'Roboto', $font-stack;
+				font-weight: normal;
 				font-size: 18rem;
 				line-height: 30rem;
 			}

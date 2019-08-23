@@ -1,10 +1,39 @@
 var $ = require('jquery');
 //var json = require('./data/project.json'); //with path
 var tempUri = window.location.hash;
-import { TweenLite ,TweenMax, TimelineLite, Power4, Power3, Linear, Elastic, CSSPlugin} from 'gsap';
+import { TweenLite ,TweenMax, TimelineLite, Power4, Power3, Linear, Elastic, CSSPlugin, TimelineMax} from 'gsap';
 import 'gsap/src/uncompressed/plugins/ScrollToPlugin';
 //var mJson = JSON.parse(json);
 //console.log("json",json.projects);
+
+// Import lodash.
+import _ from 'lodash';
+import 'lodash/throttle';
+
+// Obtain DOM elements from carousel.
+let carouselWrapper = $(".ourwork-container .carousel-container .mask .wrapper");
+let items = $(".ourwork-container .carousel-container .mask .wrapper .slide");
+let arrows = $(".ourwork-container .carousel-container .carousel-arrow");
+let dots = $(".ourwork-container .carousel-container .carousel-dots .dot");
+let activeIndex = 0;
+
+// Forms.
+let formsArray = [];
+
+let form1 = {
+	formId: '#contactForm',
+	submitButton: '#contactForm .submitBtn',
+	location: '#contact'
+}
+
+let form2 = {
+	formId: '#contactForm2',
+	submitButton: '#contactForm2 .submitBtn',
+	location: '#web'
+}
+
+formsArray.push(form1);
+formsArray.push(form2);
 
 function createProjects(){
 	for (var i = json.projects.work.length - 1; i >= 0; i--) {
@@ -29,6 +58,13 @@ $(document).ready(()=>{
 	validateForm();
 	scrollDirection();
 	removeAutoComplete();
+
+	// Scroll animations.
+	initWebSectionAnimations();
+
+	// Carousel.
+	initImageCarousels();
+
 })
 
 function menuControl(){
@@ -204,6 +240,12 @@ function renderContent(uri){
 				showSection($('#work-section'));
 			},300)
 		break;
+		case '#web':
+			hideSection($('.section').not('#web-section').not('.hidden'));
+			setTimeout(()=>{
+				showSection($('#web-section'));
+			},300)
+		break;
 		case '#comefindme':
 			hideSection($('.section').not('#come-find-me').not('.hidden'));
 			setTimeout(()=>{
@@ -268,7 +310,7 @@ function UIAnimations(){
 }
 
 function validateForm(){
-	const submitButton =  $('.submitBtn');
+	/*const submitButton =  $('.submitBtn');
 	const formContent = $('#contactForm')
 	
 	submitButton.on('click',function(){
@@ -294,10 +336,42 @@ function validateForm(){
 			location.href=tempEmail;
 			location.href='#contact';
 		}
-	});
+	});*/
+
+	for(let form of formsArray) {
+		let submitButton =  $(form.submitButton);
+		let formContent = $(form.formId);
+		
+		submitButton.on('click',function(){
+			this.preventDefault;
+			formContent.trigger("submit");
+		})
+		
+		$(document).on(form.formId + " focusout", form.formId + ".inputContainer.required input",()=>{
+			checkFormInputs(formContent)
+		})
+
+		formContent.on('submit',(event)=>{
+			event.preventDefault();
+			if(checkFormInputs(formContent)){
+				$('.required').each(function(){
+					$(this).removeClass('required');
+				})
+				var tempEmail = 'mailto:sales@augmentedislandstudios.com?subject=Contact from website';
+				tempEmail+='&body='+formContent[0].message.value;
+				tempEmail+='%0D%0A%0D%0A%0D%0AContact info: %0D%0A Name: '+formContent[0].name.value;
+				tempEmail+='%0D%0A Email: '+formContent[0].email.value;
+				tempEmail+='%0D%0A Phone: '+formContent[0].phone.value;
+				location.href=tempEmail;
+				location.href=form.location;
+			}
+		});
+	}
+
 }
 
 function checkFormInputs(formContent){
+	console.log(formContent);
 	let fail = false;
 	let name;
 	let fail_log = '';
@@ -391,4 +465,158 @@ function removeAutoComplete(){
 			}
 		}
 	}
+}
+
+function initWebSectionAnimations(){
+
+	let webWindow = document.getElementById("web-section");
+
+	let viewportHeight = window.innerHeight; // This is the viewport height.
+
+	// The top value of elements.
+	let complaint1Position = document.getElementById("complaint-1").getBoundingClientRect().top;
+	let complaint2Position = document.getElementById("complaint-2").getBoundingClientRect().top;
+	let complaint3Position = document.getElementById("complaint-3").getBoundingClientRect().top;
+	let complaint4Position = document.getElementById("complaint-4").getBoundingClientRect().top;
+
+	// State. Defines if a complaint has not appeared, has appeared and has finished.
+	let complaint1state = 0;
+	let complaint2state = 0;
+	let complaint3state = 0;
+	let complaint4state = 0;
+
+	/* Tweens. */
+
+	// Intro animation of complaints.
+	let tw1 = TweenLite.from("#complaint-1", 0.5, {x: -20, opacity: 0, paused: true});
+	let tw2 = TweenLite.from("#complaint-2", 0.5, {x: 20, opacity: 0, paused: true});
+	let tw3 = TweenLite.from("#complaint-3", 0.5, {x: -20, opacity: 0, paused: true});
+	let tw4 = TweenLite.from("#complaint-4", 0.5, {x: 20, opacity: 0, paused: true});
+
+	// Animation for the complaints cross out.
+	let tw5 = TweenLite.to("#complaint-1", 0.5, {opacity: 0.2, paused: true});
+	let tw6 = TweenLite.to("#complaint-2", 0.5, {opacity: 0.2, paused: true});
+	let tw7 = TweenLite.to("#complaint-3", 0.5, {opacity: 0.2, paused: true});
+	let tw8 = TweenLite.to("#complaint-4", 0.5, {opacity: 0.2, paused: true});
+
+	// Store lodash throttle function.
+	let lodashFunction = _.throttle(() => {
+
+		//console.log("Scrolleando.");
+
+		// Update positions.
+		complaint1Position = document.getElementById("complaint-1").getBoundingClientRect().top;
+		complaint2Position = document.getElementById("complaint-2").getBoundingClientRect().top;
+		complaint3Position = document.getElementById("complaint-3").getBoundingClientRect().top;
+		complaint4Position = document.getElementById("complaint-4").getBoundingClientRect().top;
+
+		// Check position. Intro animations.
+		if((((complaint1Position*100)/viewportHeight) <= 70) && complaint1state === 0) {
+			tw1.play();
+			complaint1state = 1;
+		}
+		if((((complaint2Position*100)/viewportHeight) <= 70) && complaint2state === 0) {
+			tw2.play();
+			complaint2state = 1;
+		}
+		if((((complaint3Position*100)/viewportHeight) <= 70) && complaint3state === 0) {
+			tw3.play();
+			complaint3state = 1;
+		}
+		if((((complaint4Position*100)/viewportHeight) <= 70) && complaint4state === 0) {
+			tw4.play();
+			complaint4state = 1;
+		}
+
+		// Check position. Crossout animations.
+		if((((complaint1Position*100)/viewportHeight) <= 20) && complaint1state === 1) {
+			tw5.play();
+			complaint1state = 2;
+		}
+		if((((complaint2Position*100)/viewportHeight) <= 20) && complaint2state === 1) {
+			tw6.play();
+			complaint2state = 2;
+		}
+		if((((complaint3Position*100)/viewportHeight) <= 20) && complaint3state === 1) {
+			tw7.play();
+			complaint3state = 2;
+		}
+		if((((complaint4Position*100)/viewportHeight) <= 20) && complaint4state === 1) {
+			tw8.play();
+			complaint4state = 2;
+		}
+
+		// Eliminate envent listener if all animations are complete.
+		if(complaint1state === 2 && complaint2state === 2 && complaint3state === 2 && complaint4state === 2) {
+			//console.log("Todas las animaciones se terminaron.");
+			webWindow.removeEventListener("scroll", lodashFunction);
+		}
+
+	}, 200);
+
+	webWindow.addEventListener("scroll", lodashFunction);
+
+}
+
+function initImageCarousels() {
+
+	for(let arrow of arrows) {
+		arrow.addEventListener("click", onCarouselArrowClick);
+	}
+
+	createCarouselDots();
+
+	for(let dot of dots) {
+		//console.log(dot);
+		dot.addEventListener("click", onCarouselDotClick);
+	}
+	
+}
+
+function createCarouselDots() {
+
+	let dotsContainer = $(".ourwork-container .carousel-container .carousel-dots");
+
+	for(let i = 0; i < items.length; i++) {
+		if(i === 0) {
+			dotsContainer.append("<div class='dot active' slide=" + (i+1) + "><div class='graphic'></div></div>");
+		} else {
+			dotsContainer.append("<div class='dot' slide=" + (i+1) + "><div class='graphic'></div></div>");
+		}
+	}
+
+	// Update dots.
+	dots = $(".ourwork-container .carousel-container .carousel-dots .dot");
+
+}
+
+function onCarouselArrowClick(e) {
+	// If arrow was clicked.
+	if($(e.currentTarget).hasClass('right')){
+		activeIndex++;
+		if(activeIndex>= items.length){
+			activeIndex = 0;
+		}
+	}else{
+		activeIndex--;
+		if(activeIndex<0){
+			activeIndex = items.length-1;
+		}
+	}
+	carouselScroll();
+}
+
+function onCarouselDotClick(e) {
+	let slide = $(e.currentTarget).attr('slide');
+	activeIndex = slide - 1;
+	carouselScroll();
+}
+
+function carouselScroll() {
+	// Scroll action.
+	let position = $(items[activeIndex]).position().left;
+	carouselWrapper.css('transform','translateX('+position*(-1)+'px )');
+	dots.removeClass('active');
+	$(dots[activeIndex]).addClass('active');
+	console.log($(items[activeIndex]));
 }

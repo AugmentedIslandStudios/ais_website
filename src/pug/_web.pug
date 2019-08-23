@@ -1,0 +1,148 @@
+#web-section.section.scrollable.hidden
+    .cornerImage
+        img(src="./assets/images/web_corner_photo.jpg", alt="")
+    .content
+        .webText
+            .highligh.
+                Beautiful, Smart, Consistent,<br>Non-template Web Design.
+            p.copy.
+                There is nothing more painful than hiring a web designer only to find out later that they have disappeared and left you in darkness, with no one else to help.<br><br>Almost immediately after we started our AR/VR development studio, our clients and prospective clients began asking us if we offered web design and management services. These are some of the painful phrases that landed on our desks:
+        
+        #complaints-container
+            #complaint-1.complaint
+                .quote.
+                    “Our web designer disappeared and we don’t even have our web credentials or backup. What do we do?”
+                .complaint-line
+            #complaint-2.complaint
+                .quote.
+                    “We are so unhappy with the aesthetics of our website. They don't represent our brand well. We need help”
+                .complaint-line
+            #complaint-3.complaint
+                .quote.
+                    “We feel like we are getting charged an arm and a leg for nothing”
+                .complaint-line
+            #complaint-4.complaint
+                .quote.
+                    “I am always begging our web design company to get our updates done on time and it never happens”
+                .complaint-line
+
+        .cantstand-container
+            .text.
+                At Augmented Island Studios we:
+            .text-line
+                .cross
+                    include ../assets/images/web-cross.svg
+                .text Can't stand for poor service.
+            .text-line
+                .cross
+                    include ../assets/images/web-cross.svg
+                .text Can't stand for bad design.
+            .text-line
+                .cross
+                    include ../assets/images/web-cross.svg
+                .text Can't stand for lack of respect.
+        
+        .webstudio-container
+            .grid-container
+                .container-title.
+                    This is why we started:
+                .column-1
+                    .logo
+                        .logo-svg
+                            include ../assets/images/ais_logo.svg
+                        .logo-text.
+                            AIS Web<br>Studio
+                .column-2
+                    .lines-container
+                        .horizontal-line
+                .column-3
+                    img(src="/assets/images/web-webstudio1.jpg", alt="")
+        
+        .laboroflove-container
+            .lineTitle
+                h1 Services
+            p.copy.
+                Exceptional design is a labor of love. Exceptional design should come with extraordinary service and a mindful commitment to your project’s long-term wellbeing.
+            .definition
+                span labor of love
+                span n.
+                .definition-text.
+                    Work done for interest in the work itself rather than for payment.
+                span [1665-75; 1 Thess. 1-3]
+        
+        .services-container
+            p.copy.
+                Our services are fully customizable depending on your specific needs. Here are just a few services we offer:
+            .services-list
+                .service-item 
+                    .text Website design and development.
+                    .service-line
+                .service-item 
+                    .text Webmaster services.
+                    .service-line
+                .service-item 
+                    .text Editable blogs.
+                    .service-line
+                .service-item 
+                    .text Integration with third-party offerings like Mailchimp.
+                    .service-line
+
+        .ourwork-container
+            .lineTitle
+                h1 Our work
+            .carousel-container
+                .mask
+                    .wrapper
+                        .slide1.slide
+                            img(src="./assets/images/test-img1.jpg", alt="")
+                        .slide2.slide
+                            img(src="./assets/images/test-img1.jpg", alt="")
+                        .slide3.slide
+                            img(src="./assets/images/test-img1.jpg", alt="")
+                .carousel-dots
+                    //- .dot(slide="1").active
+                    //- .dot(slide="2")
+                    //- .dot(slide="3")
+                .carousel-arrow.left
+                    include ../assets/images/carousel-arrow.svg
+                .carousel-arrow.right
+                    include ../assets/images/carousel-arrow.svg
+
+        .clients-container
+            .lineTitle
+                h1 Clients
+            a.team
+                img(src="./assets/images/tc-logo.png", alt="Terry Crews")
+            a.team(href='https://comefindmebook.com/' target="_blank")
+                img(src="./assets/images/cfm_logo.svg", alt="Come Find Me")
+            a.team(href='https://laislabrand.com/' target="_blank")
+                img(src="./assets/images/laisla-logo.png", alt="La Isla")
+
+        .contact-container
+            .lineTitle
+                h1 Contact us
+            .contact-column
+                p.copy.
+                    We invite you to contact us and let us know how we can help. We are eager to connect. Send us an email or fill out the form below to reach out to us please:
+                form#contactForm2(autocomplete="nope")
+                    span.inputContainer
+                        input.disableAutoComplete(type="text" name="name" required placeholder="Name*" autocomplete="false")
+                    span.inputContainer
+                        input.disableAutoComplete(type="email" name="email" required placeholder="Email*" autocomplete="false")
+                    span.inputContainer
+                        textarea(name="message" required placeholder="Message*" autocomplete="false")
+                    br
+                    br
+                    span.inputContainer
+                        input.disableAutoComplete(type="tel" name="phone" placeholder="Phone: +1 888 888 8888"  minlength="10" maxlength="14" title="Phone number" autocomplete="false")
+                            
+                    input.submitBtn(type="submit" value="SEND")
+                .social-media
+                    a(href="mailto:sales@augmentedislandstudios.com").email sales@augmentedislandstudios.com
+                    .social-icons
+                        a(href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs")
+                            include ../assets/images/facebook-f.svg
+                        a(href="https://www.instagram.com/augmentedislandstudios/?hl=en")
+                            include ../assets/images/instagram.svg
+                        a(href="https://www.linkedin.com/company/augmented-island-studios/")
+                            include ../assets/images/linkedin-in.svg
