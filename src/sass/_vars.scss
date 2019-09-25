@@ -33,6 +33,12 @@ $lGrey:#838383;
 	font-weight: bold;
 	font-style: normal;
 }
+@font-face {
+	font-family: Roboto;
+	src: url('../assets/fonts/Roboto-LightItalic.ttf') format('truetype');
+	font-weight: lighter;
+	font-style: italic;
+}
 
 
 //------- MIXIN -------//

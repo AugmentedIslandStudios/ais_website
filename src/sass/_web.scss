@@ -320,7 +320,7 @@
             .services-list{
                 margin-left: 10.5%;
                 .service-item{
-                    padding-bottom: 20rem;
+                    //padding-bottom: 20rem;
                     font-family: 'Roboto', $font-stack;
                     font-weight: bold;
                     font-size: 24rem;
@@ -393,7 +393,7 @@
 
                 .mask{
                     //background: yellow;
-                    height: auto;
+                    height: 75vh;
                     overflow: hidden;
                     grid-area: carouselmask;
                     border: 1px solid white;
@@ -401,7 +401,7 @@
                     .wrapper {
                         display: block;
                         width: 100%;
-                        height: auto;
+                        height: 75vh;
                         white-space: nowrap;
                         transition: all 500ms ease-in-out;
     
@@ -417,12 +417,12 @@
                         .slide{
                             display: inline-block;
                             width: 100%;
-                            height: auto;
+                            height: 75vh;
                             white-space: normal;
     
                             img{
                                 width: 100%;
-                                height: auto;
+                                height: 100%;
                                 object-fit: cover;
                             }
                         }
@@ -917,6 +917,15 @@
                     width: 100%;
                     margin: 0;
                     grid-template-columns: 30rem auto 30rem;
+                    .mask{
+                        height: 30vh;
+                        .wrapper {
+                            height: 30vh;
+                            .slide{
+                                height: 30vh;
+                            }
+                        }
+                    }
                 }
             }
 

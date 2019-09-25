@@ -34,9 +34,12 @@
 			display: block;
 			color: white;
 			font-weight: bold;
-			font-size: 65rem;
+			font-size: 3.5vw;
 			text-transform: uppercase;
 			margin: 15rem 0;
+			&:last-child{
+				margin: 15rem 0 0 0;
+			}
 			// &:after, &::after{
 			// 	content: "";
 			// 	height: 2rem;

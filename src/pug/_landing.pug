@@ -1,18 +1,134 @@
-#landing-section.section.hidden
+#landing-section.section.scrollable.hidden
 	.content
-		.feature-work
-			.info-wrapper
-				.index
-					.line
-					.line
-					.line
-				.titles
-					h3.tag Featured work
-					h1.name Augmented Magazine Cover
-					h1.client / Wine Enthusiast
-				.linkToStudy
-					.line
-					a.link(href="#wineEnthusiast") View Case Study
-						.arrow
-							img(src="./assets/images/icon_arrow.svg", alt="")
-			//img(src="/assets/images/placeholder_image.jpg")
+		//- .feature-work
+		//- 	.info-wrapper
+		//- 		.index
+		//- 			.line
+		//- 			.line
+		//- 			.line
+		//- 		.titles
+		//- 			h3.tag Featured work
+		//- 			h1.name Augmented Magazine Cover
+		//- 			h1.client / Wine Enthusiast
+		//- 		.linkToStudy
+		//- 			.line
+		//- 			a.link(href="#wineEnthusiast") View Case Study
+		//- 				.arrow
+		//- 					img(src="./assets/images/icon_arrow.svg", alt="")
+		//- 	//img(src="/assets/images/placeholder_image.jpg")
+		.landing-container-1
+			img(src="./assets/images/holo_engine_landing.jpg", alt="")
+			.column-right
+				.content
+					ul
+						li
+							a(href="#about") About us
+						li
+							a(href="#work") Our work
+					.text-1 "Limits aren't real,
+					.text-2 break every barrier"
+					.text-3 - Augmented Island Studios
+			.dividing-line
+		.landing-container-2
+			.grid-container
+				.container-title
+					.index 01
+					.text We start with #[span "Why?"]
+				.column-1
+					p.
+						Every intelligent solution is derived from a good plan and every plan must stem from asking “why?”.<br><br>Every application we develop grows from a passionate desire to address why it’s being developed and how it will solve a problem and also have a strong ROI.
+					a(href="https://medium.com/@augmentedisland", target="_blank") Check our blog_
+				.column-2
+					.auto-carousel
+						img.auto-carousel-img.active(src="./assets/images/vr_medical.jpg", alt="")
+						img.auto-carousel-img(src="./assets/images/holo_engine.jpg", alt="")
+						img.auto-carousel-img(src="./assets/images/ar_phone.jpg", alt="")
+			.dividing-line
+		.landing-container-3
+			.container-title
+				.index 02
+				.text Focused on
+				.text #[span ROI] + #[span Creativity]
+			.dividing-line
+		.landing-container-4
+			.grid-container
+				#landing-work-carousel
+					//- .cursor-drag
+					//- 	span Drag
+					.wrapper
+						.project-container
+							.project
+								img(src="./assets/images/cfm_featured_2.jpg", alt="")
+								.info
+									.name Come Find Me Book
+									a.logo(href="#comefindme")
+										include ../../src/assets/images/cfm_logo.svg
+									a.link(href="#comefindme") Go to project
+						.project-container
+							.project.active
+								img(src="./assets/images/g2_featured.jpg", alt="")
+								.info
+									.name J.Lo and Bad Bunny Video
+									a.logo(href="#g2")
+										img(src="./assets/images/g2-logo-grey.png", alt="")
+									a.link(href="#g2") Go to project
+						.project-container
+							.project
+								img(src="./assets/images/we_featured.jpeg", alt="")
+								.info
+									.name Augmented Wine Cover
+									a.logo(href="#wineEnthusiast")
+										img(src="./assets/images/we-logo-grey.png", alt="")
+									a.link(href="#wineEnthusiast") Go to project
+						.project-container
+							.project
+								img(src="./assets/images/carhartt_featured.jpg", alt="")
+								.info
+									.name Sangiovese AR
+									a.logo(href="#carhartt")
+										img(src="./assets/images/carhartt-logo-grey.png", alt="")
+									a.link(href="#carhartt") Go to project
+				.column-1
+					p.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dapibus sem. Sed placerat condimentum cursus.
+					a(href="#work") View all our work_
+				.column-2
+					.container-title
+						.index 03
+						.text #[span World class]
+						.text Immersive experiences with value in mind
+			.dividing-line
+		.landing-container-5
+			.grid-container
+				.container-title
+					.index 04
+					.text Testimonials
+				.testimonials
+					.left-arrow
+						include ../assets/images/carousel-arrow.svg
+					.content
+						.quotation-mark "
+						//- .statement.
+						//- 	I was thrilled to work with Augmented Island Studios. After many years of working in Hollywood with top creative talent, I can confidently say that they are world-class! Once they completed the first project for me I decided to make them a permanent fixture of my digital media team”
+						//- .client Terry Crews
+						//- .client-description Actor, Artist and Activist
+						.statement
+						.client
+						.client-description
+						.service-line
+					.right-arrow
+						include ../assets/images/carousel-arrow.svg
+		.landing-footer
+			.grid-container
+				.email
+					a(href="mailto:sales@augmentedislandstudios.com") sales@augmentedislandstudios.com
+				.column-1
+					.text #[span Portland, OR]811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204
+					.text #[span Cali, Colombia]Cra. 6 #2-61<br>Cali, Valle del Cauca
+				.column-2
+					a(href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs")
+						include ../assets/images/facebook-f.svg
+					a(href="https://www.instagram.com/augmentedislandstudios/?hl=en")
+						include ../assets/images/instagram.svg
+					a(href="https://www.linkedin.com/company/augmented-island-studios/")
+						include ../assets/images/linkedin-in.svg
