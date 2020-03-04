@@ -6,17 +6,21 @@
 			
 			.copyWrapper
 				h1.title Come Find Me
-				h2.client Terry Crews
+				h2.client Terry Crews & Ken Harvey
 				p.description.
 					Sharing a quote from our client Terry Crews: "20 years ago, 1995 to be exact, Ken Harvey and I were teammates on the NFL’s Washington Redskins. Ken came to me with a brilliant idea of a book he wrote for his two very young sons, Anthony and Marcus. The book was to be a first time reader, and feature the boys in an imaginative game of hide and seek."
 			
 			.photoWrapper
-				img.workPhoto(src="./assets/images/cfm_2.jpg", alt="")
-				img.workPhoto(src="./assets/images/cfm_1.jpg", alt="")
-				img.workPhoto(src="./assets/images/cfm_3.jpg", alt="")
-				//img.workPhoto(src="./assets/images/cfm_4.jpg", alt="")
-				img.workPhoto(src="./assets/images/cfm_5.jpg", alt="")
-				img.workPhoto(src="./assets/images/cfm_7.jpg", alt="")
+				//- img.workPhoto(src="./assets/images/cfm_2.jpg", alt="")
+				//- img.workPhoto(src="./assets/images/cfm_1.jpg", alt="")
+				//- img.workPhoto(src="./assets/images/cfm_3.jpg", alt="")
+				//- img.workPhoto(src="./assets/images/cfm_5.jpg", alt="")
+				//- img.workPhoto(src="./assets/images/cfm_7.jpg", alt="")
+				img.workPhoto.lazyload(src="./assets/images/lazyload-image.png", data-src="./assets/images/cfm_2.jpg", alt="")
+				img.workPhoto.lazyload(src="./assets/images/lazyload-image.png", data-src="./assets/images/cfm_1.jpg", alt="")
+				img.workPhoto.lazyload(src="./assets/images/lazyload-image.png", data-src="./assets/images/cfm_3.jpg", alt="")
+				img.workPhoto.lazyload(src="./assets/images/lazyload-image.png", data-src="./assets/images/cfm_5.jpg", alt="")
+				img.workPhoto.lazyload(src="./assets/images/lazyload-image.png", data-src="./assets/images/cfm_7.jpg", alt="")
 			.goBack.btn
 				.container.rotated
 					h2 Go Back

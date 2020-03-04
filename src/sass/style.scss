@@ -95,13 +95,476 @@ body{
 		display: inline-block;
 	}
 
+	.footer {
+
+		display: flex;
+		width: 100%;
+		margin: 0;
+		padding: 150rem 8% 80rem 8%;
+
+		background: white;
+
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+
+		.grid-container {
+
+			display: grid;
+			width: 100%;
+
+			grid-template-columns: 15% 15% 10% 20% 20% 20%;
+			grid-template-rows: auto 50rem auto auto 100rem auto auto;
+			grid-template-areas: 
+				"footerlogo footerlogo . . . ."
+				". . . . . ."
+				"locationportland locationcali . smourservices smnews smcontactus"
+				"contactinfo contactinfo . smourservices smnews smcontactus"
+				". . . . . ."
+				"taologo taologo socialmedia socialmedia socialmedia socialmedia"
+				"taologo taologo infolinks infolinks infolinks infolinks";
+			justify-items: start;
+			//align-items: center;
+
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.title, .location, li > a, .text, .slash, .all-rights, .info-links > a {
+				font-size: 16rem;
+				font-family:'Roboto', $font-stack;
+				font-weight: normal;
+				color: $darkGrey;
+			}
+
+			.title {
+				margin-bottom: 34rem;
+				font-weight: bold;
+			}
+
+			.location {
+				line-height: 25rem;
+			}
+
+			li {
+
+				margin: 25rem 0;
+
+				&:first-child {
+					margin: 0 0 25rem 0;
+				}
+
+				&:last-child {
+					margin: 25rem 0 0 0;
+				}
+
+				&:hover {
+					a{
+						color: rgb(14, 185, 185);
+						//text-decoration: underline;
+					}
+				}
+
+			}
+
+			.footer-logo {
+
+				grid-area: footerlogo;
+
+				width: auto;
+				height: auto;
+
+				.logo, .isotipo {
+					display: inline-block;
+				}
+				.logo{
+					//width: 50rem;
+					height: 28rem;
+					max-height: 28rem;
+					margin-right: 10rem;
+					svg{
+						width: auto;
+						height: 100%;
+					}
+				}
+				.isotipo{
+					height: 26rem;
+					max-height: 26rem;
+					overflow: hidden;
+					svg{
+						width: auto;
+						height: 100%;
+					}
+				}
+
+			}
+
+			.location-portland, .location-cali {
+
+				.title, .location {
+					font-size: 14rem;
+					//color: rgb(150, 150, 150);
+				}
+
+				.title {
+					margin-bottom: 12rem;
+				}
+
+			}
+
+			.location-portland {
+
+				grid-area: locationportland;
+			}
+
+			.location-cali {
+
+				grid-area: locationcali;
+
+			}
+
+			.contact-info {
+
+				grid-area: contactinfo;
+
+				margin-top: 30rem;
+
+				a {
+
+					display: block;
+					font-size: 14rem;
+					text-decoration: underline;
+					color: rgb(14, 185, 185);
+
+					&:first-child {
+						margin-bottom: 10rem;
+					}
+
+				}
+
+			}
+
+			.submenu-our-services {
+
+				grid-area: smourservices;
+
+				.title {
+					text-transform: uppercase;
+				}
+
+			}
+
+			.submenu-news {
+
+				grid-area: smnews;
+
+				.title {
+					text-transform: uppercase;
+				}
+
+			}
+
+			.submenu-contact-us {
+
+				grid-area: smcontactus;
+
+				.title {
+					text-transform: uppercase;
+				}
+
+			}
+
+			.tao-logo {
+
+				grid-area: taologo;
+
+				.text {
+					margin-bottom: 10rem;
+					font-size: 12rem;
+				}
+
+				a {
+					img {
+						width: 160rem;
+						max-width: 160rem;
+					}
+				}
+
+			}
+
+			.social-media {
+
+				grid-area: socialmedia;
+				justify-self: end;
+				align-self: end;
+
+				display: flex;
+				width: 100%;
+
+				flex-wrap: nowrap;
+				justify-content: flex-end;
+				align-items: center;
+				align-content: center;
+
+				a{
+
+					display: block;
+					//width: 20rem;
+					height: 20rem;
+					max-height: 20rem;
+					margin-right: 20rem;
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					svg{
+						//width: 20rem;
+						height: 20rem;
+						max-height: 20rem;
+
+						path{
+							width: auto;
+							height: 20rem;
+							max-height: 20rem;
+							fill: $darkGrey;
+						}
+
+					}
+
+				}
+
+			}
+
+			.info-links {
+
+				grid-area: infolinks;
+				justify-self: end;
+				align-self: end;
+
+				width: 100%;
+
+				text-align: right;
+
+				* {
+					display: inline-block;
+					font-size: 12rem;
+				}
+
+				a {
+					text-decoration: underline;
+					font-size: 12rem;
+				}
+
+				.slash{
+					margin: 0 3%;
+				}
+
+			}
+			
+		}
+
+	}
+
+	@import '_loading';
 	@import '_landing';
 	@import '_work';
 	@import '_fixed-ui';
 	@import '_about';
 	@import '_web';
+	@import '_web-ar';
 	@import '_press';
+	@import '_video';
 	@import '_menu';
 	@import '_work-detail';
 	@import '_contact';
+}
+
+@media (min-width: 320px) and (max-width: 740px){
+	body{
+		.footer {
+
+			padding: 70rem 40rem 30rem 40rem;
+
+			.grid-container {
+
+				grid-template-columns: 50% 50%;
+				grid-template-rows: auto 50rem auto auto 50rem auto 50rem auto 50rem auto 40rem auto auto;
+				grid-template-areas: 
+					"footerlogo footerlogo"
+					". ."
+					"locationportland locationcali"
+					"contactinfo contactinfo"
+					". ."
+					"smourservices smnews"
+					". ."
+					"smcontactus smcontactus"
+					". ."
+					"taologo taologo"
+					". ."
+					"socialmedia socialmedia"
+					"infolinks infolinks";
+				grid-column-gap: 20rem;
+
+				.title, .location, li > a, .text, .slash, .all-rights, .info-links > a {
+					font-size: 13rem;
+				}
+
+				.title {
+					margin-bottom: 18rem;
+				}
+
+				li {
+
+					margin: 16rem 0;
+	
+					&:first-child {
+						margin: 0 0 16rem 0;
+					}
+	
+					&:last-child {
+						margin: 16rem 0 0 0;
+					}
+
+					a {
+						text-decoration: underline;
+					}
+	
+				}
+
+				.location-portland, .location-cali {
+
+					.title, .location {
+						font-size: 13rem;
+					}
+	
+					.title {
+						margin-bottom: 12rem;
+					}
+	
+				}
+
+				.contact-info {
+					a {
+						font-size: 13rem;
+					}
+				}
+
+				.tao-logo {
+
+					justify-self: center;
+					text-align: center;
+
+					.text {
+						font-size: 12rem;
+					}
+
+				}
+
+				.social-media {
+					justify-self: center;
+					justify-content: center;
+				}
+
+				.info-links {
+					justify-self: center;
+					margin-top: 20rem;
+					text-align: center;
+				}
+
+				// .email {
+
+				// 	margin-bottom: 40rem;
+
+				// 	a {
+
+				// 		font-size: 19rem;
+
+				// 		color: $darkGrey;
+
+				// 		-webkit-text-stroke-width: 0;
+				// 		-webkit-text-stroke-color: none;
+				// 	}
+
+				// }
+
+				// .column-1 {
+				// 	.text {
+				// 		width: 50%;
+				// 	}
+				// 	&:first-child {
+				// 		margin-right: 0;
+				// 	}
+				// }
+
+				// .column-2 {
+
+				// 	align-self: start;
+
+				// 	margin-top: 40rem;
+
+				// 	justify-content: center;
+
+				// }
+
+			}
+
+		}
+	}
+}
+
+@media (max-width: 1399px){
+	html{
+		font-size: 1px; // 16px.
+	}
+}
+
+@media (min-width: 1400px) and (max-width: 1599px){
+	html{
+		font-size: 1.0625px; // 17px.
+	}
+}
+
+@media (min-width: 1600px) and (max-width: 1999px){
+	html{
+		font-size: 1.25px; // 20px.
+	}
+}
+
+@media (min-width: 2000px) and (max-width: 2399px){
+	html{
+		font-size: 1.5px; // 24px.
+	}
+}
+
+@media (min-width: 2400px) and (max-width: 2799px){
+	html{
+		font-size: 1.75px; // 28px.
+	}
+}
+
+@media (min-width: 2800px) and (max-width: 3199px){
+	html{
+		font-size: 2px; // 32px.
+	}
+}
+
+@media (min-width: 3200px) and (max-width: 3599px){
+	html{
+		font-size: 2.25px; // 36px.
+	}
+}
+
+@media (min-width: 3600px) and (max-width: 3999px){
+	html{
+		font-size: 2.5px; // 40px.
+	}
+}
+
+@media (min-width: 4000px){
+	html{
+		font-size: 2.5px; // 40px.
+	}
 }

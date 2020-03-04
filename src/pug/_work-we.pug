@@ -12,17 +12,17 @@
 					Wine Enthusiast Magazine asked us to build their first-ever Augmented Reality magazine cover. The task was to create an application that would launch a digital experience when the magazine cover was detected. In collaboration with the magazine and award-winning digital artist Pete Bollinger, we elected to choose a sci-fi interface that brought Peter’s video to life by creating a 3D version of it that is displayed in different layers as if they were coming right out of the magazine. The experience ends with a very futuristic hologram of the actual cover. Check out the full Wine Enthusiast article <a href="http://www.enth.to/2JZNeBU" target="_blank">here</a> 
 			
 			.photoWrapper
-				img.workPhoto(src="./assets/images/we_featured.jpeg", alt="")
+				img.workPhoto.lazyload(src="./assets/images/lazyload-image.png", data-src="./assets/images/we_featured.jpeg", alt="")
 				video(controls)
 					source(src="./assets/media/we_wip_ar.mp4" type="video/mp4")
 					Your browser does not support the video tag.
 
 				.pair.around
 					.external.small
-						img.workPhoto(src="./assets/images/we_cover_ar.jpg", alt="Wine Enthusiast cover")
+						img.workPhoto.lazyload(src="./assets/images/lazyload-image2.png", data-src="./assets/images/we_cover_ar.jpg", alt="Wine Enthusiast cover")
 						span Cover provided by Wine Enthusiast
 			
-					video(controls poster="./assets/images/we_video_cover.png").half
+					video(controls poster="./assets/images/we_video_cover.jpg").half
 						source(src="./assets/media/videoCapture.mp4" type="video/mp4")
 						Your browser does not support the video tag.
 

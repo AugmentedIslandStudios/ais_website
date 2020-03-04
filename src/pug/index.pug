@@ -6,8 +6,8 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		meta(name="author" content="Augmented Island Studios")
-		meta(name="copyright" content="2018")
-		meta(http-equiv="Content-Security-Policy" content="default-src 'self'")
+		meta(name="copyright" content="2020")
+		meta(http-equiv="Content-Security-Policy" content="default-src 'self' *.vimeo.com unpkg.com")
 		//Details
 		meta(name="description" content="We are a full service augmented reality and virtual reality studio based in Portland, Oregon  with development offices in Cali, Colombia.")
 		meta(name="keywords" content="AIS, Augmented Island, Augmented Island Studios, Enrique Sanchez-Rivera, Juan C. Ramon, Guillermo Alvarez, Kammil Carranza, Mauricio Fernandez, Augmented Reality, AR, Augmented, Reality, Virtual Reality, VR, XR, MR, Mix Reality, Mixing Reality, Come Find me, App, Apps, Colombia, Cali, Studio, Estudio")
@@ -53,12 +53,15 @@ html(lang="en")
 		
 	body
 		.body-wrapper
+			include _loading.pug
 			include _fixed-ui.pug
 			include _landing.pug
 			include _work.pug
 			include _about.pug
 			include _web.pug
+			include _webar.pug
 			include _press.pug
+			include _video.pug
 			include _menu.pug
 			include _work-comefindme.pug
 			include _work-g2.pug
@@ -66,5 +69,7 @@ html(lang="en")
 			include _work-carhartt.pug
 			include _work-monarch.pug
 			include _work-filters.pug
+			include _work-thejourney.pug
+			include _work-surfrx.pug
 			include _contact-overlay.pug
 		script(src='./js/index.min.js')

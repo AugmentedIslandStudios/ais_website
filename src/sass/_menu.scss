@@ -34,7 +34,7 @@
 			display: block;
 			color: white;
 			font-weight: bold;
-			font-size: 3.5vw;
+			font-size: 2.4vw;
 			text-transform: uppercase;
 			margin: 15rem 0;
 			&:last-child{
@@ -79,11 +79,21 @@
 			@include transform(translateY(-50%));
 			
 			.opt{
-				margin: 25rem 0;
+				margin: 20rem 0;
+				font-size: 5vh;
 			}
 		}
 		.social{
 			display: none;
+		}
+	}
+	@media (min-width: 741px) and (max-width: 1024px){
+		.options{
+			
+			.opt{
+				margin: 25rem 0;
+				font-size: 5vh;
+			}
 		}
 	}
 }

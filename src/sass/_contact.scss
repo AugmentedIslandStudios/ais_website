@@ -17,7 +17,7 @@
 				h1{
 					@include transform(translateX(-50%));
 					-webkit-text-stroke-width: 1px;
-					-webkit-text-stroke-color: $lGrey;
+					-webkit-text-stroke-color: white;
 					color: transparent;
 					font-size: 90rem;
 					letter-spacing: 4px;
@@ -228,7 +228,7 @@
 			overflow-y: visible;
            .wrapper{
 			   	height: 100%;
-				padding: 60rem 20rem;
+				padding: 0 20rem 60rem 20rem;
 				display: flex;
 				justify-content: space-between;
 				flex-direction: column;
@@ -236,14 +236,14 @@
 				.lineTitle{
 					position: relative;
 					margin-bottom: 20rem;
-					margin-top: 30rem;
+					margin-top: 165rem;
 					bottom: unset;
 					@include transform(none);
 					h1{
 						@include transform(none);
 						position: relative;
 						-webkit-text-stroke-width: 0.5px;
-						font-size: 40rem;
+						font-size: 45rem;
 					}
 				}
 				.form-container{
@@ -257,7 +257,7 @@
 						line-height: 21rem;
 					}
 					form{
-						margin-bottom: 100rem;
+						margin-bottom: 70rem;
 						.inputContainer{
 							width: 100% !important;
 							input{

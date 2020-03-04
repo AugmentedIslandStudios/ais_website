@@ -1,34 +1,11 @@
 #landing-section.section.scrollable.hidden
 	.content
-		//- .feature-work
-		//- 	.info-wrapper
-		//- 		.index
-		//- 			.line
-		//- 			.line
-		//- 			.line
-		//- 		.titles
-		//- 			h3.tag Featured work
-		//- 			h1.name Augmented Magazine Cover
-		//- 			h1.client / Wine Enthusiast
-		//- 		.linkToStudy
-		//- 			.line
-		//- 			a.link(href="#wineEnthusiast") View Case Study
-		//- 				.arrow
-		//- 					img(src="./assets/images/icon_arrow.svg", alt="")
-		//- 	//img(src="/assets/images/placeholder_image.jpg")
 		.landing-container-1
-			img(src="./assets/images/holo_engine_landing.jpg", alt="")
-			.column-right
-				.content
-					ul
-						li
-							a(href="#about") About us
-						li
-							a(href="#work") Our work
-					.text-1 "Limits aren't real,
-					.text-2 break every barrier"
-					.text-3 - Augmented Island Studios
-			.dividing-line
+			.content
+				.text-1 "Limits aren't real,
+				.text-2 break every barrier"
+				.text-3 - Augmented Island Studios
+			//- .dividing-line
 		.landing-container-2
 			.grid-container
 				.container-title
@@ -37,7 +14,8 @@
 				.column-1
 					p.
 						Every intelligent solution is derived from a good plan and every plan must stem from asking “why?”.<br><br>Every application we develop grows from a passionate desire to address why it’s being developed and how it will solve a problem and also have a strong ROI.
-					a(href="https://medium.com/@augmentedisland", target="_blank") Check our blog_
+					//- .button-container
+					//- 	a(href="https://medium.com/@augmentedisland", target="_blank") Check our blog
 				.column-2
 					.auto-carousel
 						img.auto-carousel-img.active(src="./assets/images/vr_medical.jpg", alt="")
@@ -65,7 +43,15 @@
 										include ../../src/assets/images/cfm_logo.svg
 									a.link(href="#comefindme") Go to project
 						.project-container
-							.project.active
+							.project
+								img(src="./assets/images/surfrx_featured.jpg", alt="")
+								.info
+									.name Surf Prescriptions 
+									a.logo(href="#surfrx")
+										img(src="./assets/images/surfprescriptions-logo-grey.png", alt="")
+									a.link(href="#surfrx") Go to project
+						.project-container
+							.project
 								img(src="./assets/images/g2_featured.jpg", alt="")
 								.info
 									.name J.Lo and Bad Bunny Video
@@ -89,14 +75,14 @@
 										img(src="./assets/images/carhartt-logo-grey.png", alt="")
 									a.link(href="#carhartt") Go to project
 				.column-1
-					p.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dapibus sem. Sed placerat condimentum cursus.
-					a(href="#work") View all our work_
+					//- p.
+					//- 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dapibus sem. Sed placerat condimentum cursus.
+					a(href="#work") View some of our work
 				.column-2
 					.container-title
 						.index 03
 						.text #[span World class]
-						.text Immersive experiences with value in mind
+						.text Immersive experiences<br>with value in mind
 			.dividing-line
 		.landing-container-5
 			.grid-container
@@ -118,17 +104,33 @@
 						.service-line
 					.right-arrow
 						include ../assets/images/carousel-arrow.svg
-		.landing-footer
+				.testimonial-dots
+			.dividing-line
+		.landing-container-6
 			.grid-container
-				.email
-					a(href="mailto:sales@augmentedislandstudios.com") sales@augmentedislandstudios.com
-				.column-1
-					.text #[span Portland, OR]811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204
-					.text #[span Cali, Colombia]Cra. 6 #2-61<br>Cali, Valle del Cauca
-				.column-2
-					a(href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs")
-						include ../assets/images/facebook-f.svg
-					a(href="https://www.instagram.com/augmentedislandstudios/?hl=en")
-						include ../assets/images/instagram.svg
-					a(href="https://www.linkedin.com/company/augmented-island-studios/")
-						include ../assets/images/linkedin-in.svg
+				.container-title
+					.index 05
+					.text Developing
+					.text <span>for the following<br>hardware platforms</span>
+				.platforms-container
+					.platform-1
+						img(src="./assets/images/oculus-logo.png", alt="")
+					.platform-2
+						img(src="./assets/images/mleap-logo.png", alt="")
+					.platform-3
+						img(src="./assets/images/hololens-logo.svg", alt="")
+		//- .landing-footer
+		//- 	.grid-container
+		//- 		.email
+		//- 			a(href="mailto:sales@augmentedislandstudios.com") sales@augmentedislandstudios.com
+		//- 		.column-1
+		//- 			.text #[span Portland, OR]811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204
+		//- 			.text #[span Cali, Colombia]Cra. 6 #2-61<br>Cali, Valle del Cauca
+		//- 		.column-2
+		//- 			a(href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs")
+		//- 				include ../assets/images/facebook-f.svg
+		//- 			a(href="https://www.instagram.com/augmentedislandstudios/?hl=en")
+		//- 				include ../assets/images/instagram.svg
+		//- 			a(href="https://www.linkedin.com/company/augmented-island-studios/")
+		//- 				include ../assets/images/linkedin-in.svg
+		include _footer.pug

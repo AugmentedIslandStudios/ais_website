@@ -1,0 +1,37 @@
+#web-ar.section.scrollable.hidden
+    .cornerImage
+        img(src="./assets/images/webar_corner_photo.jpg", alt="")
+    .content
+        .webarText
+            .highligh.
+                Beautifully Designed WebAR Solutions<br>Which Revolutionize the Way You<br>Showcase Your Products and Sell
+            p.copy.
+                Retail showcasing in augmented reality is one of the quickest growing segments within this industry. WebAR is slowly but surely getting rid of the need to download apps to deploy AR content.<br><br>This new way of launching AR experiences, coupled with our top 3D modeling and technical abilities, ensures that your customers and business associates can enjoy viewing your products in any space and anywhere.<br><br>Below are a few of our work samples for your review:
+        .webarvideos-container
+            video(controls poster="./assets/images/surfrx_video_cover.jpg")
+                source(src="./assets/media/surfrx_video_hb.mp4" type="video/mp4")
+                Your browser does not support the video tag.
+        .webarwork-container
+            .lineTitle
+                h1 Our work
+            .carousel-container
+                .mask
+                    .wrapper
+                        .slide1.slide
+                            img(src="./assets/images/surfrx_3.jpg", alt="")
+                        .slide2.slide
+                            img(src="./assets/images/surfrx_4.jpg", alt="")
+                        .slide3.slide
+                            img(src="./assets/images/surfrx_5.jpg", alt="")
+                        .slide4.slide
+                            img(src="./assets/images/surfrx_6.jpg", alt="")
+                .carousel-dots
+                    //- .dot(slide="1").active
+                    //- .dot(slide="2")
+                    //- .dot(slide="3")
+                .carousel-arrow.left
+                    include ../assets/images/carousel-arrow.svg
+                .carousel-arrow.right
+                    include ../assets/images/carousel-arrow.svg
+
+    include _footer.pug

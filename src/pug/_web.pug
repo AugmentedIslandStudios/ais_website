@@ -81,6 +81,9 @@
                     .text Webmaster services.
                     //- .service-line
                 .service-item 
+                    .text WebAR development.
+                    //- .service-line
+                .service-item 
                     .text Editable blogs.
                     //- .service-line
                 .service-item 
@@ -94,15 +97,13 @@
                 .mask
                     .wrapper
                         .slide1.slide
-                            img(src="./assets/images/terry-mockup1.jpg", alt="")
+                            img(src="./assets/images/web_work1.jpg", alt="")
                         .slide2.slide
-                            img(src="./assets/images/terry-mockup2.jpg", alt="")
+                            img(src="./assets/images/web_work2.jpg", alt="")
                         .slide3.slide
-                            img(src="./assets/images/terry-mockup3.jpg", alt="")
+                            img(src="./assets/images/web_work3.jpg", alt="")
                         .slide4.slide
-                            img(src="./assets/images/terry-mockup4.jpg", alt="")
-                        .slide5.slide
-                            img(src="./assets/images/terry-mockup5.jpg", alt="")
+                            img(src="./assets/images/web_work4.jpg", alt="")
                 .carousel-dots
                     //- .dot(slide="1").active
                     //- .dot(slide="2")
@@ -115,16 +116,18 @@
         .clients-container
             .lineTitle
                 h1 Clients
-            a.team
+            a.team(href='https://terrycrews.com/' target="_blank")
                 img(src="./assets/images/tc-logo.png", alt="Terry Crews")
             a.team(href='https://comefindmebook.com/' target="_blank")
                 img(src="./assets/images/cfm_logo.svg", alt="Come Find Me")
             a.team(href='https://laislabrand.com/' target="_blank")
                 img(src="./assets/images/laisla-logo.png", alt="La Isla")
+            a.team(href='https://www.surfprescriptions.com/' target="_blank")
+                img(src="./assets/images/surfprescriptions-logo.png", alt="Surf Prescriptions Surfboards")
 
         .contact-container
             .lineTitle
-                h1 Contact us
+                h1 Contact
             .contact-column
                 p.copy.
                     We invite you to contact us and let us know how we can help. We are eager to connect. Send us an email or fill out the form below to reach out to us please:
@@ -141,12 +144,13 @@
                         input.disableAutoComplete(type="tel" name="phone" placeholder="Phone: +1 888 888 8888"  minlength="10" maxlength="14" title="Phone number" autocomplete="false")
                             
                     input.submitBtn(type="submit" value="SEND")
-                .social-media
-                    a(href="mailto:sales@augmentedislandstudios.com").email sales@augmentedislandstudios.com
-                    .social-icons
-                        a(href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs")
-                            include ../assets/images/facebook-f.svg
-                        a(href="https://www.instagram.com/augmentedislandstudios/?hl=en")
-                            include ../assets/images/instagram.svg
-                        a(href="https://www.linkedin.com/company/augmented-island-studios/")
-                            include ../assets/images/linkedin-in.svg
+                //- .social-media
+                //-     a(href="mailto:sales@augmentedislandstudios.com").email sales@augmentedislandstudios.com
+                //-     .social-icons
+                //-         a(href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs")
+                //-             include ../assets/images/facebook-f.svg
+                //-         a(href="https://www.instagram.com/augmentedislandstudios/?hl=en")
+                //-             include ../assets/images/instagram.svg
+                //-         a(href="https://www.linkedin.com/company/augmented-island-studios/")
+                //-             include ../assets/images/linkedin-in.svg
+    include _footer.pug

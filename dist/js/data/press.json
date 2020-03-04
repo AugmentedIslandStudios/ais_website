@@ -1,224 +1,62 @@
 [
     {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Surf Prescriptions Enhances the Process of Buying a Surfboard with Tech",
+        "date": "2020.02.18",
+        "cover": "./assets/images/press-logos-trendhunter.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2020-02-18.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='https://www.trendhunter.com/trends/buying-a-surfboard' target='_blank'>https://www.trendhunter.com/trends/buying-a-surfboard</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Terry Crews talks about AIS and Colombia",
+        "date": "2020.01.28",
+        "cover": "./assets/images/press-logos-wradio.jpg",
+        "article": "<div class='article-audio'><p>Audio file:</p><audio controls><source src='./assets/media/press2020-01-28.mp3' type='audio/mpeg'>Your browser does not support the audio element.</audio></div><div class='article-image'><img src='./assets/images/press2020-01-28.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='https://www.wradio.com.co/noticias/sociedad/por-que-a-terry-crews-le-gustaria-vivir-en-colombia/20200128/nota/4009160.aspx' target='_blank'>https://www.wradio.com.co/noticias/sociedad/por-que-a-terry-crews-le-gustaria-vivir-en-colombia/20200128/nota/4009160.aspx</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Augmented Island Studios - Enterprise Mixed Reality",
+        "date": "2019.09.25",
+        "cover": "./assets/images/press-logos-cerebral.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2019-09-25.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='https://cerebral-overload.com/2019/09/augmented-island-studios-enterprise-mixed-reality/?fbclid=IwAR1KEucVN8Z6cje2aplbTxzqV1xchTLy-BNYDbSzyc2B9WC8s6kh0JfQJjU' target='_blank'>https://cerebral-overload.com/2019/09/augmented-island-studios-enterprise-mixed-reality/?fbclid=IwAR1KEucVN8Z6cje2aplbTxzqV1xchTLy-BNYDbSzyc2B9WC8s6kh0JfQJjU</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Father's Day Gift Guide by Terry Crews",
+        "date": "2019.06.10",
+        "cover": "./assets/images/press-logos-people.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2019-06-10.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='https://people.com/home/dad-of-five-terry-crews-shares-his-top-gift-picks-for-fathers-day/' target='_blank'>https://people.com/home/dad-of-five-terry-crews-shares-his-top-gift-picks-for-fathers-day/</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Augmented Island Studios' Imaginarium is Using Augmented Reality as the Storytelling Platform of the Future",
+        "date": "2019.05.09",
+        "cover": "./assets/images/press-logos-usatoday.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2019-05-09_1.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='http://classifieds.usatoday.com/press/augmented-island-studios-imaginarium-is-using-augmented-reality-as-the-storytelling-platform-of-the-future/' target='_blank'>http://classifieds.usatoday.com/press/augmented-island-studios-imaginarium-is-using-augmented-reality-as-the-storytelling-platform-of-the-future/</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Wine Enthusiast Releases Augmented Reality Magazine Cover This May",
+        "date": "2019.04.25",
+        "cover": "./assets/images/press-logos-eves.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2019-04-25.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='http://evewine101.com/2019/04/25/wine-enthusiast-releases-augmented-reality-magazine-cover-this-may/' target='_blank'>http://evewine101.com/2019/04/25/wine-enthusiast-releases-augmented-reality-magazine-cover-this-may/</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Pairing wine with tech: Los Olivos' Carhartt Vineyard launches augmented reality 'wine app'",
+        "date": "2019.01.08",
+        "cover": "./assets/images/press-logos-santaynez.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2019-01-08.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='https://syvnews.com/lifestyles/pairing-wine-with-tech-los-olivos-carhartt-vineyard-launches-augmented/article_dc56b875-9d51-54d2-a67a-6b65f342ebdf.html' target='_blank'>https://syvnews.com/lifestyles/pairing-wine-with-tech-los-olivos-carhartt-vineyard-launches-augmented/article_dc56b875-9d51-54d2-a67a-6b65f342ebdf.html</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "First Augmented Reality (AR) Wine Application in Santa Barbara Wine Country Launched",
+        "date": "2018.12.27",
+        "cover": "./assets/images/press-logos-eves.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2018-12-27.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='http://evewine101.com/2018/12/27/first-augmented-reality-ar-wine-application-in-santa-barbara-wine-country-launched/' target='_blank'>http://evewine101.com/2018/12/27/first-augmented-reality-ar-wine-application-in-santa-barbara-wine-country-launched/</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Cali-based Augmented Reality Firm Offers Low Cost Development",
+        "date": "2018.06.13",
+        "cover": "./assets/images/press-logos-latamtech.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2018-06-13.jpg' alt=''></div><div class='article-text link'><p>Link: <a href='https://latam.tech/cali-based-augmented-reality-firm-offers-low-cost-development/3242/' target='_blank'>https://latam.tech/cali-based-augmented-reality-firm-offers-low-cost-development/3242/</a></p></div>"
     },
     {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
+        "title": "Colombian Augmented Reality Start Up, Augmented Island Studios, Offers Augmented Reality Application Development at a Great Value",
+        "date": "2018.05.16",
+        "cover": "./assets/images/press-logos-hawaiinewsnow.jpg",
+        "article": "<div class='article-image'><img src='./assets/images/press2018-05-16.jpg' alt=''></div>"
     }
-    /*{
-        "title": "Wine Enthusiast launches its new interactive magazine 1",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 2",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 3",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 4",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 5",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 6",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 7",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 8",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 9",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 10",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 11",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 12",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    },
-    {
-        "title": "Wine Enthusiast launches its new interactive magazine 13",
-        "date": "08.07.2019",
-        "cover": "./assets/images/cfm_7.jpg",
-        "article": "<div class='article-image'><img src='./assets/images/we_cover_ar.jpg' alt=''></div><div class='article-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum, felis sit amet eleifend auctor, nunc mauris dictum augue, vitae fringilla nisi lectus quis ante. Aenean lacinia at sapien ut ultricies. Suspendisse et venenatis justo, non bibendum nibh. Vivamus velit ipsum, semper aliquet nulla sit amet, lobortis facilisis lacus.</p></div><div class='article-image'><img src='./assets/images/we_featured.jpeg' alt=''></div><div class='article-text'><p>Sed blandit a est sed pulvinar. Vivamus quis congue massa. Morbi et ornare enim. Sed blandit nisl at aliquet ullamcorper. In a turpis est. Donec ut nisi sit amet ligula efficitur aliquam sit amet ut erat. Ut id maximus urna, vel auctor nulla.</p></div>"
-    } */
 ]

@@ -66,6 +66,12 @@
 			&.six{
 				background-image: url('../assets/images/filters_featured.jpg');
 			}
+			&.seven{
+				background-image: url('../assets/images/thejourney_featured.jpg');
+			}
+			&.eight{
+				background-image: url('../assets/images/surfrx_featured.jpg');
+			}
 		}
 	}
 	.selector-container{
@@ -206,8 +212,11 @@
 			}
 		}
 		.selector-container{
-			.project-container{	
+			.project-container{
+				height: 72%;
+				transform: translateY(-47%);
 				.project{
+					margin: 25rem 0;
 					.name{
 						font-size: 35rem;
 					}

@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Augmented Island Studios">
-    <meta name="copyright" content="2018">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta name="copyright" content="2020">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.vimeo.com unpkg.com">
     <!--Details-->
     <meta name="description" content="We are a full service augmented reality and virtual reality studio based in Portland, Oregon  with development offices in Cali, Colombia.">
     <meta name="keywords" content="AIS, Augmented Island, Augmented Island Studios, Enrique Sanchez-Rivera, Juan C. Ramon, Guillermo Alvarez, Kammil Carranza, Mauricio Fernandez, Augmented Reality, AR, Augmented, Reality, Virtual Reality, VR, XR, MR, Mix Reality, Mixing Reality, Come Find me, App, Apps, Colombia, Cali, Studio, Estudio">
@@ -47,6 +47,9 @@
   </head>
   <body>
     <div class="body-wrapper">
+      <div class="section show" id="loading-section">
+        <div class="content"><img src="./assets/images/ais_logo.svg" alt=""></div>
+      </div>
       <div class="fixed-ui">
         <div class="button-container">
           <div class="openMenuBtn"><img src="./assets/images/icon_menu.svg"></div>
@@ -58,19 +61,12 @@
       </div>
       <div class="section scrollable hidden" id="landing-section">
         <div class="content">
-          <div class="landing-container-1"><img src="./assets/images/holo_engine_landing.jpg" alt="">
-            <div class="column-right">
-              <div class="content">
-                <ul>
-                  <li><a href="#about">About us</a></li>
-                  <li><a href="#work">Our work</a></li>
-                </ul>
-                <div class="text-1">"Limits aren't real,</div>
-                <div class="text-2">break every barrier"</div>
-                <div class="text-3">- Augmented Island Studios</div>
-              </div>
+          <div class="landing-container-1">
+            <div class="content">
+              <div class="text-1">"Limits aren't real,</div>
+              <div class="text-2">break every barrier"</div>
+              <div class="text-3">- Augmented Island Studios</div>
             </div>
-            <div class="dividing-line"></div>
           </div>
           <div class="landing-container-2">
             <div class="grid-container">
@@ -79,7 +75,7 @@
                 <div class="text">We start with <span>"Why?"</span></div>
               </div>
               <div class="column-1">
-                <p>Every intelligent solution is derived from a good plan and every plan must stem from asking “why?”.<br><br>Every application we develop grows from a passionate desire to address why it’s being developed and how it will solve a problem and also have a strong ROI.</p><a href="https://medium.com/@augmentedisland" target="_blank">Check our blog_</a>
+                <p>Every intelligent solution is derived from a good plan and every plan must stem from asking “why?”.<br><br>Every application we develop grows from a passionate desire to address why it’s being developed and how it will solve a problem and also have a strong ROI.</p>
               </div>
               <div class="column-2">
                 <div class="auto-carousel"><img class="auto-carousel-img active" src="./assets/images/vr_medical.jpg" alt=""><img class="auto-carousel-img" src="./assets/images/holo_engine.jpg" alt=""><img class="auto-carousel-img" src="./assets/images/ar_phone.jpg" alt=""></div>
@@ -107,7 +103,14 @@
                     </div>
                   </div>
                   <div class="project-container">
-                    <div class="project active"><img src="./assets/images/g2_featured.jpg" alt="">
+                    <div class="project"><img src="./assets/images/surfrx_featured.jpg" alt="">
+                      <div class="info">
+                        <div class="name">Surf Prescriptions </div><a class="logo" href="#surfrx"><img src="./assets/images/surfprescriptions-logo-grey.png" alt=""></a><a class="link" href="#surfrx">Go to project</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-container">
+                    <div class="project"><img src="./assets/images/g2_featured.jpg" alt="">
                       <div class="info">
                         <div class="name">J.Lo and Bad Bunny Video</div><a class="logo" href="#g2"><img src="./assets/images/g2-logo-grey.png" alt=""></a><a class="link" href="#g2">Go to project</a>
                       </div>
@@ -129,14 +132,12 @@
                   </div>
                 </div>
               </div>
-              <div class="column-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dapibus sem. Sed placerat condimentum cursus.</p><a href="#work">View all our work_</a>
-              </div>
+              <div class="column-1"><a href="#work">View some of our work</a></div>
               <div class="column-2">
                 <div class="container-title">
                   <div class="index">03</div>
                   <div class="text"><span>World class</span></div>
-                  <div class="text">Immersive experiences with value in mind</div>
+                  <div class="text">Immersive experiences<br>with value in mind</div>
                 </div>
               </div>
             </div>
@@ -159,16 +160,76 @@
                 </div>
                 <div class="right-arrow"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582.48 1108.14"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:40px;fill-rule:evenodd;}</style></defs><title>carousel-arrow</title><polyline class="cls-1" points="568.09 14.14 28.28 553.95 568.33 1093.99"/></svg></div>
               </div>
+              <div class="testimonial-dots"></div>
+            </div>
+            <div class="dividing-line"></div>
+          </div>
+          <div class="landing-container-6">
+            <div class="grid-container">
+              <div class="container-title">
+                <div class="index">05</div>
+                <div class="text">Developing</div>
+                <div class="text"><span>for the following<br>hardware platforms</span></div>
+              </div>
+              <div class="platforms-container">
+                <div class="platform-1"><img src="./assets/images/oculus-logo.png" alt=""></div>
+                <div class="platform-2"><img src="./assets/images/mleap-logo.png" alt=""></div>
+                <div class="platform-3"><img src="./assets/images/hololens-logo.svg" alt=""></div>
+              </div>
             </div>
           </div>
-          <div class="landing-footer">
+          <div class="footer">
             <div class="grid-container">
-              <div class="email"><a href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a></div>
-              <div class="column-1">
-                <div class="text"><span>Portland, OR</span>811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204</div>
-                <div class="text"><span>Cali, Colombia</span>Cra. 6 #2-61<br>Cali, Valle del Cauca</div>
+              <div class="footer-logo">
+                <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 74 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Logo"><path d="M27.796,0l-27.388,44l23.572,0l21.551,-30.306l10.326,16.612l8.98,0l-19.306,-30.081l-25.592,36.367l-6.286,0l18.857,-29.184l-4.714,-7.408Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M44.857,26.49l7.184,10.327l17.061,0l4.49,7.183l-24.694,0l-8.531,-12.122l4.49,-5.388Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+                <div class="isotipo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 220 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="ais_isotipo"><path d="M9.225,0.475l3.295,0l8.9,20.373l-3.757,0l-2.051,-4.884l-9.566,0l-2.08,4.884l-3.641,0l8.9,-20.373Zm5.086,12.339l-3.496,-8.091l-3.468,8.091l6.964,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M36.547,21.165c-1.31,0 -2.494,-0.187 -3.554,-0.563c-1.059,-0.376 -1.966,-0.94 -2.717,-1.691c-0.75,-0.751 -1.329,-1.681 -1.733,-2.788c-0.405,-1.108 -0.607,-2.395 -0.607,-3.858l0,-11.646l3.525,0l0,11.501c0,1.888 0.458,3.323 1.368,4.306c0.91,0.982 2.167,1.473 3.777,1.473c1.588,0 2.836,-0.471 3.747,-1.416c0.91,-0.943 1.367,-2.349 1.367,-4.218l0,-11.646l3.525,0l0,11.472c0,1.503 -0.207,2.823 -0.621,3.96c-0.414,1.135 -0.997,2.085 -1.748,2.845c-0.751,0.761 -1.662,1.33 -2.73,1.706c-1.07,0.376 -2.269,0.563 -3.599,0.563" style="fill:#fff;fill-rule:nonzero;"/><path d="M63.089,21.194c-1.579,0 -3.015,-0.266 -4.306,-0.795c-1.29,-0.53 -2.393,-1.262 -3.308,-2.196c-0.915,-0.935 -1.623,-2.032 -2.124,-3.294c-0.501,-1.263 -0.751,-2.635 -0.751,-4.118l0,-0.058c0,-1.406 0.255,-2.745 0.77,-4.017c0.516,-1.271 1.238,-2.384 2.167,-3.337c0.93,-0.955 2.037,-1.71 3.319,-2.269c1.281,-0.559 2.682,-0.838 4.205,-0.838c0.885,0 1.69,0.063 2.413,0.188c0.721,0.125 1.391,0.303 2.008,0.535c0.616,0.23 1.199,0.514 1.749,0.851c0.548,0.338 1.083,0.728 1.603,1.171l-2.254,2.688c-0.386,-0.327 -0.78,-0.626 -1.185,-0.896c-0.405,-0.27 -0.828,-0.496 -1.272,-0.679c-0.442,-0.183 -0.929,-0.328 -1.459,-0.434c-0.529,-0.106 -1.112,-0.158 -1.748,-0.158c-0.925,0 -1.787,0.192 -2.587,0.577c-0.799,0.386 -1.493,0.906 -2.08,1.552c-0.588,0.644 -1.05,1.401 -1.388,2.272c-0.336,0.867 -0.504,1.787 -0.504,2.75l0,0.058c0,1.041 0.163,2.009 0.491,2.895c0.327,0.891 0.789,1.652 1.396,2.287c0.607,0.636 1.324,1.142 2.162,1.508c0.838,0.366 1.773,0.549 2.813,0.549c0.959,0 1.859,-0.14 2.692,-0.419c0.839,-0.284 1.561,-0.655 2.178,-1.122l0,-3.805l-5.173,0l0,-3.092l8.611,0l0,8.496c-0.501,0.423 -1.054,0.828 -1.661,1.213c-0.607,0.386 -1.262,0.723 -1.965,1.012c-0.704,0.289 -1.459,0.516 -2.269,0.679c-0.809,0.164 -1.656,0.246 -2.543,0.246" style="fill:#fff;fill-rule:nonzero;"/><path d="M79.517,0.619l3.786,0l6.155,9.564l6.155,-9.564l3.786,0l0,20.229l-3.526,0l0,-14.507l-6.386,9.536l-0.116,0l-6.328,-9.479l0,14.45l-3.526,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M107.966,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.144,0l0,3.208l-10.144,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M130.693,0.619l3.29,0l10.812,13.986l0,-13.986l3.525,0l0,20.229l-2.971,0l-11.131,-14.392l0,14.392l-3.525,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M161.859,3.913l-6.415,0l0,-3.294l16.413,0l0,3.294l-6.415,0l0,16.935l-3.583,0l0,-16.935Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M178.98,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.143,0l0,3.208l-10.143,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M201.708,0.619l7.542,0c1.58,0 3.029,0.255 4.35,0.766c1.319,0.51 2.456,1.218 3.409,2.124c0.954,0.905 1.69,1.969 2.211,3.193c0.519,1.224 0.78,2.548 0.78,3.974l0,0.057c0,1.426 -0.261,2.755 -0.78,3.988c-0.521,1.233 -1.257,2.302 -2.211,3.208c-0.953,0.905 -2.09,1.618 -3.409,2.138c-1.321,0.52 -2.77,0.781 -4.35,0.781l-7.542,0l0,-20.229Zm7.514,17.021c1.059,0 2.022,-0.169 2.888,-0.506c0.868,-0.342 1.605,-0.814 2.211,-1.426c0.608,-0.607 1.079,-1.334 1.416,-2.177c0.337,-0.838 0.506,-1.753 0.506,-2.74l0,-0.058c0,-0.987 -0.169,-1.907 -0.506,-2.755c-0.337,-0.852 -0.808,-1.585 -1.416,-2.191c-0.606,-0.612 -1.343,-1.089 -2.211,-1.44c-0.866,-0.347 -1.829,-0.521 -2.888,-0.521l-3.989,0l0,13.814l3.989,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="40.844" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M50.361,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.261,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.339,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M57.945,29.231l1.456,0l0,7.028l4.391,0l0,1.325l-5.847,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M71.174,29.173l1.36,0l3.675,8.411l-1.551,0l-0.846,-2.016l-3.95,0l-0.859,2.016l-1.504,0l3.675,-8.411Zm2.101,5.095l-1.445,-3.341l-1.431,3.341l2.876,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M80.524,29.231l1.358,0l4.464,5.775l0,-5.775l1.456,0l0,8.353l-1.226,0l-4.596,-5.942l0,5.942l-1.456,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M92.834,29.231l3.114,0c0.653,0 1.25,0.105 1.796,0.316c0.544,0.211 1.014,0.504 1.407,0.878c0.394,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.519,0.951 -0.913,1.324c-0.393,0.374 -0.863,0.669 -1.407,0.884c-0.546,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.437,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.662,-0.336 0.913,-0.588c0.25,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.208,-0.724 0.208,-1.131l0,-0.024c0,-0.408 -0.069,-0.787 -0.208,-1.138c-0.14,-0.351 -0.335,-0.654 -0.585,-0.904c-0.251,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.756,-0.215 -1.193,-0.215l-1.647,0l0,5.703l1.647,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M111.563,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.589,-0.219 -1.134,-0.556 -1.635,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.4,-0.445 0.4,-0.764l0,-0.023c0,-0.151 -0.026,-0.284 -0.078,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.559,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.234,-0.188 -0.415,-0.416 -0.539,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l-0.001,-0.023c0.001,-0.358 0.072,-0.686 0.214,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.546,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.162,0.09 1.651,0.269c0.49,0.179 0.949,0.439 1.379,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.43,0 -0.763,0.096 -1.004,0.286c-0.237,0.192 -0.357,0.426 -0.357,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.147,0.099 0.35,0.193 0.609,0.281c0.261,0.087 0.59,0.178 0.989,0.274c0.438,0.111 0.826,0.235 1.164,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.224,0.195 0.395,0.421 0.51,0.68c0.114,0.259 0.172,0.559 0.172,0.901l0.001,0.024c-0.001,0.39 -0.075,0.74 -0.22,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M121.199,30.592l-2.649,0l0,-1.36l6.777,0l0,1.36l-2.649,0l0,6.992l-1.479,0l0,-6.992Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M133.186,37.716c-0.541,0 -1.03,-0.078 -1.468,-0.232c-0.437,-0.156 -0.811,-0.389 -1.122,-0.699c-0.309,-0.31 -0.549,-0.694 -0.716,-1.151c-0.167,-0.458 -0.25,-0.988 -0.25,-1.594l0,-4.808l1.455,0l0,4.75c0,0.779 0.19,1.371 0.566,1.777c0.376,0.405 0.894,0.608 1.558,0.608c0.657,0 1.172,-0.195 1.548,-0.584c0.376,-0.39 0.565,-0.97 0.565,-1.743l0,-4.808l1.456,0l0,4.737c0,0.621 -0.086,1.166 -0.257,1.635c-0.171,0.469 -0.412,0.861 -0.722,1.175c-0.31,0.314 -0.686,0.549 -1.128,0.705c-0.441,0.154 -0.936,0.232 -1.485,0.232" style="fill:#fff;fill-rule:nonzero;"/><path d="M141.678,29.231l3.114,0c0.653,0 1.251,0.105 1.796,0.316c0.545,0.211 1.014,0.504 1.407,0.878c0.395,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.518,0.951 -0.913,1.324c-0.393,0.374 -0.862,0.669 -1.407,0.884c-0.545,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.438,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.663,-0.336 0.913,-0.588c0.251,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.209,-0.724 0.209,-1.131l0,-0.024c0,-0.408 -0.07,-0.787 -0.209,-1.138c-0.14,-0.351 -0.334,-0.654 -0.585,-0.904c-0.25,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.755,-0.215 -1.193,-0.215l-1.646,0l0,5.703l1.646,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="153.975" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M164.542,37.727c-0.645,0 -1.232,-0.113 -1.766,-0.34c-0.533,-0.226 -0.99,-0.535 -1.372,-0.925c-0.382,-0.389 -0.68,-0.844 -0.895,-1.366c-0.215,-0.521 -0.321,-1.076 -0.321,-1.664l0,-0.024c0,-0.589 0.106,-1.144 0.321,-1.665c0.215,-0.521 0.517,-0.979 0.907,-1.372c0.39,-0.394 0.851,-0.707 1.384,-0.937c0.533,-0.23 1.122,-0.346 1.766,-0.346c0.644,0 1.233,0.114 1.766,0.34c0.533,0.227 0.99,0.535 1.372,0.925c0.382,0.39 0.68,0.845 0.896,1.366c0.213,0.522 0.321,1.076 0.321,1.665l0,0.024c0,0.589 -0.108,1.143 -0.321,1.664c-0.216,0.521 -0.518,0.978 -0.908,1.373c-0.389,0.393 -0.851,0.705 -1.383,0.936c-0.534,0.231 -1.122,0.346 -1.767,0.346m0.024,-1.349c0.412,0 0.789,-0.077 1.135,-0.232c0.345,-0.155 0.639,-0.366 0.885,-0.632c0.245,-0.266 0.438,-0.579 0.575,-0.937c0.14,-0.358 0.209,-0.74 0.209,-1.145l0,-0.024c0,-0.406 -0.069,-0.789 -0.209,-1.152c-0.137,-0.362 -0.332,-0.675 -0.581,-0.942c-0.25,-0.267 -0.549,-0.48 -0.896,-0.639c-0.35,-0.159 -0.73,-0.238 -1.142,-0.238c-0.411,0 -0.789,0.077 -1.136,0.232c-0.343,0.156 -0.637,0.367 -0.885,0.632c-0.244,0.267 -0.437,0.579 -0.574,0.938c-0.139,0.357 -0.209,0.739 -0.209,1.145l0,0.024c0,0.405 0.07,0.789 0.209,1.151c0.137,0.362 0.332,0.676 0.58,0.942c0.251,0.267 0.549,0.48 0.898,0.639c0.349,0.159 0.729,0.238 1.141,0.238" style="fill:#fff;fill-rule:nonzero;"/><path d="M176.518,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.349,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.26,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
               </div>
-              <div class="column-2"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></div>
+              <div class="location-portland">
+                <div class="title">Portland, OR</div>
+                <div class="location">811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204</div>
+              </div>
+              <div class="location-cali">
+                <div class="title">Cali, Colombia</div>
+                <div class="location">Cra. 6 #2-61<br>Cali, Valle del Cauca</div>
+              </div>
+              <div class="contact-info"><a href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a><a href="tel:15038194346">+1 (503) 819 - 4346</a></div>
+              <div class="submenu-our-services">
+                <div class="title">Our services</div>
+                <ul>
+                  <li><a href="#work">Work</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#web">Web</a></li>
+                </ul>
+              </div>
+              <div class="submenu-news">
+                <div class="title">News</div>
+                <ul>
+                  <li><a href="https://medium.com/@augmentedisland" target="_blank">Blog</a></li>
+                  <li><a href="#press">Press</a></li>
+                </ul>
+              </div>
+              <div class="submenu-contact-us">
+                <div class="title">Contact us</div>
+                <ul>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="tao-logo">
+                <div class="text">Proud members of</div><a href="http://www.techoregon.org/" target="_blank"><img src="./assets/images/tao-logo.png"></a>
+              </div>
+              <div class="social-media"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 267.8 500" style="enable-background:new 0 0 267.8 500;" xml:space="preserve">
+<title>Mesa de trabajo 1</title>
+<path d="M250.3,281.3l13.9-90.5h-86.8V132c0-24.8,12.1-48.9,51-48.9h39.5v-77c0,0-35.8-6.1-70.1-6.1C126.2,0,79.5,43.3,79.5,121.8
+	v69H0v90.5h79.5V500h97.8V281.3H250.3z"/>
+</svg>
+</a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia</title><path d="M250.06,121.83A128.17,128.17,0,1,0,378.22,250,128,128,0,0,0,250.06,121.83Zm0,211.49A83.32,83.32,0,1,1,333.38,250a83.47,83.47,0,0,1-83.32,83.32Zm163.3-216.73a29.9,29.9,0,1,1-29.9-29.89A29.83,29.83,0,0,1,413.36,116.59Zm84.88,30.34c-1.89-40-11-75.51-40.38-104.74S393.17,3.82,353.12,1.81c-41.27-2.34-165-2.34-206.24,0-39.94,1.9-75.41,11-104.74,40.27S3.76,106.78,1.76,146.82c-2.35,41.27-2.35,165,0,206.25,1.89,40,11,75.51,40.38,104.74s64.69,38.37,104.74,40.38c41.27,2.34,165,2.34,206.24,0,40.05-1.9,75.52-11.05,104.74-40.38s38.38-64.7,40.38-104.74c2.35-41.27,2.35-164.87,0-206.14ZM444.92,397.35a84.36,84.36,0,0,1-47.51,47.52c-32.91,13.05-111,10-147.35,10s-114.56,2.9-147.36-10a84.33,84.33,0,0,1-47.51-47.52c-13-32.9-10-111-10-147.35s-2.9-114.56,10-147.35A84.36,84.36,0,0,1,102.7,55.13c32.91-13.05,111-10,147.36-10s114.55-2.9,147.35,10a84.33,84.33,0,0,1,47.51,47.52c13.06,32.9,10,111,10,147.35S458,364.56,444.92,397.35Z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia 2</title><path d="M111.94,500H8.26V166.18H111.94ZM60,120.65C26.9,120.65,0,93.19,0,60a60,60,0,0,1,120.09,0C120.09,93.19,93.19,120.65,60,120.65ZM499.89,500H396.43V337.5c0-38.73-.78-88.39-53.91-88.39-53.9,0-62.16,42.07-62.16,85.6V500H176.79V166.18h99.44v45.54h1.45c13.84-26.23,47.65-53.91,98.1-53.91C480.69,157.81,500,226.9,500,316.63V500Z"/></svg></a></div>
+              <div class="info-links"><a href="">Sitemap</a>
+                <div class="slash">/</div>
+                <div class="all-rights">© 2020 Augmented Island Studios, LLC.</div>
+              </div>
             </div>
           </div>
         </div>
@@ -178,6 +239,8 @@
           <div class="bg-container">
             <div class="workOpts">
               <div class="bg one"></div>
+              <div class="bg eight"></div>
+              <div class="bg seven"></div>
               <div class="bg two"></div>
               <div class="bg three"></div>
               <div class="bg four"></div>
@@ -195,37 +258,49 @@
                 <!--.index 01-->
                 <h2 class="tag"></h2>
                 <h1 class="name"><span>01</span>Come Find Me</h1>
-                <p class="client">Terry Crews</p>
+                <p class="client">Terry Crews & Ken Harvey</p>
+              </div>
+              <div class="project eight" data-link="#surfrx">
+                <!--.index 01-->
+                <h2 class="tag">Featured</h2>
+                <h1 class="name"><span>02</span>Surf Prescriptions Web AR</h1>
+                <p class="client">Surf Prescriptions</p>
+              </div>
+              <div class="project seven" data-link="#thejourney">
+                <!--.index 01-->
+                <h2 class="tag"></h2>
+                <h1 class="name"><span>03</span>The Journey AR Murals</h1>
+                <p class="client">The Short North Arts District</p>
               </div>
               <div class="project two" data-link="#g2">
                 <!--.index 02-->
                 <h2 class="tag"></h2>
-                <h1 class="name"><span>02</span>J.Lo and Bad Bunny Video</h1>
+                <h1 class="name"><span>04</span>J.Lo and Bad Bunny Video</h1>
                 <p class="client">G2 Productions</p>
+              </div>
+              <div class="project six" data-link="#filterslenses"> 
+                <!--.index 06-->
+                <div class="tag"></div>
+                <h1 class="name"><span>05</span>Face Filters + Lenses</h1>
+                <p class="client">Multiple clients</p>
               </div>
               <div class="project three" data-link="#wineEnthusiast">
                 <!--.index 03-->
-                <h2 class="tag">Featured</h2>
-                <h1 class="name"><span>03</span>Augmented Wine Cover</h1>
+                <h2 class="tag"></h2>
+                <h1 class="name"><span>06</span>Augmented Wine Cover</h1>
                 <p class="client">Wine Enthusiast</p>
               </div>
               <div class="project four" data-link="#carhartt"> 
                 <!--.index 04-->
                 <h2 class="tag"></h2>
-                <h1 class="name"><span>04</span>Sangiovese AR</h1>
+                <h1 class="name"><span>07</span>Sangiovese AR</h1>
                 <p class="client">Carhartt</p>
               </div>
               <div class="project five" data-link="#monarch"> 
                 <!--.index 05-->
                 <div class="tag"></div>
-                <h1 class="name"><span>05</span>Monarch AR</h1>
+                <h1 class="name"><span>08</span>Monarch AR</h1>
                 <p class="client">Monarch Reign</p>
-              </div>
-              <div class="project six" data-link="#filterslenses"> 
-                <!--.index 06-->
-                <div class="tag"></div>
-                <h1 class="name"><span>06</span>Face Filters + Lenses</h1>
-                <p class="client">Multiple clients</p>
               </div>
             </div>
             <div class="lab-projects project-container hidden">
@@ -254,7 +329,7 @@
             </div>
             <p class="highligh">We are a full service creative augmented reality and virtual reality studio based in Portland, Oregon with development offices in Cali, Colombia.</p>
             <p class="copy">
-              With over 40 years of combined real time development experience, we serve a multitude of clients in a myriad of industries, who want to and now, need to, take advantage of the new and interesting ways in which AR and VR can help their businesses evolve. From curious and fun AR/VR applications to complex 3D simulations, we are able to set you apart from your competition.
+              With over 90 years of combined real time development experience, we serve a multitude of clients in a myriad of industries, who want to and now, need to, take advantage of the new and interesting ways in which AR and VR can help their businesses evolve. From curious and fun AR/VR applications to complex 3D simulations, we are able to set you apart from your competition.
               
             </p>
           </div>
@@ -291,6 +366,21 @@
                   <p class="position short">3D</p>
                 </div>
               </div>
+              <!--.team
+              img(src="./assets/images/stefa_team.jpg", alt="Pulsara - 3D")
+              .detail
+                  p.name Stefanía Ruiz
+                  p.position UI/UX Designer
+                  p.position.short UI
+              
+              -->
+              <div class="team"><img src="./assets/images/peto_team.jpg" alt="Santamaria - 3D">
+                <div class="detail">
+                  <p class="name">Juan Felipe Cadena P.</p>
+                  <p class="position">Web Developer</p>
+                  <p class="position short">Web</p>
+                </div>
+              </div>
             </div>
             <div class="rightPhotos">
               <div class="team"><img src="./assets/images/kammil_team.jpg" alt="Kammil - CD">
@@ -322,6 +412,13 @@
                   <p class="position short">3D</p>
                 </div>
               </div>
+              <div class="team"><img src="./assets/images/luiscarlos_team.jpg" alt="Santamaria - 3D">
+                <div class="detail">
+                  <p class="name">Luis Carlos Contreras</p>
+                  <p class="position">Developer</p>
+                  <p class="position short">Dev</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="services-container">
@@ -346,10 +443,62 @@
           <div class="clients-container">
             <div class="lineTitle">
               <h1>Clients</h1>
-            </div><a class="team" href="https://www.ameritexpipe.com/" target="_blank"><img src="./assets/images/ameritex-logo.png" alt="Ameritex"></a><a class="team"><img src="./assets/images/tc-logo.png" alt="Terry Crews"></a><a class="team" href="https://www.wineenthusiast.com/" target="_blank"><img src="./assets/images/we-logo.png" alt="Wine Enthusiast"></a><a class="team" href="https://mindgruve.com/" target="_blank"><img src="./assets/images/mindgruve-logo.png" alt="MindGrouve"></a><a class="team" href="https://carharttvineyard.com/" target="_blank"><img src="./assets/images/carhartt-logo.png" alt="Carhartt"></a><a class="team" href="http://www.amennamen.com/" target="_blank"><img src="./assets/images/amenamen-logo.png" alt="Amen &amp; Amen"></a><a class="team"><img src="./assets/images/g2-logo.png" alt="G2 Productions"></a><a class="team" href="https://laislabrand.com/" target="_blank"><img src="./assets/images/laisla-logo.png" alt="La Isla"></a><a class="team"><img src="./assets/images/muve-logo.png" alt="Muve"></a>
+            </div><a class="team" href="https://www.ameritexpipe.com/" target="_blank"><img src="./assets/images/ameritex-logo.png" alt="Ameritex"></a><a class="team" href="https://terrycrews.com/" target="_blank"><img src="./assets/images/tc-logo.png" alt="Terry Crews"></a><a class="team" href="https://www.wineenthusiast.com/" target="_blank"><img src="./assets/images/we-logo.png" alt="Wine Enthusiast"></a><a class="team" href="https://carharttvineyard.com/" target="_blank"><img src="./assets/images/carhartt-logo.png" alt="Carhartt"></a><a class="team" href="http://www.amennamen.com/" target="_blank"><img src="./assets/images/amenamen-logo.png" alt="Amen &amp; Amen"></a><a class="team"><img src="./assets/images/g2-logo.png" alt="G2 Productions"></a><a class="team" href="https://laislabrand.com/" target="_blank"><img src="./assets/images/laisla-logo.png" alt="La Isla"></a><a class="team"><img src="./assets/images/muve-logo.png" alt="Muve"></a><a class="team" href="https://shortnorth.org/" target="_blank"><img src="./assets/images/snad-logo.png" alt="Short North Arts District"></a><a class="team" href="https://www.surfprescriptions.com/" target="_blank"><img src="./assets/images/surfprescriptions-logo.png" alt="Surf Prescriptions Surfboards"></a>
           </div>
-          <div class="links"><a class="opt menu-work" href="#work">See Our Work</a><a class="opt menu-contact" href="#contact">Contact Us</a></div>
-          <div class="social"><a class="sn facebook" href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs" target="_blank">Facebook</a><a class="sn instagram" href="https://www.instagram.com/augmentedislandstudios/?hl=en" target="_blank">Instagram</a><a class="sn linkedin" href="https://www.linkedin.com/company/augmented-island-studios/" target="_blank">Linkedin</a></div>
+        </div>
+        <div class="footer">
+          <div class="grid-container">
+            <div class="footer-logo">
+              <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 74 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Logo"><path d="M27.796,0l-27.388,44l23.572,0l21.551,-30.306l10.326,16.612l8.98,0l-19.306,-30.081l-25.592,36.367l-6.286,0l18.857,-29.184l-4.714,-7.408Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M44.857,26.49l7.184,10.327l17.061,0l4.49,7.183l-24.694,0l-8.531,-12.122l4.49,-5.388Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+              <div class="isotipo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 220 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="ais_isotipo"><path d="M9.225,0.475l3.295,0l8.9,20.373l-3.757,0l-2.051,-4.884l-9.566,0l-2.08,4.884l-3.641,0l8.9,-20.373Zm5.086,12.339l-3.496,-8.091l-3.468,8.091l6.964,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M36.547,21.165c-1.31,0 -2.494,-0.187 -3.554,-0.563c-1.059,-0.376 -1.966,-0.94 -2.717,-1.691c-0.75,-0.751 -1.329,-1.681 -1.733,-2.788c-0.405,-1.108 -0.607,-2.395 -0.607,-3.858l0,-11.646l3.525,0l0,11.501c0,1.888 0.458,3.323 1.368,4.306c0.91,0.982 2.167,1.473 3.777,1.473c1.588,0 2.836,-0.471 3.747,-1.416c0.91,-0.943 1.367,-2.349 1.367,-4.218l0,-11.646l3.525,0l0,11.472c0,1.503 -0.207,2.823 -0.621,3.96c-0.414,1.135 -0.997,2.085 -1.748,2.845c-0.751,0.761 -1.662,1.33 -2.73,1.706c-1.07,0.376 -2.269,0.563 -3.599,0.563" style="fill:#fff;fill-rule:nonzero;"/><path d="M63.089,21.194c-1.579,0 -3.015,-0.266 -4.306,-0.795c-1.29,-0.53 -2.393,-1.262 -3.308,-2.196c-0.915,-0.935 -1.623,-2.032 -2.124,-3.294c-0.501,-1.263 -0.751,-2.635 -0.751,-4.118l0,-0.058c0,-1.406 0.255,-2.745 0.77,-4.017c0.516,-1.271 1.238,-2.384 2.167,-3.337c0.93,-0.955 2.037,-1.71 3.319,-2.269c1.281,-0.559 2.682,-0.838 4.205,-0.838c0.885,0 1.69,0.063 2.413,0.188c0.721,0.125 1.391,0.303 2.008,0.535c0.616,0.23 1.199,0.514 1.749,0.851c0.548,0.338 1.083,0.728 1.603,1.171l-2.254,2.688c-0.386,-0.327 -0.78,-0.626 -1.185,-0.896c-0.405,-0.27 -0.828,-0.496 -1.272,-0.679c-0.442,-0.183 -0.929,-0.328 -1.459,-0.434c-0.529,-0.106 -1.112,-0.158 -1.748,-0.158c-0.925,0 -1.787,0.192 -2.587,0.577c-0.799,0.386 -1.493,0.906 -2.08,1.552c-0.588,0.644 -1.05,1.401 -1.388,2.272c-0.336,0.867 -0.504,1.787 -0.504,2.75l0,0.058c0,1.041 0.163,2.009 0.491,2.895c0.327,0.891 0.789,1.652 1.396,2.287c0.607,0.636 1.324,1.142 2.162,1.508c0.838,0.366 1.773,0.549 2.813,0.549c0.959,0 1.859,-0.14 2.692,-0.419c0.839,-0.284 1.561,-0.655 2.178,-1.122l0,-3.805l-5.173,0l0,-3.092l8.611,0l0,8.496c-0.501,0.423 -1.054,0.828 -1.661,1.213c-0.607,0.386 -1.262,0.723 -1.965,1.012c-0.704,0.289 -1.459,0.516 -2.269,0.679c-0.809,0.164 -1.656,0.246 -2.543,0.246" style="fill:#fff;fill-rule:nonzero;"/><path d="M79.517,0.619l3.786,0l6.155,9.564l6.155,-9.564l3.786,0l0,20.229l-3.526,0l0,-14.507l-6.386,9.536l-0.116,0l-6.328,-9.479l0,14.45l-3.526,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M107.966,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.144,0l0,3.208l-10.144,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M130.693,0.619l3.29,0l10.812,13.986l0,-13.986l3.525,0l0,20.229l-2.971,0l-11.131,-14.392l0,14.392l-3.525,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M161.859,3.913l-6.415,0l0,-3.294l16.413,0l0,3.294l-6.415,0l0,16.935l-3.583,0l0,-16.935Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M178.98,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.143,0l0,3.208l-10.143,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M201.708,0.619l7.542,0c1.58,0 3.029,0.255 4.35,0.766c1.319,0.51 2.456,1.218 3.409,2.124c0.954,0.905 1.69,1.969 2.211,3.193c0.519,1.224 0.78,2.548 0.78,3.974l0,0.057c0,1.426 -0.261,2.755 -0.78,3.988c-0.521,1.233 -1.257,2.302 -2.211,3.208c-0.953,0.905 -2.09,1.618 -3.409,2.138c-1.321,0.52 -2.77,0.781 -4.35,0.781l-7.542,0l0,-20.229Zm7.514,17.021c1.059,0 2.022,-0.169 2.888,-0.506c0.868,-0.342 1.605,-0.814 2.211,-1.426c0.608,-0.607 1.079,-1.334 1.416,-2.177c0.337,-0.838 0.506,-1.753 0.506,-2.74l0,-0.058c0,-0.987 -0.169,-1.907 -0.506,-2.755c-0.337,-0.852 -0.808,-1.585 -1.416,-2.191c-0.606,-0.612 -1.343,-1.089 -2.211,-1.44c-0.866,-0.347 -1.829,-0.521 -2.888,-0.521l-3.989,0l0,13.814l3.989,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="40.844" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M50.361,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.261,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.339,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M57.945,29.231l1.456,0l0,7.028l4.391,0l0,1.325l-5.847,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M71.174,29.173l1.36,0l3.675,8.411l-1.551,0l-0.846,-2.016l-3.95,0l-0.859,2.016l-1.504,0l3.675,-8.411Zm2.101,5.095l-1.445,-3.341l-1.431,3.341l2.876,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M80.524,29.231l1.358,0l4.464,5.775l0,-5.775l1.456,0l0,8.353l-1.226,0l-4.596,-5.942l0,5.942l-1.456,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M92.834,29.231l3.114,0c0.653,0 1.25,0.105 1.796,0.316c0.544,0.211 1.014,0.504 1.407,0.878c0.394,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.519,0.951 -0.913,1.324c-0.393,0.374 -0.863,0.669 -1.407,0.884c-0.546,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.437,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.662,-0.336 0.913,-0.588c0.25,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.208,-0.724 0.208,-1.131l0,-0.024c0,-0.408 -0.069,-0.787 -0.208,-1.138c-0.14,-0.351 -0.335,-0.654 -0.585,-0.904c-0.251,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.756,-0.215 -1.193,-0.215l-1.647,0l0,5.703l1.647,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M111.563,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.589,-0.219 -1.134,-0.556 -1.635,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.4,-0.445 0.4,-0.764l0,-0.023c0,-0.151 -0.026,-0.284 -0.078,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.559,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.234,-0.188 -0.415,-0.416 -0.539,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l-0.001,-0.023c0.001,-0.358 0.072,-0.686 0.214,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.546,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.162,0.09 1.651,0.269c0.49,0.179 0.949,0.439 1.379,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.43,0 -0.763,0.096 -1.004,0.286c-0.237,0.192 -0.357,0.426 -0.357,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.147,0.099 0.35,0.193 0.609,0.281c0.261,0.087 0.59,0.178 0.989,0.274c0.438,0.111 0.826,0.235 1.164,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.224,0.195 0.395,0.421 0.51,0.68c0.114,0.259 0.172,0.559 0.172,0.901l0.001,0.024c-0.001,0.39 -0.075,0.74 -0.22,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M121.199,30.592l-2.649,0l0,-1.36l6.777,0l0,1.36l-2.649,0l0,6.992l-1.479,0l0,-6.992Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M133.186,37.716c-0.541,0 -1.03,-0.078 -1.468,-0.232c-0.437,-0.156 -0.811,-0.389 -1.122,-0.699c-0.309,-0.31 -0.549,-0.694 -0.716,-1.151c-0.167,-0.458 -0.25,-0.988 -0.25,-1.594l0,-4.808l1.455,0l0,4.75c0,0.779 0.19,1.371 0.566,1.777c0.376,0.405 0.894,0.608 1.558,0.608c0.657,0 1.172,-0.195 1.548,-0.584c0.376,-0.39 0.565,-0.97 0.565,-1.743l0,-4.808l1.456,0l0,4.737c0,0.621 -0.086,1.166 -0.257,1.635c-0.171,0.469 -0.412,0.861 -0.722,1.175c-0.31,0.314 -0.686,0.549 -1.128,0.705c-0.441,0.154 -0.936,0.232 -1.485,0.232" style="fill:#fff;fill-rule:nonzero;"/><path d="M141.678,29.231l3.114,0c0.653,0 1.251,0.105 1.796,0.316c0.545,0.211 1.014,0.504 1.407,0.878c0.395,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.518,0.951 -0.913,1.324c-0.393,0.374 -0.862,0.669 -1.407,0.884c-0.545,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.438,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.663,-0.336 0.913,-0.588c0.251,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.209,-0.724 0.209,-1.131l0,-0.024c0,-0.408 -0.07,-0.787 -0.209,-1.138c-0.14,-0.351 -0.334,-0.654 -0.585,-0.904c-0.25,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.755,-0.215 -1.193,-0.215l-1.646,0l0,5.703l1.646,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="153.975" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M164.542,37.727c-0.645,0 -1.232,-0.113 -1.766,-0.34c-0.533,-0.226 -0.99,-0.535 -1.372,-0.925c-0.382,-0.389 -0.68,-0.844 -0.895,-1.366c-0.215,-0.521 -0.321,-1.076 -0.321,-1.664l0,-0.024c0,-0.589 0.106,-1.144 0.321,-1.665c0.215,-0.521 0.517,-0.979 0.907,-1.372c0.39,-0.394 0.851,-0.707 1.384,-0.937c0.533,-0.23 1.122,-0.346 1.766,-0.346c0.644,0 1.233,0.114 1.766,0.34c0.533,0.227 0.99,0.535 1.372,0.925c0.382,0.39 0.68,0.845 0.896,1.366c0.213,0.522 0.321,1.076 0.321,1.665l0,0.024c0,0.589 -0.108,1.143 -0.321,1.664c-0.216,0.521 -0.518,0.978 -0.908,1.373c-0.389,0.393 -0.851,0.705 -1.383,0.936c-0.534,0.231 -1.122,0.346 -1.767,0.346m0.024,-1.349c0.412,0 0.789,-0.077 1.135,-0.232c0.345,-0.155 0.639,-0.366 0.885,-0.632c0.245,-0.266 0.438,-0.579 0.575,-0.937c0.14,-0.358 0.209,-0.74 0.209,-1.145l0,-0.024c0,-0.406 -0.069,-0.789 -0.209,-1.152c-0.137,-0.362 -0.332,-0.675 -0.581,-0.942c-0.25,-0.267 -0.549,-0.48 -0.896,-0.639c-0.35,-0.159 -0.73,-0.238 -1.142,-0.238c-0.411,0 -0.789,0.077 -1.136,0.232c-0.343,0.156 -0.637,0.367 -0.885,0.632c-0.244,0.267 -0.437,0.579 -0.574,0.938c-0.139,0.357 -0.209,0.739 -0.209,1.145l0,0.024c0,0.405 0.07,0.789 0.209,1.151c0.137,0.362 0.332,0.676 0.58,0.942c0.251,0.267 0.549,0.48 0.898,0.639c0.349,0.159 0.729,0.238 1.141,0.238" style="fill:#fff;fill-rule:nonzero;"/><path d="M176.518,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.349,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.26,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+            </div>
+            <div class="location-portland">
+              <div class="title">Portland, OR</div>
+              <div class="location">811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204</div>
+            </div>
+            <div class="location-cali">
+              <div class="title">Cali, Colombia</div>
+              <div class="location">Cra. 6 #2-61<br>Cali, Valle del Cauca</div>
+            </div>
+            <div class="contact-info"><a href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a><a href="tel:15038194346">+1 (503) 819 - 4346</a></div>
+            <div class="submenu-our-services">
+              <div class="title">Our services</div>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#web">Web</a></li>
+              </ul>
+            </div>
+            <div class="submenu-news">
+              <div class="title">News</div>
+              <ul>
+                <li><a href="https://medium.com/@augmentedisland" target="_blank">Blog</a></li>
+                <li><a href="#press">Press</a></li>
+              </ul>
+            </div>
+            <div class="submenu-contact-us">
+              <div class="title">Contact us</div>
+              <ul>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="tao-logo">
+              <div class="text">Proud members of</div><a href="http://www.techoregon.org/" target="_blank"><img src="./assets/images/tao-logo.png"></a>
+            </div>
+            <div class="social-media"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 267.8 500" style="enable-background:new 0 0 267.8 500;" xml:space="preserve">
+<title>Mesa de trabajo 1</title>
+<path d="M250.3,281.3l13.9-90.5h-86.8V132c0-24.8,12.1-48.9,51-48.9h39.5v-77c0,0-35.8-6.1-70.1-6.1C126.2,0,79.5,43.3,79.5,121.8
+	v69H0v90.5h79.5V500h97.8V281.3H250.3z"/>
+</svg>
+</a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia</title><path d="M250.06,121.83A128.17,128.17,0,1,0,378.22,250,128,128,0,0,0,250.06,121.83Zm0,211.49A83.32,83.32,0,1,1,333.38,250a83.47,83.47,0,0,1-83.32,83.32Zm163.3-216.73a29.9,29.9,0,1,1-29.9-29.89A29.83,29.83,0,0,1,413.36,116.59Zm84.88,30.34c-1.89-40-11-75.51-40.38-104.74S393.17,3.82,353.12,1.81c-41.27-2.34-165-2.34-206.24,0-39.94,1.9-75.41,11-104.74,40.27S3.76,106.78,1.76,146.82c-2.35,41.27-2.35,165,0,206.25,1.89,40,11,75.51,40.38,104.74s64.69,38.37,104.74,40.38c41.27,2.34,165,2.34,206.24,0,40.05-1.9,75.52-11.05,104.74-40.38s38.38-64.7,40.38-104.74c2.35-41.27,2.35-164.87,0-206.14ZM444.92,397.35a84.36,84.36,0,0,1-47.51,47.52c-32.91,13.05-111,10-147.35,10s-114.56,2.9-147.36-10a84.33,84.33,0,0,1-47.51-47.52c-13-32.9-10-111-10-147.35s-2.9-114.56,10-147.35A84.36,84.36,0,0,1,102.7,55.13c32.91-13.05,111-10,147.36-10s114.55-2.9,147.35,10a84.33,84.33,0,0,1,47.51,47.52c13.06,32.9,10,111,10,147.35S458,364.56,444.92,397.35Z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia 2</title><path d="M111.94,500H8.26V166.18H111.94ZM60,120.65C26.9,120.65,0,93.19,0,60a60,60,0,0,1,120.09,0C120.09,93.19,93.19,120.65,60,120.65ZM499.89,500H396.43V337.5c0-38.73-.78-88.39-53.91-88.39-53.9,0-62.16,42.07-62.16,85.6V500H176.79V166.18h99.44v45.54h1.45c13.84-26.23,47.65-53.91,98.1-53.91C480.69,157.81,500,226.9,500,316.63V500Z"/></svg></a></div>
+            <div class="info-links"><a href="">Sitemap</a>
+              <div class="slash">/</div>
+              <div class="all-rights">© 2020 Augmented Island Studios, LLC.</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="section scrollable hidden" id="web-section">
@@ -464,6 +613,9 @@
                 <div class="text">Webmaster services.</div>
               </div>
               <div class="service-item"> 
+                <div class="text">WebAR development.</div>
+              </div>
+              <div class="service-item"> 
                 <div class="text">Editable blogs.</div>
               </div>
               <div class="service-item"> 
@@ -478,11 +630,10 @@
             <div class="carousel-container">
               <div class="mask">
                 <div class="wrapper">
-                  <div class="slide1 slide"><img src="./assets/images/terry-mockup1.jpg" alt=""></div>
-                  <div class="slide2 slide"><img src="./assets/images/terry-mockup2.jpg" alt=""></div>
-                  <div class="slide3 slide"><img src="./assets/images/terry-mockup3.jpg" alt=""></div>
-                  <div class="slide4 slide"><img src="./assets/images/terry-mockup4.jpg" alt=""></div>
-                  <div class="slide5 slide"><img src="./assets/images/terry-mockup5.jpg" alt=""></div>
+                  <div class="slide1 slide"><img src="./assets/images/web_work1.jpg" alt=""></div>
+                  <div class="slide2 slide"><img src="./assets/images/web_work2.jpg" alt=""></div>
+                  <div class="slide3 slide"><img src="./assets/images/web_work3.jpg" alt=""></div>
+                  <div class="slide4 slide"><img src="./assets/images/web_work4.jpg" alt=""></div>
                 </div>
               </div>
               <div class="carousel-dots"></div>
@@ -493,11 +644,11 @@
           <div class="clients-container">
             <div class="lineTitle">
               <h1>Clients</h1>
-            </div><a class="team"><img src="./assets/images/tc-logo.png" alt="Terry Crews"></a><a class="team" href="https://comefindmebook.com/" target="_blank"><img src="./assets/images/cfm_logo.svg" alt="Come Find Me"></a><a class="team" href="https://laislabrand.com/" target="_blank"><img src="./assets/images/laisla-logo.png" alt="La Isla"></a>
+            </div><a class="team" href="https://terrycrews.com/" target="_blank"><img src="./assets/images/tc-logo.png" alt="Terry Crews"></a><a class="team" href="https://comefindmebook.com/" target="_blank"><img src="./assets/images/cfm_logo.svg" alt="Come Find Me"></a><a class="team" href="https://laislabrand.com/" target="_blank"><img src="./assets/images/laisla-logo.png" alt="La Isla"></a><a class="team" href="https://www.surfprescriptions.com/" target="_blank"><img src="./assets/images/surfprescriptions-logo.png" alt="Surf Prescriptions Surfboards"></a>
           </div>
           <div class="contact-container">
             <div class="lineTitle">
-              <h1>Contact us</h1>
+              <h1>Contact</h1>
             </div>
             <div class="contact-column">
               <p class="copy">We invite you to contact us and let us know how we can help. We are eager to connect. Send us an email or fill out the form below to reach out to us please:</p>
@@ -508,9 +659,147 @@
                   <input class="disableAutoComplete" type="tel" name="phone" placeholder="Phone: +1 888 888 8888" minlength="10" maxlength="14" title="Phone number" autocomplete="false"></span>
                 <input class="submitBtn" type="submit" value="SEND">
               </form>
-              <div class="social-media"><a class="email" href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a>
-                <div class="social-icons"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="grid-container">
+            <div class="footer-logo">
+              <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 74 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Logo"><path d="M27.796,0l-27.388,44l23.572,0l21.551,-30.306l10.326,16.612l8.98,0l-19.306,-30.081l-25.592,36.367l-6.286,0l18.857,-29.184l-4.714,-7.408Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M44.857,26.49l7.184,10.327l17.061,0l4.49,7.183l-24.694,0l-8.531,-12.122l4.49,-5.388Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+              <div class="isotipo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 220 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="ais_isotipo"><path d="M9.225,0.475l3.295,0l8.9,20.373l-3.757,0l-2.051,-4.884l-9.566,0l-2.08,4.884l-3.641,0l8.9,-20.373Zm5.086,12.339l-3.496,-8.091l-3.468,8.091l6.964,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M36.547,21.165c-1.31,0 -2.494,-0.187 -3.554,-0.563c-1.059,-0.376 -1.966,-0.94 -2.717,-1.691c-0.75,-0.751 -1.329,-1.681 -1.733,-2.788c-0.405,-1.108 -0.607,-2.395 -0.607,-3.858l0,-11.646l3.525,0l0,11.501c0,1.888 0.458,3.323 1.368,4.306c0.91,0.982 2.167,1.473 3.777,1.473c1.588,0 2.836,-0.471 3.747,-1.416c0.91,-0.943 1.367,-2.349 1.367,-4.218l0,-11.646l3.525,0l0,11.472c0,1.503 -0.207,2.823 -0.621,3.96c-0.414,1.135 -0.997,2.085 -1.748,2.845c-0.751,0.761 -1.662,1.33 -2.73,1.706c-1.07,0.376 -2.269,0.563 -3.599,0.563" style="fill:#fff;fill-rule:nonzero;"/><path d="M63.089,21.194c-1.579,0 -3.015,-0.266 -4.306,-0.795c-1.29,-0.53 -2.393,-1.262 -3.308,-2.196c-0.915,-0.935 -1.623,-2.032 -2.124,-3.294c-0.501,-1.263 -0.751,-2.635 -0.751,-4.118l0,-0.058c0,-1.406 0.255,-2.745 0.77,-4.017c0.516,-1.271 1.238,-2.384 2.167,-3.337c0.93,-0.955 2.037,-1.71 3.319,-2.269c1.281,-0.559 2.682,-0.838 4.205,-0.838c0.885,0 1.69,0.063 2.413,0.188c0.721,0.125 1.391,0.303 2.008,0.535c0.616,0.23 1.199,0.514 1.749,0.851c0.548,0.338 1.083,0.728 1.603,1.171l-2.254,2.688c-0.386,-0.327 -0.78,-0.626 -1.185,-0.896c-0.405,-0.27 -0.828,-0.496 -1.272,-0.679c-0.442,-0.183 -0.929,-0.328 -1.459,-0.434c-0.529,-0.106 -1.112,-0.158 -1.748,-0.158c-0.925,0 -1.787,0.192 -2.587,0.577c-0.799,0.386 -1.493,0.906 -2.08,1.552c-0.588,0.644 -1.05,1.401 -1.388,2.272c-0.336,0.867 -0.504,1.787 -0.504,2.75l0,0.058c0,1.041 0.163,2.009 0.491,2.895c0.327,0.891 0.789,1.652 1.396,2.287c0.607,0.636 1.324,1.142 2.162,1.508c0.838,0.366 1.773,0.549 2.813,0.549c0.959,0 1.859,-0.14 2.692,-0.419c0.839,-0.284 1.561,-0.655 2.178,-1.122l0,-3.805l-5.173,0l0,-3.092l8.611,0l0,8.496c-0.501,0.423 -1.054,0.828 -1.661,1.213c-0.607,0.386 -1.262,0.723 -1.965,1.012c-0.704,0.289 -1.459,0.516 -2.269,0.679c-0.809,0.164 -1.656,0.246 -2.543,0.246" style="fill:#fff;fill-rule:nonzero;"/><path d="M79.517,0.619l3.786,0l6.155,9.564l6.155,-9.564l3.786,0l0,20.229l-3.526,0l0,-14.507l-6.386,9.536l-0.116,0l-6.328,-9.479l0,14.45l-3.526,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M107.966,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.144,0l0,3.208l-10.144,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M130.693,0.619l3.29,0l10.812,13.986l0,-13.986l3.525,0l0,20.229l-2.971,0l-11.131,-14.392l0,14.392l-3.525,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M161.859,3.913l-6.415,0l0,-3.294l16.413,0l0,3.294l-6.415,0l0,16.935l-3.583,0l0,-16.935Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M178.98,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.143,0l0,3.208l-10.143,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M201.708,0.619l7.542,0c1.58,0 3.029,0.255 4.35,0.766c1.319,0.51 2.456,1.218 3.409,2.124c0.954,0.905 1.69,1.969 2.211,3.193c0.519,1.224 0.78,2.548 0.78,3.974l0,0.057c0,1.426 -0.261,2.755 -0.78,3.988c-0.521,1.233 -1.257,2.302 -2.211,3.208c-0.953,0.905 -2.09,1.618 -3.409,2.138c-1.321,0.52 -2.77,0.781 -4.35,0.781l-7.542,0l0,-20.229Zm7.514,17.021c1.059,0 2.022,-0.169 2.888,-0.506c0.868,-0.342 1.605,-0.814 2.211,-1.426c0.608,-0.607 1.079,-1.334 1.416,-2.177c0.337,-0.838 0.506,-1.753 0.506,-2.74l0,-0.058c0,-0.987 -0.169,-1.907 -0.506,-2.755c-0.337,-0.852 -0.808,-1.585 -1.416,-2.191c-0.606,-0.612 -1.343,-1.089 -2.211,-1.44c-0.866,-0.347 -1.829,-0.521 -2.888,-0.521l-3.989,0l0,13.814l3.989,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="40.844" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M50.361,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.261,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.339,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M57.945,29.231l1.456,0l0,7.028l4.391,0l0,1.325l-5.847,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M71.174,29.173l1.36,0l3.675,8.411l-1.551,0l-0.846,-2.016l-3.95,0l-0.859,2.016l-1.504,0l3.675,-8.411Zm2.101,5.095l-1.445,-3.341l-1.431,3.341l2.876,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M80.524,29.231l1.358,0l4.464,5.775l0,-5.775l1.456,0l0,8.353l-1.226,0l-4.596,-5.942l0,5.942l-1.456,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M92.834,29.231l3.114,0c0.653,0 1.25,0.105 1.796,0.316c0.544,0.211 1.014,0.504 1.407,0.878c0.394,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.519,0.951 -0.913,1.324c-0.393,0.374 -0.863,0.669 -1.407,0.884c-0.546,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.437,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.662,-0.336 0.913,-0.588c0.25,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.208,-0.724 0.208,-1.131l0,-0.024c0,-0.408 -0.069,-0.787 -0.208,-1.138c-0.14,-0.351 -0.335,-0.654 -0.585,-0.904c-0.251,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.756,-0.215 -1.193,-0.215l-1.647,0l0,5.703l1.647,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M111.563,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.589,-0.219 -1.134,-0.556 -1.635,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.4,-0.445 0.4,-0.764l0,-0.023c0,-0.151 -0.026,-0.284 -0.078,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.559,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.234,-0.188 -0.415,-0.416 -0.539,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l-0.001,-0.023c0.001,-0.358 0.072,-0.686 0.214,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.546,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.162,0.09 1.651,0.269c0.49,0.179 0.949,0.439 1.379,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.43,0 -0.763,0.096 -1.004,0.286c-0.237,0.192 -0.357,0.426 -0.357,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.147,0.099 0.35,0.193 0.609,0.281c0.261,0.087 0.59,0.178 0.989,0.274c0.438,0.111 0.826,0.235 1.164,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.224,0.195 0.395,0.421 0.51,0.68c0.114,0.259 0.172,0.559 0.172,0.901l0.001,0.024c-0.001,0.39 -0.075,0.74 -0.22,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M121.199,30.592l-2.649,0l0,-1.36l6.777,0l0,1.36l-2.649,0l0,6.992l-1.479,0l0,-6.992Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M133.186,37.716c-0.541,0 -1.03,-0.078 -1.468,-0.232c-0.437,-0.156 -0.811,-0.389 -1.122,-0.699c-0.309,-0.31 -0.549,-0.694 -0.716,-1.151c-0.167,-0.458 -0.25,-0.988 -0.25,-1.594l0,-4.808l1.455,0l0,4.75c0,0.779 0.19,1.371 0.566,1.777c0.376,0.405 0.894,0.608 1.558,0.608c0.657,0 1.172,-0.195 1.548,-0.584c0.376,-0.39 0.565,-0.97 0.565,-1.743l0,-4.808l1.456,0l0,4.737c0,0.621 -0.086,1.166 -0.257,1.635c-0.171,0.469 -0.412,0.861 -0.722,1.175c-0.31,0.314 -0.686,0.549 -1.128,0.705c-0.441,0.154 -0.936,0.232 -1.485,0.232" style="fill:#fff;fill-rule:nonzero;"/><path d="M141.678,29.231l3.114,0c0.653,0 1.251,0.105 1.796,0.316c0.545,0.211 1.014,0.504 1.407,0.878c0.395,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.518,0.951 -0.913,1.324c-0.393,0.374 -0.862,0.669 -1.407,0.884c-0.545,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.438,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.663,-0.336 0.913,-0.588c0.251,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.209,-0.724 0.209,-1.131l0,-0.024c0,-0.408 -0.07,-0.787 -0.209,-1.138c-0.14,-0.351 -0.334,-0.654 -0.585,-0.904c-0.25,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.755,-0.215 -1.193,-0.215l-1.646,0l0,5.703l1.646,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="153.975" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M164.542,37.727c-0.645,0 -1.232,-0.113 -1.766,-0.34c-0.533,-0.226 -0.99,-0.535 -1.372,-0.925c-0.382,-0.389 -0.68,-0.844 -0.895,-1.366c-0.215,-0.521 -0.321,-1.076 -0.321,-1.664l0,-0.024c0,-0.589 0.106,-1.144 0.321,-1.665c0.215,-0.521 0.517,-0.979 0.907,-1.372c0.39,-0.394 0.851,-0.707 1.384,-0.937c0.533,-0.23 1.122,-0.346 1.766,-0.346c0.644,0 1.233,0.114 1.766,0.34c0.533,0.227 0.99,0.535 1.372,0.925c0.382,0.39 0.68,0.845 0.896,1.366c0.213,0.522 0.321,1.076 0.321,1.665l0,0.024c0,0.589 -0.108,1.143 -0.321,1.664c-0.216,0.521 -0.518,0.978 -0.908,1.373c-0.389,0.393 -0.851,0.705 -1.383,0.936c-0.534,0.231 -1.122,0.346 -1.767,0.346m0.024,-1.349c0.412,0 0.789,-0.077 1.135,-0.232c0.345,-0.155 0.639,-0.366 0.885,-0.632c0.245,-0.266 0.438,-0.579 0.575,-0.937c0.14,-0.358 0.209,-0.74 0.209,-1.145l0,-0.024c0,-0.406 -0.069,-0.789 -0.209,-1.152c-0.137,-0.362 -0.332,-0.675 -0.581,-0.942c-0.25,-0.267 -0.549,-0.48 -0.896,-0.639c-0.35,-0.159 -0.73,-0.238 -1.142,-0.238c-0.411,0 -0.789,0.077 -1.136,0.232c-0.343,0.156 -0.637,0.367 -0.885,0.632c-0.244,0.267 -0.437,0.579 -0.574,0.938c-0.139,0.357 -0.209,0.739 -0.209,1.145l0,0.024c0,0.405 0.07,0.789 0.209,1.151c0.137,0.362 0.332,0.676 0.58,0.942c0.251,0.267 0.549,0.48 0.898,0.639c0.349,0.159 0.729,0.238 1.141,0.238" style="fill:#fff;fill-rule:nonzero;"/><path d="M176.518,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.349,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.26,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+            </div>
+            <div class="location-portland">
+              <div class="title">Portland, OR</div>
+              <div class="location">811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204</div>
+            </div>
+            <div class="location-cali">
+              <div class="title">Cali, Colombia</div>
+              <div class="location">Cra. 6 #2-61<br>Cali, Valle del Cauca</div>
+            </div>
+            <div class="contact-info"><a href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a><a href="tel:15038194346">+1 (503) 819 - 4346</a></div>
+            <div class="submenu-our-services">
+              <div class="title">Our services</div>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#web">Web</a></li>
+              </ul>
+            </div>
+            <div class="submenu-news">
+              <div class="title">News</div>
+              <ul>
+                <li><a href="https://medium.com/@augmentedisland" target="_blank">Blog</a></li>
+                <li><a href="#press">Press</a></li>
+              </ul>
+            </div>
+            <div class="submenu-contact-us">
+              <div class="title">Contact us</div>
+              <ul>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="tao-logo">
+              <div class="text">Proud members of</div><a href="http://www.techoregon.org/" target="_blank"><img src="./assets/images/tao-logo.png"></a>
+            </div>
+            <div class="social-media"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 267.8 500" style="enable-background:new 0 0 267.8 500;" xml:space="preserve">
+<title>Mesa de trabajo 1</title>
+<path d="M250.3,281.3l13.9-90.5h-86.8V132c0-24.8,12.1-48.9,51-48.9h39.5v-77c0,0-35.8-6.1-70.1-6.1C126.2,0,79.5,43.3,79.5,121.8
+	v69H0v90.5h79.5V500h97.8V281.3H250.3z"/>
+</svg>
+</a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia</title><path d="M250.06,121.83A128.17,128.17,0,1,0,378.22,250,128,128,0,0,0,250.06,121.83Zm0,211.49A83.32,83.32,0,1,1,333.38,250a83.47,83.47,0,0,1-83.32,83.32Zm163.3-216.73a29.9,29.9,0,1,1-29.9-29.89A29.83,29.83,0,0,1,413.36,116.59Zm84.88,30.34c-1.89-40-11-75.51-40.38-104.74S393.17,3.82,353.12,1.81c-41.27-2.34-165-2.34-206.24,0-39.94,1.9-75.41,11-104.74,40.27S3.76,106.78,1.76,146.82c-2.35,41.27-2.35,165,0,206.25,1.89,40,11,75.51,40.38,104.74s64.69,38.37,104.74,40.38c41.27,2.34,165,2.34,206.24,0,40.05-1.9,75.52-11.05,104.74-40.38s38.38-64.7,40.38-104.74c2.35-41.27,2.35-164.87,0-206.14ZM444.92,397.35a84.36,84.36,0,0,1-47.51,47.52c-32.91,13.05-111,10-147.35,10s-114.56,2.9-147.36-10a84.33,84.33,0,0,1-47.51-47.52c-13-32.9-10-111-10-147.35s-2.9-114.56,10-147.35A84.36,84.36,0,0,1,102.7,55.13c32.91-13.05,111-10,147.36-10s114.55-2.9,147.35,10a84.33,84.33,0,0,1,47.51,47.52c13.06,32.9,10,111,10,147.35S458,364.56,444.92,397.35Z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia 2</title><path d="M111.94,500H8.26V166.18H111.94ZM60,120.65C26.9,120.65,0,93.19,0,60a60,60,0,0,1,120.09,0C120.09,93.19,93.19,120.65,60,120.65ZM499.89,500H396.43V337.5c0-38.73-.78-88.39-53.91-88.39-53.9,0-62.16,42.07-62.16,85.6V500H176.79V166.18h99.44v45.54h1.45c13.84-26.23,47.65-53.91,98.1-53.91C480.69,157.81,500,226.9,500,316.63V500Z"/></svg></a></div>
+            <div class="info-links"><a href="">Sitemap</a>
+              <div class="slash">/</div>
+              <div class="all-rights">© 2020 Augmented Island Studios, LLC.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section scrollable hidden" id="web-ar">
+        <div class="cornerImage"><img src="./assets/images/webar_corner_photo.jpg" alt=""></div>
+        <div class="content">
+          <div class="webarText">
+            <div class="highligh">Beautifully Designed WebAR Solutions<br>Which Revolutionize the Way You<br>Showcase Your Products and Sell</div>
+            <p class="copy">Retail showcasing in augmented reality is one of the quickest growing segments within this industry. WebAR is slowly but surely getting rid of the need to download apps to deploy AR content.<br><br>This new way of launching AR experiences, coupled with our top 3D modeling and technical abilities, ensures that your customers and business associates can enjoy viewing your products in any space and anywhere.<br><br>Below are a few of our work samples for your review:</p>
+          </div>
+          <div class="webarvideos-container">
+            <video controls poster="./assets/images/surfrx_video_cover.jpg">
+              <source src="./assets/media/surfrx_video_hb.mp4" type="video/mp4">
+              <Your>browser does not support the video tag.</Your>
+            </video>
+          </div>
+          <div class="webarwork-container">
+            <div class="lineTitle">
+              <h1>Our work</h1>
+            </div>
+            <div class="carousel-container">
+              <div class="mask">
+                <div class="wrapper">
+                  <div class="slide1 slide"><img src="./assets/images/surfrx_3.jpg" alt=""></div>
+                  <div class="slide2 slide"><img src="./assets/images/surfrx_4.jpg" alt=""></div>
+                  <div class="slide3 slide"><img src="./assets/images/surfrx_5.jpg" alt=""></div>
+                  <div class="slide4 slide"><img src="./assets/images/surfrx_6.jpg" alt=""></div>
+                </div>
               </div>
+              <div class="carousel-dots"></div>
+              <div class="carousel-arrow left"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582.48 1108.14"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:40px;fill-rule:evenodd;}</style></defs><title>carousel-arrow</title><polyline class="cls-1" points="568.09 14.14 28.28 553.95 568.33 1093.99"/></svg></div>
+              <div class="carousel-arrow right"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 582.48 1108.14"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:40px;fill-rule:evenodd;}</style></defs><title>carousel-arrow</title><polyline class="cls-1" points="568.09 14.14 28.28 553.95 568.33 1093.99"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="grid-container">
+            <div class="footer-logo">
+              <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 74 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Logo"><path d="M27.796,0l-27.388,44l23.572,0l21.551,-30.306l10.326,16.612l8.98,0l-19.306,-30.081l-25.592,36.367l-6.286,0l18.857,-29.184l-4.714,-7.408Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M44.857,26.49l7.184,10.327l17.061,0l4.49,7.183l-24.694,0l-8.531,-12.122l4.49,-5.388Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+              <div class="isotipo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 220 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="ais_isotipo"><path d="M9.225,0.475l3.295,0l8.9,20.373l-3.757,0l-2.051,-4.884l-9.566,0l-2.08,4.884l-3.641,0l8.9,-20.373Zm5.086,12.339l-3.496,-8.091l-3.468,8.091l6.964,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M36.547,21.165c-1.31,0 -2.494,-0.187 -3.554,-0.563c-1.059,-0.376 -1.966,-0.94 -2.717,-1.691c-0.75,-0.751 -1.329,-1.681 -1.733,-2.788c-0.405,-1.108 -0.607,-2.395 -0.607,-3.858l0,-11.646l3.525,0l0,11.501c0,1.888 0.458,3.323 1.368,4.306c0.91,0.982 2.167,1.473 3.777,1.473c1.588,0 2.836,-0.471 3.747,-1.416c0.91,-0.943 1.367,-2.349 1.367,-4.218l0,-11.646l3.525,0l0,11.472c0,1.503 -0.207,2.823 -0.621,3.96c-0.414,1.135 -0.997,2.085 -1.748,2.845c-0.751,0.761 -1.662,1.33 -2.73,1.706c-1.07,0.376 -2.269,0.563 -3.599,0.563" style="fill:#fff;fill-rule:nonzero;"/><path d="M63.089,21.194c-1.579,0 -3.015,-0.266 -4.306,-0.795c-1.29,-0.53 -2.393,-1.262 -3.308,-2.196c-0.915,-0.935 -1.623,-2.032 -2.124,-3.294c-0.501,-1.263 -0.751,-2.635 -0.751,-4.118l0,-0.058c0,-1.406 0.255,-2.745 0.77,-4.017c0.516,-1.271 1.238,-2.384 2.167,-3.337c0.93,-0.955 2.037,-1.71 3.319,-2.269c1.281,-0.559 2.682,-0.838 4.205,-0.838c0.885,0 1.69,0.063 2.413,0.188c0.721,0.125 1.391,0.303 2.008,0.535c0.616,0.23 1.199,0.514 1.749,0.851c0.548,0.338 1.083,0.728 1.603,1.171l-2.254,2.688c-0.386,-0.327 -0.78,-0.626 -1.185,-0.896c-0.405,-0.27 -0.828,-0.496 -1.272,-0.679c-0.442,-0.183 -0.929,-0.328 -1.459,-0.434c-0.529,-0.106 -1.112,-0.158 -1.748,-0.158c-0.925,0 -1.787,0.192 -2.587,0.577c-0.799,0.386 -1.493,0.906 -2.08,1.552c-0.588,0.644 -1.05,1.401 -1.388,2.272c-0.336,0.867 -0.504,1.787 -0.504,2.75l0,0.058c0,1.041 0.163,2.009 0.491,2.895c0.327,0.891 0.789,1.652 1.396,2.287c0.607,0.636 1.324,1.142 2.162,1.508c0.838,0.366 1.773,0.549 2.813,0.549c0.959,0 1.859,-0.14 2.692,-0.419c0.839,-0.284 1.561,-0.655 2.178,-1.122l0,-3.805l-5.173,0l0,-3.092l8.611,0l0,8.496c-0.501,0.423 -1.054,0.828 -1.661,1.213c-0.607,0.386 -1.262,0.723 -1.965,1.012c-0.704,0.289 -1.459,0.516 -2.269,0.679c-0.809,0.164 -1.656,0.246 -2.543,0.246" style="fill:#fff;fill-rule:nonzero;"/><path d="M79.517,0.619l3.786,0l6.155,9.564l6.155,-9.564l3.786,0l0,20.229l-3.526,0l0,-14.507l-6.386,9.536l-0.116,0l-6.328,-9.479l0,14.45l-3.526,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M107.966,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.144,0l0,3.208l-10.144,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M130.693,0.619l3.29,0l10.812,13.986l0,-13.986l3.525,0l0,20.229l-2.971,0l-11.131,-14.392l0,14.392l-3.525,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M161.859,3.913l-6.415,0l0,-3.294l16.413,0l0,3.294l-6.415,0l0,16.935l-3.583,0l0,-16.935Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M178.98,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.143,0l0,3.208l-10.143,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M201.708,0.619l7.542,0c1.58,0 3.029,0.255 4.35,0.766c1.319,0.51 2.456,1.218 3.409,2.124c0.954,0.905 1.69,1.969 2.211,3.193c0.519,1.224 0.78,2.548 0.78,3.974l0,0.057c0,1.426 -0.261,2.755 -0.78,3.988c-0.521,1.233 -1.257,2.302 -2.211,3.208c-0.953,0.905 -2.09,1.618 -3.409,2.138c-1.321,0.52 -2.77,0.781 -4.35,0.781l-7.542,0l0,-20.229Zm7.514,17.021c1.059,0 2.022,-0.169 2.888,-0.506c0.868,-0.342 1.605,-0.814 2.211,-1.426c0.608,-0.607 1.079,-1.334 1.416,-2.177c0.337,-0.838 0.506,-1.753 0.506,-2.74l0,-0.058c0,-0.987 -0.169,-1.907 -0.506,-2.755c-0.337,-0.852 -0.808,-1.585 -1.416,-2.191c-0.606,-0.612 -1.343,-1.089 -2.211,-1.44c-0.866,-0.347 -1.829,-0.521 -2.888,-0.521l-3.989,0l0,13.814l3.989,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="40.844" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M50.361,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.261,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.339,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M57.945,29.231l1.456,0l0,7.028l4.391,0l0,1.325l-5.847,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M71.174,29.173l1.36,0l3.675,8.411l-1.551,0l-0.846,-2.016l-3.95,0l-0.859,2.016l-1.504,0l3.675,-8.411Zm2.101,5.095l-1.445,-3.341l-1.431,3.341l2.876,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M80.524,29.231l1.358,0l4.464,5.775l0,-5.775l1.456,0l0,8.353l-1.226,0l-4.596,-5.942l0,5.942l-1.456,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M92.834,29.231l3.114,0c0.653,0 1.25,0.105 1.796,0.316c0.544,0.211 1.014,0.504 1.407,0.878c0.394,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.519,0.951 -0.913,1.324c-0.393,0.374 -0.863,0.669 -1.407,0.884c-0.546,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.437,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.662,-0.336 0.913,-0.588c0.25,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.208,-0.724 0.208,-1.131l0,-0.024c0,-0.408 -0.069,-0.787 -0.208,-1.138c-0.14,-0.351 -0.335,-0.654 -0.585,-0.904c-0.251,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.756,-0.215 -1.193,-0.215l-1.647,0l0,5.703l1.647,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M111.563,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.589,-0.219 -1.134,-0.556 -1.635,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.4,-0.445 0.4,-0.764l0,-0.023c0,-0.151 -0.026,-0.284 -0.078,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.559,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.234,-0.188 -0.415,-0.416 -0.539,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l-0.001,-0.023c0.001,-0.358 0.072,-0.686 0.214,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.546,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.162,0.09 1.651,0.269c0.49,0.179 0.949,0.439 1.379,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.43,0 -0.763,0.096 -1.004,0.286c-0.237,0.192 -0.357,0.426 -0.357,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.147,0.099 0.35,0.193 0.609,0.281c0.261,0.087 0.59,0.178 0.989,0.274c0.438,0.111 0.826,0.235 1.164,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.224,0.195 0.395,0.421 0.51,0.68c0.114,0.259 0.172,0.559 0.172,0.901l0.001,0.024c-0.001,0.39 -0.075,0.74 -0.22,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M121.199,30.592l-2.649,0l0,-1.36l6.777,0l0,1.36l-2.649,0l0,6.992l-1.479,0l0,-6.992Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M133.186,37.716c-0.541,0 -1.03,-0.078 -1.468,-0.232c-0.437,-0.156 -0.811,-0.389 -1.122,-0.699c-0.309,-0.31 -0.549,-0.694 -0.716,-1.151c-0.167,-0.458 -0.25,-0.988 -0.25,-1.594l0,-4.808l1.455,0l0,4.75c0,0.779 0.19,1.371 0.566,1.777c0.376,0.405 0.894,0.608 1.558,0.608c0.657,0 1.172,-0.195 1.548,-0.584c0.376,-0.39 0.565,-0.97 0.565,-1.743l0,-4.808l1.456,0l0,4.737c0,0.621 -0.086,1.166 -0.257,1.635c-0.171,0.469 -0.412,0.861 -0.722,1.175c-0.31,0.314 -0.686,0.549 -1.128,0.705c-0.441,0.154 -0.936,0.232 -1.485,0.232" style="fill:#fff;fill-rule:nonzero;"/><path d="M141.678,29.231l3.114,0c0.653,0 1.251,0.105 1.796,0.316c0.545,0.211 1.014,0.504 1.407,0.878c0.395,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.518,0.951 -0.913,1.324c-0.393,0.374 -0.862,0.669 -1.407,0.884c-0.545,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.438,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.663,-0.336 0.913,-0.588c0.251,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.209,-0.724 0.209,-1.131l0,-0.024c0,-0.408 -0.07,-0.787 -0.209,-1.138c-0.14,-0.351 -0.334,-0.654 -0.585,-0.904c-0.25,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.755,-0.215 -1.193,-0.215l-1.646,0l0,5.703l1.646,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="153.975" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M164.542,37.727c-0.645,0 -1.232,-0.113 -1.766,-0.34c-0.533,-0.226 -0.99,-0.535 -1.372,-0.925c-0.382,-0.389 -0.68,-0.844 -0.895,-1.366c-0.215,-0.521 -0.321,-1.076 -0.321,-1.664l0,-0.024c0,-0.589 0.106,-1.144 0.321,-1.665c0.215,-0.521 0.517,-0.979 0.907,-1.372c0.39,-0.394 0.851,-0.707 1.384,-0.937c0.533,-0.23 1.122,-0.346 1.766,-0.346c0.644,0 1.233,0.114 1.766,0.34c0.533,0.227 0.99,0.535 1.372,0.925c0.382,0.39 0.68,0.845 0.896,1.366c0.213,0.522 0.321,1.076 0.321,1.665l0,0.024c0,0.589 -0.108,1.143 -0.321,1.664c-0.216,0.521 -0.518,0.978 -0.908,1.373c-0.389,0.393 -0.851,0.705 -1.383,0.936c-0.534,0.231 -1.122,0.346 -1.767,0.346m0.024,-1.349c0.412,0 0.789,-0.077 1.135,-0.232c0.345,-0.155 0.639,-0.366 0.885,-0.632c0.245,-0.266 0.438,-0.579 0.575,-0.937c0.14,-0.358 0.209,-0.74 0.209,-1.145l0,-0.024c0,-0.406 -0.069,-0.789 -0.209,-1.152c-0.137,-0.362 -0.332,-0.675 -0.581,-0.942c-0.25,-0.267 -0.549,-0.48 -0.896,-0.639c-0.35,-0.159 -0.73,-0.238 -1.142,-0.238c-0.411,0 -0.789,0.077 -1.136,0.232c-0.343,0.156 -0.637,0.367 -0.885,0.632c-0.244,0.267 -0.437,0.579 -0.574,0.938c-0.139,0.357 -0.209,0.739 -0.209,1.145l0,0.024c0,0.405 0.07,0.789 0.209,1.151c0.137,0.362 0.332,0.676 0.58,0.942c0.251,0.267 0.549,0.48 0.898,0.639c0.349,0.159 0.729,0.238 1.141,0.238" style="fill:#fff;fill-rule:nonzero;"/><path d="M176.518,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.349,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.26,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+            </div>
+            <div class="location-portland">
+              <div class="title">Portland, OR</div>
+              <div class="location">811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204</div>
+            </div>
+            <div class="location-cali">
+              <div class="title">Cali, Colombia</div>
+              <div class="location">Cra. 6 #2-61<br>Cali, Valle del Cauca</div>
+            </div>
+            <div class="contact-info"><a href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a><a href="tel:15038194346">+1 (503) 819 - 4346</a></div>
+            <div class="submenu-our-services">
+              <div class="title">Our services</div>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#web">Web</a></li>
+              </ul>
+            </div>
+            <div class="submenu-news">
+              <div class="title">News</div>
+              <ul>
+                <li><a href="https://medium.com/@augmentedisland" target="_blank">Blog</a></li>
+                <li><a href="#press">Press</a></li>
+              </ul>
+            </div>
+            <div class="submenu-contact-us">
+              <div class="title">Contact us</div>
+              <ul>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="tao-logo">
+              <div class="text">Proud members of</div><a href="http://www.techoregon.org/" target="_blank"><img src="./assets/images/tao-logo.png"></a>
+            </div>
+            <div class="social-media"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 267.8 500" style="enable-background:new 0 0 267.8 500;" xml:space="preserve">
+<title>Mesa de trabajo 1</title>
+<path d="M250.3,281.3l13.9-90.5h-86.8V132c0-24.8,12.1-48.9,51-48.9h39.5v-77c0,0-35.8-6.1-70.1-6.1C126.2,0,79.5,43.3,79.5,121.8
+	v69H0v90.5h79.5V500h97.8V281.3H250.3z"/>
+</svg>
+</a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia</title><path d="M250.06,121.83A128.17,128.17,0,1,0,378.22,250,128,128,0,0,0,250.06,121.83Zm0,211.49A83.32,83.32,0,1,1,333.38,250a83.47,83.47,0,0,1-83.32,83.32Zm163.3-216.73a29.9,29.9,0,1,1-29.9-29.89A29.83,29.83,0,0,1,413.36,116.59Zm84.88,30.34c-1.89-40-11-75.51-40.38-104.74S393.17,3.82,353.12,1.81c-41.27-2.34-165-2.34-206.24,0-39.94,1.9-75.41,11-104.74,40.27S3.76,106.78,1.76,146.82c-2.35,41.27-2.35,165,0,206.25,1.89,40,11,75.51,40.38,104.74s64.69,38.37,104.74,40.38c41.27,2.34,165,2.34,206.24,0,40.05-1.9,75.52-11.05,104.74-40.38s38.38-64.7,40.38-104.74c2.35-41.27,2.35-164.87,0-206.14ZM444.92,397.35a84.36,84.36,0,0,1-47.51,47.52c-32.91,13.05-111,10-147.35,10s-114.56,2.9-147.36-10a84.33,84.33,0,0,1-47.51-47.52c-13-32.9-10-111-10-147.35s-2.9-114.56,10-147.35A84.36,84.36,0,0,1,102.7,55.13c32.91-13.05,111-10,147.36-10s114.55-2.9,147.35,10a84.33,84.33,0,0,1,47.51,47.52c13.06,32.9,10,111,10,147.35S458,364.56,444.92,397.35Z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia 2</title><path d="M111.94,500H8.26V166.18H111.94ZM60,120.65C26.9,120.65,0,93.19,0,60a60,60,0,0,1,120.09,0C120.09,93.19,93.19,120.65,60,120.65ZM499.89,500H396.43V337.5c0-38.73-.78-88.39-53.91-88.39-53.9,0-62.16,42.07-62.16,85.6V500H176.79V166.18h99.44v45.54h1.45c13.84-26.23,47.65-53.91,98.1-53.91C480.69,157.81,500,226.9,500,316.63V500Z"/></svg></a></div>
+            <div class="info-links"><a href="">Sitemap</a>
+              <div class="slash">/</div>
+              <div class="all-rights">© 2020 Augmented Island Studios, LLC.</div>
             </div>
           </div>
         </div>
@@ -545,13 +834,166 @@
               </div>
             </div>
           </div>
-          <div class="links"><a class="opt menu-work" href="#work">See Our Work</a><a class="opt menu-contact" href="#contact">Contact Us</a></div>
-          <div class="social"><a class="sn facebook" href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs" target="_blank">Facebook</a><a class="sn instagram" href="https://www.instagram.com/augmentedislandstudios/?hl=en" target="_blank">Instagram</a><a class="sn linkedin" href="https://www.linkedin.com/company/augmented-island-studios/" target="_blank">Linkedin</a></div>
+        </div>
+        <div class="footer">
+          <div class="grid-container">
+            <div class="footer-logo">
+              <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 74 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Logo"><path d="M27.796,0l-27.388,44l23.572,0l21.551,-30.306l10.326,16.612l8.98,0l-19.306,-30.081l-25.592,36.367l-6.286,0l18.857,-29.184l-4.714,-7.408Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M44.857,26.49l7.184,10.327l17.061,0l4.49,7.183l-24.694,0l-8.531,-12.122l4.49,-5.388Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+              <div class="isotipo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 220 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="ais_isotipo"><path d="M9.225,0.475l3.295,0l8.9,20.373l-3.757,0l-2.051,-4.884l-9.566,0l-2.08,4.884l-3.641,0l8.9,-20.373Zm5.086,12.339l-3.496,-8.091l-3.468,8.091l6.964,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M36.547,21.165c-1.31,0 -2.494,-0.187 -3.554,-0.563c-1.059,-0.376 -1.966,-0.94 -2.717,-1.691c-0.75,-0.751 -1.329,-1.681 -1.733,-2.788c-0.405,-1.108 -0.607,-2.395 -0.607,-3.858l0,-11.646l3.525,0l0,11.501c0,1.888 0.458,3.323 1.368,4.306c0.91,0.982 2.167,1.473 3.777,1.473c1.588,0 2.836,-0.471 3.747,-1.416c0.91,-0.943 1.367,-2.349 1.367,-4.218l0,-11.646l3.525,0l0,11.472c0,1.503 -0.207,2.823 -0.621,3.96c-0.414,1.135 -0.997,2.085 -1.748,2.845c-0.751,0.761 -1.662,1.33 -2.73,1.706c-1.07,0.376 -2.269,0.563 -3.599,0.563" style="fill:#fff;fill-rule:nonzero;"/><path d="M63.089,21.194c-1.579,0 -3.015,-0.266 -4.306,-0.795c-1.29,-0.53 -2.393,-1.262 -3.308,-2.196c-0.915,-0.935 -1.623,-2.032 -2.124,-3.294c-0.501,-1.263 -0.751,-2.635 -0.751,-4.118l0,-0.058c0,-1.406 0.255,-2.745 0.77,-4.017c0.516,-1.271 1.238,-2.384 2.167,-3.337c0.93,-0.955 2.037,-1.71 3.319,-2.269c1.281,-0.559 2.682,-0.838 4.205,-0.838c0.885,0 1.69,0.063 2.413,0.188c0.721,0.125 1.391,0.303 2.008,0.535c0.616,0.23 1.199,0.514 1.749,0.851c0.548,0.338 1.083,0.728 1.603,1.171l-2.254,2.688c-0.386,-0.327 -0.78,-0.626 -1.185,-0.896c-0.405,-0.27 -0.828,-0.496 -1.272,-0.679c-0.442,-0.183 -0.929,-0.328 -1.459,-0.434c-0.529,-0.106 -1.112,-0.158 -1.748,-0.158c-0.925,0 -1.787,0.192 -2.587,0.577c-0.799,0.386 -1.493,0.906 -2.08,1.552c-0.588,0.644 -1.05,1.401 -1.388,2.272c-0.336,0.867 -0.504,1.787 -0.504,2.75l0,0.058c0,1.041 0.163,2.009 0.491,2.895c0.327,0.891 0.789,1.652 1.396,2.287c0.607,0.636 1.324,1.142 2.162,1.508c0.838,0.366 1.773,0.549 2.813,0.549c0.959,0 1.859,-0.14 2.692,-0.419c0.839,-0.284 1.561,-0.655 2.178,-1.122l0,-3.805l-5.173,0l0,-3.092l8.611,0l0,8.496c-0.501,0.423 -1.054,0.828 -1.661,1.213c-0.607,0.386 -1.262,0.723 -1.965,1.012c-0.704,0.289 -1.459,0.516 -2.269,0.679c-0.809,0.164 -1.656,0.246 -2.543,0.246" style="fill:#fff;fill-rule:nonzero;"/><path d="M79.517,0.619l3.786,0l6.155,9.564l6.155,-9.564l3.786,0l0,20.229l-3.526,0l0,-14.507l-6.386,9.536l-0.116,0l-6.328,-9.479l0,14.45l-3.526,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M107.966,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.144,0l0,3.208l-10.144,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M130.693,0.619l3.29,0l10.812,13.986l0,-13.986l3.525,0l0,20.229l-2.971,0l-11.131,-14.392l0,14.392l-3.525,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M161.859,3.913l-6.415,0l0,-3.294l16.413,0l0,3.294l-6.415,0l0,16.935l-3.583,0l0,-16.935Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M178.98,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.143,0l0,3.208l-10.143,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M201.708,0.619l7.542,0c1.58,0 3.029,0.255 4.35,0.766c1.319,0.51 2.456,1.218 3.409,2.124c0.954,0.905 1.69,1.969 2.211,3.193c0.519,1.224 0.78,2.548 0.78,3.974l0,0.057c0,1.426 -0.261,2.755 -0.78,3.988c-0.521,1.233 -1.257,2.302 -2.211,3.208c-0.953,0.905 -2.09,1.618 -3.409,2.138c-1.321,0.52 -2.77,0.781 -4.35,0.781l-7.542,0l0,-20.229Zm7.514,17.021c1.059,0 2.022,-0.169 2.888,-0.506c0.868,-0.342 1.605,-0.814 2.211,-1.426c0.608,-0.607 1.079,-1.334 1.416,-2.177c0.337,-0.838 0.506,-1.753 0.506,-2.74l0,-0.058c0,-0.987 -0.169,-1.907 -0.506,-2.755c-0.337,-0.852 -0.808,-1.585 -1.416,-2.191c-0.606,-0.612 -1.343,-1.089 -2.211,-1.44c-0.866,-0.347 -1.829,-0.521 -2.888,-0.521l-3.989,0l0,13.814l3.989,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="40.844" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M50.361,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.261,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.339,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M57.945,29.231l1.456,0l0,7.028l4.391,0l0,1.325l-5.847,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M71.174,29.173l1.36,0l3.675,8.411l-1.551,0l-0.846,-2.016l-3.95,0l-0.859,2.016l-1.504,0l3.675,-8.411Zm2.101,5.095l-1.445,-3.341l-1.431,3.341l2.876,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M80.524,29.231l1.358,0l4.464,5.775l0,-5.775l1.456,0l0,8.353l-1.226,0l-4.596,-5.942l0,5.942l-1.456,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M92.834,29.231l3.114,0c0.653,0 1.25,0.105 1.796,0.316c0.544,0.211 1.014,0.504 1.407,0.878c0.394,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.519,0.951 -0.913,1.324c-0.393,0.374 -0.863,0.669 -1.407,0.884c-0.546,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.437,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.662,-0.336 0.913,-0.588c0.25,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.208,-0.724 0.208,-1.131l0,-0.024c0,-0.408 -0.069,-0.787 -0.208,-1.138c-0.14,-0.351 -0.335,-0.654 -0.585,-0.904c-0.251,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.756,-0.215 -1.193,-0.215l-1.647,0l0,5.703l1.647,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M111.563,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.589,-0.219 -1.134,-0.556 -1.635,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.4,-0.445 0.4,-0.764l0,-0.023c0,-0.151 -0.026,-0.284 -0.078,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.559,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.234,-0.188 -0.415,-0.416 -0.539,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l-0.001,-0.023c0.001,-0.358 0.072,-0.686 0.214,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.546,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.162,0.09 1.651,0.269c0.49,0.179 0.949,0.439 1.379,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.43,0 -0.763,0.096 -1.004,0.286c-0.237,0.192 -0.357,0.426 -0.357,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.147,0.099 0.35,0.193 0.609,0.281c0.261,0.087 0.59,0.178 0.989,0.274c0.438,0.111 0.826,0.235 1.164,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.224,0.195 0.395,0.421 0.51,0.68c0.114,0.259 0.172,0.559 0.172,0.901l0.001,0.024c-0.001,0.39 -0.075,0.74 -0.22,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M121.199,30.592l-2.649,0l0,-1.36l6.777,0l0,1.36l-2.649,0l0,6.992l-1.479,0l0,-6.992Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M133.186,37.716c-0.541,0 -1.03,-0.078 -1.468,-0.232c-0.437,-0.156 -0.811,-0.389 -1.122,-0.699c-0.309,-0.31 -0.549,-0.694 -0.716,-1.151c-0.167,-0.458 -0.25,-0.988 -0.25,-1.594l0,-4.808l1.455,0l0,4.75c0,0.779 0.19,1.371 0.566,1.777c0.376,0.405 0.894,0.608 1.558,0.608c0.657,0 1.172,-0.195 1.548,-0.584c0.376,-0.39 0.565,-0.97 0.565,-1.743l0,-4.808l1.456,0l0,4.737c0,0.621 -0.086,1.166 -0.257,1.635c-0.171,0.469 -0.412,0.861 -0.722,1.175c-0.31,0.314 -0.686,0.549 -1.128,0.705c-0.441,0.154 -0.936,0.232 -1.485,0.232" style="fill:#fff;fill-rule:nonzero;"/><path d="M141.678,29.231l3.114,0c0.653,0 1.251,0.105 1.796,0.316c0.545,0.211 1.014,0.504 1.407,0.878c0.395,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.518,0.951 -0.913,1.324c-0.393,0.374 -0.862,0.669 -1.407,0.884c-0.545,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.438,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.663,-0.336 0.913,-0.588c0.251,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.209,-0.724 0.209,-1.131l0,-0.024c0,-0.408 -0.07,-0.787 -0.209,-1.138c-0.14,-0.351 -0.334,-0.654 -0.585,-0.904c-0.25,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.755,-0.215 -1.193,-0.215l-1.646,0l0,5.703l1.646,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="153.975" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M164.542,37.727c-0.645,0 -1.232,-0.113 -1.766,-0.34c-0.533,-0.226 -0.99,-0.535 -1.372,-0.925c-0.382,-0.389 -0.68,-0.844 -0.895,-1.366c-0.215,-0.521 -0.321,-1.076 -0.321,-1.664l0,-0.024c0,-0.589 0.106,-1.144 0.321,-1.665c0.215,-0.521 0.517,-0.979 0.907,-1.372c0.39,-0.394 0.851,-0.707 1.384,-0.937c0.533,-0.23 1.122,-0.346 1.766,-0.346c0.644,0 1.233,0.114 1.766,0.34c0.533,0.227 0.99,0.535 1.372,0.925c0.382,0.39 0.68,0.845 0.896,1.366c0.213,0.522 0.321,1.076 0.321,1.665l0,0.024c0,0.589 -0.108,1.143 -0.321,1.664c-0.216,0.521 -0.518,0.978 -0.908,1.373c-0.389,0.393 -0.851,0.705 -1.383,0.936c-0.534,0.231 -1.122,0.346 -1.767,0.346m0.024,-1.349c0.412,0 0.789,-0.077 1.135,-0.232c0.345,-0.155 0.639,-0.366 0.885,-0.632c0.245,-0.266 0.438,-0.579 0.575,-0.937c0.14,-0.358 0.209,-0.74 0.209,-1.145l0,-0.024c0,-0.406 -0.069,-0.789 -0.209,-1.152c-0.137,-0.362 -0.332,-0.675 -0.581,-0.942c-0.25,-0.267 -0.549,-0.48 -0.896,-0.639c-0.35,-0.159 -0.73,-0.238 -1.142,-0.238c-0.411,0 -0.789,0.077 -1.136,0.232c-0.343,0.156 -0.637,0.367 -0.885,0.632c-0.244,0.267 -0.437,0.579 -0.574,0.938c-0.139,0.357 -0.209,0.739 -0.209,1.145l0,0.024c0,0.405 0.07,0.789 0.209,1.151c0.137,0.362 0.332,0.676 0.58,0.942c0.251,0.267 0.549,0.48 0.898,0.639c0.349,0.159 0.729,0.238 1.141,0.238" style="fill:#fff;fill-rule:nonzero;"/><path d="M176.518,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.349,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.26,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+            </div>
+            <div class="location-portland">
+              <div class="title">Portland, OR</div>
+              <div class="location">811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204</div>
+            </div>
+            <div class="location-cali">
+              <div class="title">Cali, Colombia</div>
+              <div class="location">Cra. 6 #2-61<br>Cali, Valle del Cauca</div>
+            </div>
+            <div class="contact-info"><a href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a><a href="tel:15038194346">+1 (503) 819 - 4346</a></div>
+            <div class="submenu-our-services">
+              <div class="title">Our services</div>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#web">Web</a></li>
+              </ul>
+            </div>
+            <div class="submenu-news">
+              <div class="title">News</div>
+              <ul>
+                <li><a href="https://medium.com/@augmentedisland" target="_blank">Blog</a></li>
+                <li><a href="#press">Press</a></li>
+              </ul>
+            </div>
+            <div class="submenu-contact-us">
+              <div class="title">Contact us</div>
+              <ul>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="tao-logo">
+              <div class="text">Proud members of</div><a href="http://www.techoregon.org/" target="_blank"><img src="./assets/images/tao-logo.png"></a>
+            </div>
+            <div class="social-media"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 267.8 500" style="enable-background:new 0 0 267.8 500;" xml:space="preserve">
+<title>Mesa de trabajo 1</title>
+<path d="M250.3,281.3l13.9-90.5h-86.8V132c0-24.8,12.1-48.9,51-48.9h39.5v-77c0,0-35.8-6.1-70.1-6.1C126.2,0,79.5,43.3,79.5,121.8
+	v69H0v90.5h79.5V500h97.8V281.3H250.3z"/>
+</svg>
+</a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia</title><path d="M250.06,121.83A128.17,128.17,0,1,0,378.22,250,128,128,0,0,0,250.06,121.83Zm0,211.49A83.32,83.32,0,1,1,333.38,250a83.47,83.47,0,0,1-83.32,83.32Zm163.3-216.73a29.9,29.9,0,1,1-29.9-29.89A29.83,29.83,0,0,1,413.36,116.59Zm84.88,30.34c-1.89-40-11-75.51-40.38-104.74S393.17,3.82,353.12,1.81c-41.27-2.34-165-2.34-206.24,0-39.94,1.9-75.41,11-104.74,40.27S3.76,106.78,1.76,146.82c-2.35,41.27-2.35,165,0,206.25,1.89,40,11,75.51,40.38,104.74s64.69,38.37,104.74,40.38c41.27,2.34,165,2.34,206.24,0,40.05-1.9,75.52-11.05,104.74-40.38s38.38-64.7,40.38-104.74c2.35-41.27,2.35-164.87,0-206.14ZM444.92,397.35a84.36,84.36,0,0,1-47.51,47.52c-32.91,13.05-111,10-147.35,10s-114.56,2.9-147.36-10a84.33,84.33,0,0,1-47.51-47.52c-13-32.9-10-111-10-147.35s-2.9-114.56,10-147.35A84.36,84.36,0,0,1,102.7,55.13c32.91-13.05,111-10,147.36-10s114.55-2.9,147.35,10a84.33,84.33,0,0,1,47.51,47.52c13.06,32.9,10,111,10,147.35S458,364.56,444.92,397.35Z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia 2</title><path d="M111.94,500H8.26V166.18H111.94ZM60,120.65C26.9,120.65,0,93.19,0,60a60,60,0,0,1,120.09,0C120.09,93.19,93.19,120.65,60,120.65ZM499.89,500H396.43V337.5c0-38.73-.78-88.39-53.91-88.39-53.9,0-62.16,42.07-62.16,85.6V500H176.79V166.18h99.44v45.54h1.45c13.84-26.23,47.65-53.91,98.1-53.91C480.69,157.81,500,226.9,500,316.63V500Z"/></svg></a></div>
+            <div class="info-links"><a href="">Sitemap</a>
+              <div class="slash">/</div>
+              <div class="all-rights">© 2020 Augmented Island Studios, LLC.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section scrollable hidden" id="video-section">
+        <div class="cornerImage"><img src="./assets/images/video_corner_photo.jpg" alt=""></div>
+        <div class="content">
+          <div class="videoText">
+            <div class="lineTitle">
+              <h1>About</h1>
+            </div>
+            <div class="highligh">Today’s digital landscape is more crowded than ever, it's easy to get lost in the shuffle.</div>
+            <p class="copy">With over 60 years of combined real time development experience, we serve a multitude of clients in a myriad of industries. We specialize in AR, VR and traditional video to help tell your story in groundbreaking ways. From ROI producing applications and curious + fun AR/VR development, to complex 3D simulations, as well as with heartfelt storytelling through video, we are able to set you apart from your competition.</p>
+            <div class="video-text-container">
+              <div class="video-text1">
+                <div class="small-highligh">Description of our film services</div>
+                <p class="copy">We are storytellers who respect the value of traditional video for distilling complex concepts and sharing sincere stories. We have partnered with EMMY™-winning, California-based filmmaker Cyrus Sutton to share your visions through rich and potent content.</p>
+                <div class="small-highligh">Why we’re different</div>
+                <p class="copy">Our videos push the limits of storytelling through our core values led formula. By leading with the values intrinsic to our clients we build storytelling and aesthetic palettes which distill a deeper messaging into engaging and fun videos.</p>
+              </div>
+              <div class="video-text2">
+                <div class="small-highligh">Cyrus Sutton Biography</div>
+                <p class="copy">Cyrus Sutton’s mission is to break down the barriers between ourselves and the world around us. In the sixteen years he’s been making films professionally he has leveraged the power of visual storytelling to bring his viewers inside seemingly disparate worlds and ideologies.<br><br>At 19 he was a writer for an EMMY™-winning TV show and at twenty-three years old he was the writer and cinematographer of an EMMY™ production focusing on indigenous wisdom in the face of the catastrophic 2005 tsunami which ravaged Southeast Asia. Sutton gleans inspiration and literacy from his fifteen year career as a professional surfer and adventurer. Today he divides his time between rural Washington where he has a four acre homestead and Los Angeles, California.</p>
+              </div>
+            </div>
+          </div>
+          <div class="videowork-container">
+            <div class="lineTitle">
+              <h1>Work</h1>
+            </div>
+            <div class="videos-container"><div style="padding:52.73% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/369722533" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/324784349" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:52.73% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/369719555" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+          </div>
+          <div class="stats-container">
+            <div class="lineTitle">
+              <h1>Statistics</h1>
+            </div>
+            <div class="stats-highligh">ROI Statistics Video Marketing</div>
+            <p class="stat">81% of businesses use video as a marketing tool — up from 63% over the last year. (Hubspot)</p>
+            <div class="stat-line"></div>
+            <p class="stat">6 out of 10 people would rather watch online videos than television. (Google)</p>
+            <div class="stat-line"></div>
+            <p class="stat">Mobile video consumption rises by 100% every year. (Insivia)</p>
+            <div class="stat-line"></div>
+            <p class="stat">By 2022, online videos will make up more than 82% of all consumer internet traffic — 15 times higher than it was in 2017. (Cisco)</p>
+            <div class="stat-line"></div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="grid-container">
+            <div class="footer-logo">
+              <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 74 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Logo"><path d="M27.796,0l-27.388,44l23.572,0l21.551,-30.306l10.326,16.612l8.98,0l-19.306,-30.081l-25.592,36.367l-6.286,0l18.857,-29.184l-4.714,-7.408Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M44.857,26.49l7.184,10.327l17.061,0l4.49,7.183l-24.694,0l-8.531,-12.122l4.49,-5.388Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+              <div class="isotipo"><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 220 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="ais_isotipo"><path d="M9.225,0.475l3.295,0l8.9,20.373l-3.757,0l-2.051,-4.884l-9.566,0l-2.08,4.884l-3.641,0l8.9,-20.373Zm5.086,12.339l-3.496,-8.091l-3.468,8.091l6.964,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M36.547,21.165c-1.31,0 -2.494,-0.187 -3.554,-0.563c-1.059,-0.376 -1.966,-0.94 -2.717,-1.691c-0.75,-0.751 -1.329,-1.681 -1.733,-2.788c-0.405,-1.108 -0.607,-2.395 -0.607,-3.858l0,-11.646l3.525,0l0,11.501c0,1.888 0.458,3.323 1.368,4.306c0.91,0.982 2.167,1.473 3.777,1.473c1.588,0 2.836,-0.471 3.747,-1.416c0.91,-0.943 1.367,-2.349 1.367,-4.218l0,-11.646l3.525,0l0,11.472c0,1.503 -0.207,2.823 -0.621,3.96c-0.414,1.135 -0.997,2.085 -1.748,2.845c-0.751,0.761 -1.662,1.33 -2.73,1.706c-1.07,0.376 -2.269,0.563 -3.599,0.563" style="fill:#fff;fill-rule:nonzero;"/><path d="M63.089,21.194c-1.579,0 -3.015,-0.266 -4.306,-0.795c-1.29,-0.53 -2.393,-1.262 -3.308,-2.196c-0.915,-0.935 -1.623,-2.032 -2.124,-3.294c-0.501,-1.263 -0.751,-2.635 -0.751,-4.118l0,-0.058c0,-1.406 0.255,-2.745 0.77,-4.017c0.516,-1.271 1.238,-2.384 2.167,-3.337c0.93,-0.955 2.037,-1.71 3.319,-2.269c1.281,-0.559 2.682,-0.838 4.205,-0.838c0.885,0 1.69,0.063 2.413,0.188c0.721,0.125 1.391,0.303 2.008,0.535c0.616,0.23 1.199,0.514 1.749,0.851c0.548,0.338 1.083,0.728 1.603,1.171l-2.254,2.688c-0.386,-0.327 -0.78,-0.626 -1.185,-0.896c-0.405,-0.27 -0.828,-0.496 -1.272,-0.679c-0.442,-0.183 -0.929,-0.328 -1.459,-0.434c-0.529,-0.106 -1.112,-0.158 -1.748,-0.158c-0.925,0 -1.787,0.192 -2.587,0.577c-0.799,0.386 -1.493,0.906 -2.08,1.552c-0.588,0.644 -1.05,1.401 -1.388,2.272c-0.336,0.867 -0.504,1.787 -0.504,2.75l0,0.058c0,1.041 0.163,2.009 0.491,2.895c0.327,0.891 0.789,1.652 1.396,2.287c0.607,0.636 1.324,1.142 2.162,1.508c0.838,0.366 1.773,0.549 2.813,0.549c0.959,0 1.859,-0.14 2.692,-0.419c0.839,-0.284 1.561,-0.655 2.178,-1.122l0,-3.805l-5.173,0l0,-3.092l8.611,0l0,8.496c-0.501,0.423 -1.054,0.828 -1.661,1.213c-0.607,0.386 -1.262,0.723 -1.965,1.012c-0.704,0.289 -1.459,0.516 -2.269,0.679c-0.809,0.164 -1.656,0.246 -2.543,0.246" style="fill:#fff;fill-rule:nonzero;"/><path d="M79.517,0.619l3.786,0l6.155,9.564l6.155,-9.564l3.786,0l0,20.229l-3.526,0l0,-14.507l-6.386,9.536l-0.116,0l-6.328,-9.479l0,14.45l-3.526,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M107.966,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.144,0l0,3.208l-10.144,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M130.693,0.619l3.29,0l10.812,13.986l0,-13.986l3.525,0l0,20.229l-2.971,0l-11.131,-14.392l0,14.392l-3.525,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M161.859,3.913l-6.415,0l0,-3.294l16.413,0l0,3.294l-6.415,0l0,16.935l-3.583,0l0,-16.935Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M178.98,0.619l14.969,0l0,3.207l-11.444,0l0,5.202l10.143,0l0,3.208l-10.143,0l0,5.404l11.588,0l0,3.208l-15.113,0l0,-20.229Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M201.708,0.619l7.542,0c1.58,0 3.029,0.255 4.35,0.766c1.319,0.51 2.456,1.218 3.409,2.124c0.954,0.905 1.69,1.969 2.211,3.193c0.519,1.224 0.78,2.548 0.78,3.974l0,0.057c0,1.426 -0.261,2.755 -0.78,3.988c-0.521,1.233 -1.257,2.302 -2.211,3.208c-0.953,0.905 -2.09,1.618 -3.409,2.138c-1.321,0.52 -2.77,0.781 -4.35,0.781l-7.542,0l0,-20.229Zm7.514,17.021c1.059,0 2.022,-0.169 2.888,-0.506c0.868,-0.342 1.605,-0.814 2.211,-1.426c0.608,-0.607 1.079,-1.334 1.416,-2.177c0.337,-0.838 0.506,-1.753 0.506,-2.74l0,-0.058c0,-0.987 -0.169,-1.907 -0.506,-2.755c-0.337,-0.852 -0.808,-1.585 -1.416,-2.191c-0.606,-0.612 -1.343,-1.089 -2.211,-1.44c-0.866,-0.347 -1.829,-0.521 -2.888,-0.521l-3.989,0l0,13.814l3.989,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="40.844" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M50.361,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.261,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.339,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M57.945,29.231l1.456,0l0,7.028l4.391,0l0,1.325l-5.847,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M71.174,29.173l1.36,0l3.675,8.411l-1.551,0l-0.846,-2.016l-3.95,0l-0.859,2.016l-1.504,0l3.675,-8.411Zm2.101,5.095l-1.445,-3.341l-1.431,3.341l2.876,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M80.524,29.231l1.358,0l4.464,5.775l0,-5.775l1.456,0l0,8.353l-1.226,0l-4.596,-5.942l0,5.942l-1.456,0l0,-8.353Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M92.834,29.231l3.114,0c0.653,0 1.25,0.105 1.796,0.316c0.544,0.211 1.014,0.504 1.407,0.878c0.394,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.519,0.951 -0.913,1.324c-0.393,0.374 -0.863,0.669 -1.407,0.884c-0.546,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.437,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.662,-0.336 0.913,-0.588c0.25,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.208,-0.724 0.208,-1.131l0,-0.024c0,-0.408 -0.069,-0.787 -0.208,-1.138c-0.14,-0.351 -0.335,-0.654 -0.585,-0.904c-0.251,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.756,-0.215 -1.193,-0.215l-1.647,0l0,5.703l1.647,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M111.563,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.589,-0.219 -1.134,-0.556 -1.635,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.4,-0.445 0.4,-0.764l0,-0.023c0,-0.151 -0.026,-0.284 -0.078,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.559,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.234,-0.188 -0.415,-0.416 -0.539,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l-0.001,-0.023c0.001,-0.358 0.072,-0.686 0.214,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.546,-0.376 0.896,-0.495c0.348,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.162,0.09 1.651,0.269c0.49,0.179 0.949,0.439 1.379,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.43,0 -0.763,0.096 -1.004,0.286c-0.237,0.192 -0.357,0.426 -0.357,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.147,0.099 0.35,0.193 0.609,0.281c0.261,0.087 0.59,0.178 0.989,0.274c0.438,0.111 0.826,0.235 1.164,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.224,0.195 0.395,0.421 0.51,0.68c0.114,0.259 0.172,0.559 0.172,0.901l0.001,0.024c-0.001,0.39 -0.075,0.74 -0.22,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/><path d="M121.199,30.592l-2.649,0l0,-1.36l6.777,0l0,1.36l-2.649,0l0,6.992l-1.479,0l0,-6.992Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M133.186,37.716c-0.541,0 -1.03,-0.078 -1.468,-0.232c-0.437,-0.156 -0.811,-0.389 -1.122,-0.699c-0.309,-0.31 -0.549,-0.694 -0.716,-1.151c-0.167,-0.458 -0.25,-0.988 -0.25,-1.594l0,-4.808l1.455,0l0,4.75c0,0.779 0.19,1.371 0.566,1.777c0.376,0.405 0.894,0.608 1.558,0.608c0.657,0 1.172,-0.195 1.548,-0.584c0.376,-0.39 0.565,-0.97 0.565,-1.743l0,-4.808l1.456,0l0,4.737c0,0.621 -0.086,1.166 -0.257,1.635c-0.171,0.469 -0.412,0.861 -0.722,1.175c-0.31,0.314 -0.686,0.549 -1.128,0.705c-0.441,0.154 -0.936,0.232 -1.485,0.232" style="fill:#fff;fill-rule:nonzero;"/><path d="M141.678,29.231l3.114,0c0.653,0 1.251,0.105 1.796,0.316c0.545,0.211 1.014,0.504 1.407,0.878c0.395,0.373 0.699,0.813 0.913,1.318c0.215,0.506 0.323,1.052 0.323,1.641l0,0.024c0,0.589 -0.108,1.137 -0.323,1.646c-0.214,0.51 -0.518,0.951 -0.913,1.324c-0.393,0.374 -0.862,0.669 -1.407,0.884c-0.545,0.215 -1.143,0.322 -1.796,0.322l-3.114,0l0,-8.353Zm3.102,7.028c0.438,0 0.836,-0.069 1.193,-0.209c0.358,-0.14 0.663,-0.336 0.913,-0.588c0.251,-0.251 0.445,-0.55 0.585,-0.899c0.139,-0.346 0.209,-0.724 0.209,-1.131l0,-0.024c0,-0.408 -0.07,-0.787 -0.209,-1.138c-0.14,-0.351 -0.334,-0.654 -0.585,-0.904c-0.25,-0.253 -0.555,-0.45 -0.913,-0.595c-0.357,-0.144 -0.755,-0.215 -1.193,-0.215l-1.646,0l0,5.703l1.646,0Z" style="fill:#fff;fill-rule:nonzero;"/><rect x="153.975" y="29.231" width="1.456" height="8.353" style="fill:#fff;"/><path d="M164.542,37.727c-0.645,0 -1.232,-0.113 -1.766,-0.34c-0.533,-0.226 -0.99,-0.535 -1.372,-0.925c-0.382,-0.389 -0.68,-0.844 -0.895,-1.366c-0.215,-0.521 -0.321,-1.076 -0.321,-1.664l0,-0.024c0,-0.589 0.106,-1.144 0.321,-1.665c0.215,-0.521 0.517,-0.979 0.907,-1.372c0.39,-0.394 0.851,-0.707 1.384,-0.937c0.533,-0.23 1.122,-0.346 1.766,-0.346c0.644,0 1.233,0.114 1.766,0.34c0.533,0.227 0.99,0.535 1.372,0.925c0.382,0.39 0.68,0.845 0.896,1.366c0.213,0.522 0.321,1.076 0.321,1.665l0,0.024c0,0.589 -0.108,1.143 -0.321,1.664c-0.216,0.521 -0.518,0.978 -0.908,1.373c-0.389,0.393 -0.851,0.705 -1.383,0.936c-0.534,0.231 -1.122,0.346 -1.767,0.346m0.024,-1.349c0.412,0 0.789,-0.077 1.135,-0.232c0.345,-0.155 0.639,-0.366 0.885,-0.632c0.245,-0.266 0.438,-0.579 0.575,-0.937c0.14,-0.358 0.209,-0.74 0.209,-1.145l0,-0.024c0,-0.406 -0.069,-0.789 -0.209,-1.152c-0.137,-0.362 -0.332,-0.675 -0.581,-0.942c-0.25,-0.267 -0.549,-0.48 -0.896,-0.639c-0.35,-0.159 -0.73,-0.238 -1.142,-0.238c-0.411,0 -0.789,0.077 -1.136,0.232c-0.343,0.156 -0.637,0.367 -0.885,0.632c-0.244,0.267 -0.437,0.579 -0.574,0.938c-0.139,0.357 -0.209,0.739 -0.209,1.145l0,0.024c0,0.405 0.07,0.789 0.209,1.151c0.137,0.362 0.332,0.676 0.58,0.942c0.251,0.267 0.549,0.48 0.898,0.639c0.349,0.159 0.729,0.238 1.141,0.238" style="fill:#fff;fill-rule:nonzero;"/><path d="M176.518,37.704c-0.645,0 -1.261,-0.109 -1.85,-0.328c-0.588,-0.219 -1.133,-0.556 -1.634,-1.009l0.882,-1.05c0.407,0.351 0.816,0.618 1.23,0.806c0.413,0.186 0.883,0.28 1.407,0.28c0.454,0 0.814,-0.095 1.08,-0.287c0.267,-0.19 0.401,-0.445 0.401,-0.764l0,-0.023c0,-0.151 -0.027,-0.284 -0.079,-0.399c-0.051,-0.116 -0.146,-0.225 -0.286,-0.329c-0.141,-0.103 -0.332,-0.199 -0.575,-0.287c-0.244,-0.087 -0.56,-0.173 -0.95,-0.261c-0.447,-0.104 -0.844,-0.221 -1.191,-0.353c-0.346,-0.131 -0.638,-0.29 -0.873,-0.476c-0.235,-0.188 -0.416,-0.416 -0.54,-0.687c-0.123,-0.27 -0.184,-0.597 -0.184,-0.979l0,-0.023c0,-0.358 0.071,-0.686 0.213,-0.984c0.142,-0.299 0.338,-0.553 0.587,-0.764c0.248,-0.211 0.547,-0.376 0.896,-0.495c0.349,-0.119 0.73,-0.18 1.144,-0.18c0.612,0 1.163,0.09 1.652,0.269c0.489,0.179 0.949,0.439 1.378,0.782l-0.787,1.109c-0.382,-0.278 -0.76,-0.491 -1.134,-0.638c-0.374,-0.147 -0.752,-0.221 -1.133,-0.221c-0.429,0 -0.763,0.096 -1.003,0.286c-0.238,0.192 -0.358,0.426 -0.358,0.704l0,0.025c0,0.159 0.028,0.299 0.084,0.422c0.056,0.125 0.157,0.236 0.305,0.335c0.148,0.099 0.351,0.193 0.61,0.281c0.26,0.087 0.589,0.178 0.988,0.274c0.438,0.111 0.827,0.235 1.165,0.369c0.338,0.136 0.621,0.301 0.844,0.496c0.223,0.195 0.394,0.421 0.509,0.68c0.115,0.259 0.173,0.559 0.173,0.901l0,0.024c0,0.39 -0.074,0.74 -0.219,1.05c-0.147,0.31 -0.35,0.573 -0.61,0.788c-0.259,0.215 -0.574,0.378 -0.937,0.489c-0.366,0.111 -0.768,0.167 -1.205,0.167" style="fill:#fff;fill-rule:nonzero;"/></g></svg></div>
+            </div>
+            <div class="location-portland">
+              <div class="title">Portland, OR</div>
+              <div class="location">811 SW 6th Avenue<br>Suite 1000<br>Portland, OR 97204</div>
+            </div>
+            <div class="location-cali">
+              <div class="title">Cali, Colombia</div>
+              <div class="location">Cra. 6 #2-61<br>Cali, Valle del Cauca</div>
+            </div>
+            <div class="contact-info"><a href="mailto:sales@augmentedislandstudios.com">sales@augmentedislandstudios.com</a><a href="tel:15038194346">+1 (503) 819 - 4346</a></div>
+            <div class="submenu-our-services">
+              <div class="title">Our services</div>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#web">Web</a></li>
+              </ul>
+            </div>
+            <div class="submenu-news">
+              <div class="title">News</div>
+              <ul>
+                <li><a href="https://medium.com/@augmentedisland" target="_blank">Blog</a></li>
+                <li><a href="#press">Press</a></li>
+              </ul>
+            </div>
+            <div class="submenu-contact-us">
+              <div class="title">Contact us</div>
+              <ul>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="tao-logo">
+              <div class="text">Proud members of</div><a href="http://www.techoregon.org/" target="_blank"><img src="./assets/images/tao-logo.png"></a>
+            </div>
+            <div class="social-media"><a href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 267.8 500" style="enable-background:new 0 0 267.8 500;" xml:space="preserve">
+<title>Mesa de trabajo 1</title>
+<path d="M250.3,281.3l13.9-90.5h-86.8V132c0-24.8,12.1-48.9,51-48.9h39.5v-77c0,0-35.8-6.1-70.1-6.1C126.2,0,79.5,43.3,79.5,121.8
+	v69H0v90.5h79.5V500h97.8V281.3H250.3z"/>
+</svg>
+</a><a href="https://www.instagram.com/augmentedislandstudios/?hl=en"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia</title><path d="M250.06,121.83A128.17,128.17,0,1,0,378.22,250,128,128,0,0,0,250.06,121.83Zm0,211.49A83.32,83.32,0,1,1,333.38,250a83.47,83.47,0,0,1-83.32,83.32Zm163.3-216.73a29.9,29.9,0,1,1-29.9-29.89A29.83,29.83,0,0,1,413.36,116.59Zm84.88,30.34c-1.89-40-11-75.51-40.38-104.74S393.17,3.82,353.12,1.81c-41.27-2.34-165-2.34-206.24,0-39.94,1.9-75.41,11-104.74,40.27S3.76,106.78,1.76,146.82c-2.35,41.27-2.35,165,0,206.25,1.89,40,11,75.51,40.38,104.74s64.69,38.37,104.74,40.38c41.27,2.34,165,2.34,206.24,0,40.05-1.9,75.52-11.05,104.74-40.38s38.38-64.7,40.38-104.74c2.35-41.27,2.35-164.87,0-206.14ZM444.92,397.35a84.36,84.36,0,0,1-47.51,47.52c-32.91,13.05-111,10-147.35,10s-114.56,2.9-147.36-10a84.33,84.33,0,0,1-47.51-47.52c-13-32.9-10-111-10-147.35s-2.9-114.56,10-147.35A84.36,84.36,0,0,1,102.7,55.13c32.91-13.05,111-10,147.36-10s114.55-2.9,147.35,10a84.33,84.33,0,0,1,47.51,47.52c13.06,32.9,10,111,10,147.35S458,364.56,444.92,397.35Z"/></svg></a><a href="https://www.linkedin.com/company/augmented-island-studios/"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><title>Mesa de trabajo 1 copia 2</title><path d="M111.94,500H8.26V166.18H111.94ZM60,120.65C26.9,120.65,0,93.19,0,60a60,60,0,0,1,120.09,0C120.09,93.19,93.19,120.65,60,120.65ZM499.89,500H396.43V337.5c0-38.73-.78-88.39-53.91-88.39-53.9,0-62.16,42.07-62.16,85.6V500H176.79V166.18h99.44v45.54h1.45c13.84-26.23,47.65-53.91,98.1-53.91C480.69,157.81,500,226.9,500,316.63V500Z"/></svg></a></div>
+            <div class="info-links"><a href="">Sitemap</a>
+              <div class="slash">/</div>
+              <div class="all-rights">© 2020 Augmented Island Studios, LLC.</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="menu hidden">
         <div class="backgroundImage"><img src="./assets/images/bg_image.svg" alt=""></div>
-        <div class="options"><a class="opt menu-work" href="#work">Work</a><a class="opt menu-blog" href="https://medium.com/@augmentedisland" target="_blank">Blog</a><a class="opt menu-about" href="#press">Press</a><a class="opt menu-about" href="#about">About</a><a class="opt menu-about" href="#web">Web</a><a class="opt menu-contact" href="#contact">Contact</a></div>
+        <div class="options"><a class="opt menu-work" href="#work">Work</a><a class="opt menu-about" href="#about">About</a><a class="opt menu-about" href="#web">Web</a><a class="opt menu-about" href="#webar">WebAR</a><a class="opt menu-about" href="#video">Video</a><a class="opt menu-blog" href="https://medium.com/@augmentedisland" target="_blank">Blog</a><a class="opt menu-about" href="#press">Press</a><a class="opt menu-contact" href="#contact">Contact</a></div>
         <div class="social">
           <div class="container rotated"><a class="sn facebook" href="https://www.facebook.com/augmentedislandstudios/?ref=br_rs" target="_blank">Facebook</a><a class="sn instagram" href="https://www.instagram.com/augmentedislandstudios/?hl=en" target="_blank">Instagram</a><a class="sn linkedin" href="https://www.linkedin.com/company/augmented-island-studios/" target="_blank">Linkedin</a></div>
         </div>
@@ -562,15 +1004,13 @@
             <div class="projectLogo"><img src="./assets/images/cfm_logo.svg" alt=""></div>
             <div class="copyWrapper">
               <h1 class="title">Come Find Me</h1>
-              <h2 class="client">Terry Crews</h2>
+              <h2 class="client">Terry Crews & Ken Harvey</h2>
               <p class="description">
                 Sharing a quote from our client Terry Crews: "20 years ago, 1995 to be exact, Ken Harvey and I were teammates on the NFL’s Washington Redskins. Ken came to me with a brilliant idea of a book he wrote for his two very young sons, Anthony and Marcus. The book was to be a first time reader, and feature the boys in an imaginative game of hide and seek."
                 
               </p>
             </div>
-            <div class="photoWrapper"><img class="workPhoto" src="./assets/images/cfm_2.jpg" alt=""><img class="workPhoto" src="./assets/images/cfm_1.jpg" alt=""><img class="workPhoto" src="./assets/images/cfm_3.jpg" alt="">
-              <!--img.workPhoto(src="./assets/images/cfm_4.jpg", alt="")--><img class="workPhoto" src="./assets/images/cfm_5.jpg" alt=""><img class="workPhoto" src="./assets/images/cfm_7.jpg" alt="">
-            </div>
+            <div class="photoWrapper"><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/cfm_2.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/cfm_1.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/cfm_3.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/cfm_5.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/cfm_7.jpg" alt=""></div>
             <div class="goBack btn">
               <div class="container rotated">
                 <h2>Go Back</h2>
@@ -588,7 +1028,7 @@
               <h2 class="client">G2 Productions</h2>
               <p class="description">When G2 Productions reached out to us to create their first AR experience, they wanted an augmented reality easter egg that would take everyone by surprise at the end of each of the music videos they produced. The first music video we had to work with was Jennifer Lopez’s and Bad Bunny’s collaboration, “Te Gusté”. <br><br> We decided to elaborate a beautiful and shiny disco ball which has the ability to spin as the user swipes it with their finger. When the disco ball reaches a certain speed, it explodes, and confetti as well as G2’s logo and ours come out in real time 3D. To enjoy, watch “Te Gusté” and then at the end of the video, wait for the disco ball marker to come out. Pause the video and then launch the G2 Productions app. Point your device to the market and spin the disco ball!!			</p>
             </div>
-            <div class="photoWrapper"><img class="workPhoto" src="./assets/images/g2_featured.jpg" alt=""><img class="workPhoto" src="./assets/images/g2_1.jpg" alt=""><img class="workPhoto" src="./assets/images/g2_2.jpg" alt=""><img class="workPhoto" src="./assets/images/g2_4.jpg" alt=""><img class="workPhoto" src="./assets/images/g2_5.jpg" alt=""></div>
+            <div class="photoWrapper"><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/g2_featured.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/g2_1.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/g2_2.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/g2_4.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/g2_5.jpg" alt=""></div>
             <div class="goBack btn">
               <div class="container rotated">
                 <h2>Go Back</h2>
@@ -609,14 +1049,14 @@
                 
               </p>
             </div>
-            <div class="photoWrapper"><img class="workPhoto" src="./assets/images/we_featured.jpeg" alt="">
+            <div class="photoWrapper"><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/we_featured.jpeg" alt="">
               <video controls>
                 <source src="./assets/media/we_wip_ar.mp4" type="video/mp4">
                 <Your>browser does not support the video tag.</Your>
               </video>
               <div class="pair around">
-                <div class="external small"><img class="workPhoto" src="./assets/images/we_cover_ar.jpg" alt="Wine Enthusiast cover"><span>Cover provided by Wine Enthusiast</span></div>
-                <video class="half" controls poster="./assets/images/we_video_cover.png">
+                <div class="external small"><img class="workPhoto lazyload" src="./assets/images/lazyload-image2.png" data-src="./assets/images/we_cover_ar.jpg" alt="Wine Enthusiast cover"><span>Cover provided by Wine Enthusiast</span></div>
+                <video class="half" controls poster="./assets/images/we_video_cover.jpg">
                   <source src="./assets/media/videoCapture.mp4" type="video/mp4">
                   <Your>browser does not support the video tag.</Your>
                 </video>
@@ -642,7 +1082,7 @@
                 
               </p>
             </div>
-            <div class="photoWrapper"><img class="workPhoto" src="./assets/images/carhartt_featured.jpg" alt=""><img class="workPhoto" src="./assets/images/carhartt_2.jpg" alt=""><img class="workPhoto" src="./assets/images/carhartt_3.jpg" alt=""><img class="workPhoto" src="./assets/images/carhartt_4.jpg" alt=""></div>
+            <div class="photoWrapper"><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/carhartt_featured.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/carhartt_2.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/carhartt_3.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/carhartt_4.jpg" alt=""></div>
             <div class="goBack btn">
               <div class="container rotated">
                 <h2>Go Back</h2>
@@ -665,9 +1105,9 @@
                 
               </p>
             </div>
-            <div class="photoWrapper"><img class="workPhoto" src="./assets/images/monarch_featured.jpg" alt="">
-              <div class="pair"><img class="workPhoto half" src="./assets/images/monarch_1.jpg" alt=""><img class="workPhoto half" src="./assets/images/monarch_2.jpg" alt=""></div>
-              <div class="pair"><img class="workPhoto half" src="./assets/images/monarch_4.jpg" alt=""><img class="workPhoto half" src="./assets/images/monarch_5.jpg" alt=""></div>
+            <div class="photoWrapper"><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/monarch_featured.jpg" alt="">
+              <div class="pair"><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/monarch_1.jpg" alt=""><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/monarch_2.jpg" alt=""></div>
+              <div class="pair"><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/monarch_4.jpg" alt=""><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/monarch_5.jpg" alt=""></div>
               <!--img.workPhoto(src="./assets/images/monarch_6.jpg", alt="")-->
             </div>
             <div class="goBack btn">
@@ -703,6 +1143,58 @@
                   <Your>browser does not support the video tag.</Your>
                 </video>
               </div>
+            </div>
+            <div class="goBack btn">
+              <div class="container rotated">
+                <h2>Go Back</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-detail section scrollable hidden" id="thejourney">
+        <div class="content">
+          <div class="contentWrapper">
+            <div class="projectLogo2"><img src="./assets/images/detailedview-snad-logo.png" alt=""></div>
+            <div class="copyWrapper">
+              <h1 class="title">The Journey AR Murals</h1>
+              <h2 class="client">The Short North Arts District</h2>
+              <p class="description">
+                The Short North Arts District in Columbus, Ohio hired us to augment what was to become the largest augmented reality mural in the world; three walls with a total of 11,000 ft2. Beautifully painted by artists Eric Skotnes and Ryan Safarti, “The Journey” has been one of our most memorable projects yet. Working with such talented muralists and with such a massive surface was thrilling! If you feel like trying The Journey's augmented reality on your computer screen, please download the app here for iOS and here for Android. Then launch and point your camera at the photos below to launch the experience (note: different computer screens and lighting can affect the performance of the augmented reality).
+                
+              </p>
+            </div>
+            <div class="photoWrapper">
+              <div class="pair"><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_1.jpg" alt=""><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_3.jpg" alt=""></div>
+              <div class="pair"><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_2.jpg" alt=""><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_4.jpg" alt=""></div>
+              <div class="pair"><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_5.jpg" alt=""><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_7.jpg" alt=""></div>
+              <div class="pair"><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_6.jpg" alt=""><img class="workPhoto lazyload half" src="./assets/images/lazyload-image2.png" data-src="./assets/images/thejourney_8.jpg" alt=""></div>
+            </div>
+            <div class="goBack btn">
+              <div class="container rotated">
+                <h2>Go Back</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-detail section scrollable hidden" id="surf-prescriptions">
+        <div class="content">
+          <div class="contentWrapper">
+            <div class="projectLogo2"><img src="./assets/images/surfprescriptions-logo.png" alt=""></div>
+            <div class="copyWrapper">
+              <h1 class="title">Surf Prescriptions Web AR</h1>
+              <h2 class="client">Surf Prescriptions</h2>
+              <p class="description">
+                Surf Prescriptions by Jeff ‘Doc’ Lausch, is a global surfboard design and shaping company based in Huntington Beach, California. Doc has been on the forefront of mixing art design and technology in surfboard construction for decades. Reinventing daily is Surf Prescriptions' mantra and it's the reason Doc continues to stay at the forefront of surfboard building. When he came to us for a web and tech transformation, we knew exactly what had to be done. No other surfboard company in the world had offered WebAR yet and he wanted to fulfill more orders while still doing so in a customized way. Studying Doc’s brand identity and understanding his business goals helped us work together so that we could innovate on this new layer of his business - custom surfboards online + AR. At the end of this project Doc had a new and redesigned website and every single one of his surfboards is now available to see in WebAR (no app downloads needed). Click here to experience Surf Prescriptions now: <a href='https://surfprescriptions.com/' target='_blank'>www.surfprescriptions.com</a>.
+                
+              </p>
+            </div>
+            <div class="photoWrapper">
+              <video controls poster="./assets/images/surfrx_video_cover.jpg">
+                <source src="./assets/media/surfrx_video_hb.mp4" type="video/mp4">
+                <Your>browser does not support the video tag.</Your>
+              </video><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/surfrx_3.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/surfrx_4.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/surfrx_5.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/surfrx_6.jpg" alt=""><img class="workPhoto lazyload" src="./assets/images/lazyload-image.png" data-src="./assets/images/surfrx_7.jpg" alt="">
             </div>
             <div class="goBack btn">
               <div class="container rotated">

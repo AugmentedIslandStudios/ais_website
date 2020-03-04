@@ -9,50 +9,15 @@ import 'lodash/throttle';
 import { start } from 'repl';
 import { read } from 'fs';
 
-// Carousel.
-let carouselWrapper = $(".ourwork-container .carousel-container .mask .wrapper");
-let items = $(".ourwork-container .carousel-container .mask .wrapper .slide");
-let arrows = $(".ourwork-container .carousel-container .carousel-arrow");
-let dots = $(".ourwork-container .carousel-container .carousel-dots .dot");
-let activeIndex = 0;
+// Loading screen.
+let loadingTween = TweenMax.to($('#loading-section .content img'), 0.5, {opacity:0.5, repeat: -1, yoyo: true});
 
-// Forms.
-let formsArray = [];
+// Update Work carousel position.
+var updateWorkCarousel = initLandingWorkSlider();
 
-let form1 = {
-	formId: '#contactForm',
-	submitButton: '#contactForm .submitBtn',
-	location: '#contact'
-}
-
-let form2 = {
-	formId: '#contactForm2',
-	submitButton: '#contactForm2 .submitBtn',
-	location: '#web'
-}
-
-formsArray.push(form1);
-formsArray.push(form2);
-
-// Press.
-let pressJson = require('./data/press.json');
-let booleanNextArticle = false;
-//console.log(pressJson);
-
-function createProjects(){
-	for (var i = json.projects.work.length - 1; i >= 0; i--) {
-		var obj = json.projects.work[i];
-		var work= $('<div />',{"class":'work'})
-		var wTitle = $('<h1 />',{"class":'title', text:obj.title})
-		var wDes = $('<p />',{"class":'description', text:obj.description})
-		var wClient = $('<p />',{"class":'client', text:obj.client})
-		work.append(wTitle,wDes,wClient)
-		$(".work-container").append(work);
-	};	
-}
-
-// Testimonials.
-let testimonialsJson = require('./data/testimonials.json');
+window.onload = () => {
+	renderContent(tempUri);
+};
 
 $(document).ready(()=>{
 	tempUri = window.location.hash;
@@ -61,16 +26,17 @@ $(document).ready(()=>{
 	selectWork();
 	nav();
 	checkURL();
-	renderContent(tempUri);
+	//renderContent(tempUri);
 	validateForm();
 	scrollDirection();
 	removeAutoComplete();
 	initWebSectionAnimations(); // Web Section scroll animations.
 	initImageCarousels(); // Web Section carousel.
 	initLandingWhySlider(); // Landing automatic slider from "We start with why?".
-	initLandingWorkSlider(); // Landing slider.
+	//initLandingWorkSlider(); // Landing slider.
 	initLandingTestimonials(); // Landing testimonials.
 	initPressPosts(); // Press Section posts.
+	initLazyLoad();
 })
 
 function menuControl(){
@@ -133,6 +99,12 @@ function selectWork(){
 	})
 	$('.project.six').hover(()=>{
 		$('.six').addClass('selected');
+	})
+	$('.project.seven').hover(()=>{
+		$('.seven').addClass('selected');
+	})
+	$('.project.eight').hover(()=>{
+		$('.eight').addClass('selected');
 	})
 
 	$('.project').click(function(){
@@ -228,13 +200,18 @@ function checkURL(){
 		tempUri = window.location.hash;
 		//console.log('url', tempUri);
 		renderContent(tempUri);
-		
 	};
 }
 
 function renderContent(uri){
 	//console.log('rendering url', uri);
 	switch(uri){
+		case '#loading':
+			hideSection($('.section').not('#loading-section').not('.hidden'));
+			setTimeout(()=>{
+				showSection($('#loading-section'));
+			},300)
+		break;
 		case '#about':
 			hideSection($('.section').not('#about-section').not('.hidden'));
 			setTimeout(()=>{
@@ -253,10 +230,22 @@ function renderContent(uri){
 				showSection($('#web-section'));
 			},300)
 		break;
+		case '#webar':
+			hideSection($('.section').not('#web-ar').not('.hidden'));
+			setTimeout(()=>{
+				showSection($('#web-ar'));
+			},300)
+		break;
 		case '#press':
 			hideSection($('.section').not('#press-section').not('.hidden'));
 			setTimeout(()=>{
 				showSection($('#press-section'));
+			},300)
+		break;
+		case '#video':
+			hideSection($('.section').not('#video-section').not('.hidden'));
+			setTimeout(()=>{
+				showSection($('#video-section'));
 			},300)
 		break;
 		case '#comefindme':
@@ -295,6 +284,18 @@ function renderContent(uri){
 				showSection($('#filters-lenses'));
 			},300)
 		break;
+		case '#thejourney':
+			hideSection($('.section').not('#thejourney').not('.hidden'));
+			setTimeout(()=>{
+				showSection($('#thejourney'));
+			},300)
+		break;
+		case '#surfrx':
+			hideSection($('.section').not('#surf-prescriptions').not('.hidden'));
+			setTimeout(()=>{
+				showSection($('#surf-prescriptions'));
+			},300)
+		break;
 		case '#contact':
 			hideSection($('.section').not('#contact-section').not('.hidden'));
 			setTimeout(()=>{
@@ -308,6 +309,9 @@ function renderContent(uri){
 			setTimeout(()=>{
 				showSection($('#landing-section'));
 			},300)
+			setTimeout(() => {
+				updateWorkCarousel();
+			}, 1000);
 		break;
 	}
 	var section = $('.section .content');
@@ -323,33 +327,24 @@ function UIAnimations(){
 }
 
 function validateForm(){
-	/*const submitButton =  $('.submitBtn');
-	const formContent = $('#contactForm')
-	
-	submitButton.on('click',function(){
-		this.preventDefault;
-		formContent.trigger("submit");
-	})
-	
-	$(document).on("focusout",".inputContainer.required input",()=>{
-		checkFormInputs(formContent)
-	})
 
-	formContent.on('submit',(event)=>{
-		event.preventDefault();
-		if(checkFormInputs(formContent)){
-			$('.required').each(function(){
-				$(this).removeClass('required');
-			})
-			var tempEmail = 'mailto:sales@augmentedislandstudios.com?subject=Contact from website';
-			tempEmail+='&body='+formContent[0].message.value;
-			tempEmail+='%0D%0A%0D%0A%0D%0AContact info: %0D%0A Name: '+formContent[0].name.value;
-			tempEmail+='%0D%0A Email: '+formContent[0].email.value;
-			tempEmail+='%0D%0A Phone: '+formContent[0].phone.value;
-			location.href=tempEmail;
-			location.href='#contact';
-		}
-	});*/
+	// Forms.
+	let formsArray = [];
+
+	let form1 = {
+		formId: '#contactForm',
+		submitButton: '#contactForm .submitBtn',
+		location: '#contact'
+	}
+
+	let form2 = {
+		formId: '#contactForm2',
+		submitButton: '#contactForm2 .submitBtn',
+		location: '#web'
+	}
+
+	formsArray.push(form1);
+	formsArray.push(form2);
 
 	for(let form of formsArray) {
 		let submitButton =  $(form.submitButton);
@@ -506,12 +501,6 @@ function initWebSectionAnimations(){
 	let tw3 = TweenLite.from("#complaint-3", 0.5, {x: -20, opacity: 0, paused: true});
 	let tw4 = TweenLite.from("#complaint-4", 0.5, {x: 20, opacity: 0, paused: true});
 
-	// Animation for the complaints cross out.
-	let tw5 = TweenLite.to("#complaint-1", 0.5, {opacity: 0.2, paused: true});
-	let tw6 = TweenLite.to("#complaint-2", 0.5, {opacity: 0.2, paused: true});
-	let tw7 = TweenLite.to("#complaint-3", 0.5, {opacity: 0.2, paused: true});
-	let tw8 = TweenLite.to("#complaint-4", 0.5, {opacity: 0.2, paused: true});
-
 	// Store lodash throttle function.
 	let lodashFunction = _.throttle(() => {
 
@@ -541,26 +530,8 @@ function initWebSectionAnimations(){
 			complaint4state = 1;
 		}
 
-		// Check position. Crossout animations.
-		if((((complaint1Position*100)/viewportHeight) <= 20) && complaint1state === 1) {
-			tw5.play();
-			complaint1state = 2;
-		}
-		if((((complaint2Position*100)/viewportHeight) <= 20) && complaint2state === 1) {
-			tw6.play();
-			complaint2state = 2;
-		}
-		if((((complaint3Position*100)/viewportHeight) <= 20) && complaint3state === 1) {
-			tw7.play();
-			complaint3state = 2;
-		}
-		if((((complaint4Position*100)/viewportHeight) <= 20) && complaint4state === 1) {
-			tw8.play();
-			complaint4state = 2;
-		}
-
 		// Eliminate envent listener if all animations are complete.
-		if(complaint1state === 2 && complaint2state === 2 && complaint3state === 2 && complaint4state === 2) {
+		if(complaint1state === 1 && complaint2state === 1 && complaint3state === 1 && complaint4state === 1) {
 			//console.log("Todas las animaciones se terminaron.");
 			webWindow.removeEventListener("scroll", lodashFunction);
 		}
@@ -573,65 +544,161 @@ function initWebSectionAnimations(){
 
 function initImageCarousels() {
 
-	for(let arrow of arrows) {
-		arrow.addEventListener("click", onCarouselArrowClick);
-	}
+	let carousels = [];
 
-	createCarouselDots();
+	carousels[0] = {
+		src: ".ourwork-container .carousel-container",
+		startX: "",
+		posWrapper: 0,
+		clickIsDown: false,
+		walk: 0,
+		walkTransition: window.innerWidth <= 740 ? window.innerWidth/4 : window.innerWidth/5,
+		webSlider: document.querySelector(".ourwork-container .carousel-container"),
+		webWrapper: document.querySelector(".ourwork-container .carousel-container .mask .wrapper"),
+		items: $(".ourwork-container .carousel-container .mask .wrapper .slide"),
+		arrows: $(".ourwork-container .carousel-container .carousel-arrow"),
+		dots: $(".ourwork-container .carousel-container .carousel-dots .dot"),
+		dotsContainer: $(".ourwork-container .carousel-container .carousel-dots"),
+		dotsSrc: ".ourwork-container .carousel-container .carousel-dots .dot",
+		activeIndex: 0,
+	};
 
-	for(let dot of dots) {
-		//console.log(dot);
-		dot.addEventListener("click", onCarouselDotClick);
+	carousels[1] = {
+		src: ".webarwork-container .carousel-container",
+		startX: "",
+		posWrapper: 0,
+		clickIsDown: false,
+		walk: 0,
+		walkTransition: window.innerWidth <= 740 ? window.innerWidth/4 : window.innerWidth/5,
+		webSlider: document.querySelector(".webarwork-container .carousel-container"),
+		webWrapper: document.querySelector(".webarwork-container .carousel-container .mask .wrapper"),
+		items: $(".webarwork-container .carousel-container .mask .wrapper .slide"),
+		arrows: $(".webarwork-container .carousel-container .carousel-arrow"),
+		dots: $(".webarwork-container .carousel-container .carousel-dots .dot"),
+		dotsContainer: $(".webarwork-container .carousel-container .carousel-dots"),
+		dotsSrc: ".webarwork-container .carousel-container .carousel-dots .dot",
+		activeIndex: 0,
+	};
+
+	for(let carousel of carousels) {
+
+		for(let arrow of carousel.arrows) {
+			arrow.addEventListener("click", (e) => {
+				// If arrow was clicked.
+				if($(e.currentTarget).hasClass('right')){
+					carousel.activeIndex++;
+					if(carousel.activeIndex>= carousel.items.length){
+						carousel.activeIndex = 0;
+					}
+				}else{
+					carousel.activeIndex--;
+					if(carousel.activeIndex<0){
+						carousel.activeIndex = carousel.items.length-1;
+					}
+				}
+				carouselScroll(carousel);
+			});
+		}
+
+		createCarouselDots(carousel);
+
+		for(let dot of carousel.dots) {
+			//console.log(dot);
+			dot.addEventListener("click", (e) => {
+				let slide = $(e.currentTarget).attr('slide');
+				carousel.activeIndex = slide - 1;
+				carouselScroll(carousel);
+			});
+		}
+
+		carousel.webWrapper.style.transition = "all 500ms ease-in-out";
+
+		carousel.webSlider.addEventListener("touchstart", (e) => { // 
+		
+			//console.log("Mouse down.");
+			
+			carousel.clickIsDown = true;
+			carousel.walk = 0;
+			carousel.startX = e.touches[0].screenX;
+	
+			carousel.posWrapper = carousel.items[carousel.activeIndex].offsetLeft;
+	
+		});
+	
+		carousel.webSlider.addEventListener("touchend", () => {
+			
+			//console.log("Mouse up.");
+	
+			carousel.webWrapper.style.transition = "all 500ms ease-in-out";
+			
+			carousel.clickIsDown = false;
+	
+			//console.log("Walk final: " + walk);
+	
+			if(carousel.walk >= carousel.walkTransition) { // Si va hacia la izquierda.
+				if(carousel.activeIndex <= 0) {
+					carousel.activeIndex = carousel.items.length - 1;
+				} else {
+					carousel.activeIndex--;
+				}
+			} else if (carousel.walk <= -(carousel.walkTransition)) { // Si va hacia la derecha.
+				if(carousel.activeIndex < carousel.items.length - 1) {
+					carousel.activeIndex++;
+				} else {
+					carousel.activeIndex = 0;
+				}
+			} else { // Si no hay un movimiento suficiente.
+			}
+	
+			carouselScroll(carousel);
+	
+		});
+	
+		carousel.webSlider.addEventListener("touchmove", (e) => {
+	
+			if (!carousel.clickIsDown) {
+	
+			} else {
+	
+				carousel.webWrapper.style.transition = "";
+	
+				e.preventDefault();
+				carousel.walk = (e.touches[0].screenX - carousel.startX);
+				carousel.webWrapper.style.transform = "translateX(" + ((carousel.posWrapper*(-1)) + carousel.walk) + "px)";
+	
+				//console.log(walk);
+	
+			}
+			
+		});
+
 	}
 	
 }
 
-function createCarouselDots() {
+function createCarouselDots(carousel) {
 
-	let dotsContainer = $(".ourwork-container .carousel-container .carousel-dots");
-
-	for(let i = 0; i < items.length; i++) {
+	for(let i = 0; i < carousel.items.length; i++) {
 		if(i === 0) {
-			dotsContainer.append("<div class='dot active' slide=" + (i+1) + "><div class='graphic'></div></div>");
+			carousel.dotsContainer.append("<div class='dot active' slide=" + (i+1) + "><div class='graphic'></div></div>");
 		} else {
-			dotsContainer.append("<div class='dot' slide=" + (i+1) + "><div class='graphic'></div></div>");
+			carousel.dotsContainer.append("<div class='dot' slide=" + (i+1) + "><div class='graphic'></div></div>");
 		}
 	}
 
 	// Update dots.
-	dots = $(".ourwork-container .carousel-container .carousel-dots .dot");
+	carousel.dots = $(carousel.dotsSrc);
 
 }
 
-function onCarouselArrowClick(e) {
-	// If arrow was clicked.
-	if($(e.currentTarget).hasClass('right')){
-		activeIndex++;
-		if(activeIndex>= items.length){
-			activeIndex = 0;
-		}
-	}else{
-		activeIndex--;
-		if(activeIndex<0){
-			activeIndex = items.length-1;
-		}
-	}
-	carouselScroll();
-}
+function carouselScroll(carousel) {
 
-function onCarouselDotClick(e) {
-	let slide = $(e.currentTarget).attr('slide');
-	activeIndex = slide - 1;
-	carouselScroll();
-}
-
-function carouselScroll() {
 	// Scroll action.
-	let position = $(items[activeIndex]).position().left;
-	carouselWrapper.css('transform','translateX('+position*(-1)+'px )');
-	dots.removeClass('active');
-	$(dots[activeIndex]).addClass('active');
-	//console.log($(items[activeIndex]));
+	let position = $(carousel.items[carousel.activeIndex]).position().left;
+	carousel.webWrapper.style.transform = "translateX(" + position*(-1) + "px)";
+	carousel.dots.removeClass('active');
+	$(carousel.dots[carousel.activeIndex]).addClass('active');
+
 }
 
 function initLandingWhySlider() {
@@ -656,6 +723,9 @@ function initLandingWhySlider() {
 
 function initLandingWorkSlider() {
 
+	let landingWindow = document.getElementById("landing-section");
+	let viewportHeight = window.innerHeight; // This is the viewport height.
+
 	const workSlider = document.getElementById("landing-work-carousel");
 	const workWrapper = document.querySelector("#landing-work-carousel .wrapper");
 
@@ -678,17 +748,39 @@ function initLandingWorkSlider() {
 			element: p.children[0],
 			timeline: new TimelineLite({
 							paused: true
-						}).to(p.children[0], 0.2, {width: "90%", height: "77.1%"})
+						})/*.to(p.children[0], 0.2, {width: "90%", height: "77.1%"})
 						.to(p.children[0], 0.5, {padding: "4%"}, 0.2)
 						.to(p.children[0].children[1], 0.5, {width: "78%", height: "70%", opacity: 1}, 0.9)
 						.to(p.children[0].children[1].children[0], 0.2, {opacity: 1}, 1.5)
 						.to(p.children[0].children[1].children[1], 0.2, {opacity: 1}, 1.5)
-						.to(p.children[0].children[1].children[2], 0.2, {opacity: 1}, 1.5),
+						.to(p.children[0].children[1].children[2], 0.2, {opacity: 1}, 1.5),*/
+						.to(p.children[0], 1.2, {width: "90%", height: "77.1%"})
+						.to(p.children[0], 0.8, {padding: "4%"}, 0.7)
+						.to(p.children[0].children[1], 0.8, {width: "78%", height: "70%", opacity: 1}, 0.7)
+						.to(p.children[0].children[1].children[0], 0.5, {opacity: 1}, 1.5)
+						.to(p.children[0].children[1].children[1], 0.5, {opacity: 1}, 1.5)
+						.to(p.children[0].children[1].children[2], 0.5, {opacity: 1}, 1.5),
 			isActive: false
 		});
 	}
 
-	projects[0].timeline.play();
+	//Animation.
+	let playOnArrival = _.throttle(() => {
+		//console.log("LANDING SCROLL!");
+		if(window.innerWidth <= 740) {
+			if((((projects[activeIndex].parent.getBoundingClientRect().top*100)/viewportHeight) <= 70)) {
+				projects[activeIndex].timeline.play();
+				landingWindow.removeEventListener("scroll", playOnArrival);
+			}
+		} else {
+			if((((projects[activeIndex].parent.getBoundingClientRect().top*100)/viewportHeight) <= 40)) {
+				projects[activeIndex].timeline.play();
+				landingWindow.removeEventListener("scroll", playOnArrival);
+			}
+		}
+	}, 200);
+
+	landingWindow.addEventListener("scroll", playOnArrival);
 
 	setTimeout(() => {
 		//console.log(projects[0].parent.offsetWidth);
@@ -731,7 +823,7 @@ function initLandingWorkSlider() {
 				// Si va más a la izquierda cuando finalizó, no pasa nada.
 				workWrapper.style.transform = "translateX(calc(50% - " + widthMiddle + "px + " + posWrapper*(-1) + "px))";
 			} else {
-				projects[activeIndex].timeline.reverse().timeScale(10);
+				projects[activeIndex].timeline.reverse().timeScale(1.8);
 				activeIndex--;
 				//console.log(activeIndex);
 				posWrapper = projects[activeIndex].parent.offsetLeft;
@@ -740,7 +832,7 @@ function initLandingWorkSlider() {
 			}
 		} else if (walk <= -(walkTransition)) { // Si va hacia la derecha.
 			if(activeIndex < projects.length - 1) {
-				projects[activeIndex].timeline.reverse().timeScale(10);
+				projects[activeIndex].timeline.reverse().timeScale(1.8);
 				activeIndex++;
 				//console.log(activeIndex);
 				posWrapper = projects[activeIndex].parent.offsetLeft;
@@ -773,7 +865,7 @@ function initLandingWorkSlider() {
 				// Si va más a la izquierda cuando finalizó, no pasa nada.
 				workWrapper.style.transform = "translateX(calc(50% - " + widthMiddle + "px + " + posWrapper*(-1) + "px))";
 			} else {
-				projects[activeIndex].timeline.reverse().timeScale(10);
+				projects[activeIndex].timeline.reverse().timeScale(1.8);
 				activeIndex--;
 				//console.log(activeIndex);
 				posWrapper = projects[activeIndex].parent.offsetLeft;
@@ -782,7 +874,7 @@ function initLandingWorkSlider() {
 			}
 		} else if (walk <= -(walkTransition)) { // Si va hacia la derecha.
 			if(activeIndex < projects.length - 1) {
-				projects[activeIndex].timeline.reverse().timeScale(10);
+				projects[activeIndex].timeline.reverse().timeScale(1.8);
 				activeIndex++;
 				//console.log(activeIndex);
 				posWrapper = projects[activeIndex].parent.offsetLeft;
@@ -815,12 +907,6 @@ function initLandingWorkSlider() {
 			//console.log(walk);
 
 		}
-
-		// Cursor.
-		// workCursor.style.top = e.pageY + "px";
-		// workCursor.style.left = e.pageX + "px";
-
-		//console.log(e.pageX, e.pageY);
 		
 	});
 
@@ -842,24 +928,25 @@ function initLandingWorkSlider() {
 		
 	});
 
-	// workSlider.addEventListener("mouseenter", (e) => {
-	// 	TweenLite.to(workCursor, 0.5, {opacity: 1});
-	// });
-
-	// workSlider.addEventListener("mouseleave", (e) => {
-	// 	TweenLite.to(workCursor, 0.2, {opacity: 0});
-	// });
-
 	window.addEventListener('resize', () => {
-		widthMiddle = projects[0].parent.offsetWidth / 2;
+		widthMiddle = projects[activeIndex].parent.offsetWidth / 2;
+		posWrapper = projects[activeIndex].parent.offsetLeft;
 		workWrapper.style.transform = "translateX(calc(50% - " + widthMiddle + "px + " + posWrapper*(-1) + "px))";
 		walkTransition = window.innerWidth <= 740 ? window.innerWidth/4 : window.innerWidth/5;
 	});
+
+	return function () {
+		widthMiddle = projects[activeIndex].parent.offsetWidth / 2;
+		posWrapper = projects[activeIndex].parent.offsetLeft;
+		workWrapper.style.transform = "translateX(calc(50% - " + widthMiddle + "px + " + posWrapper*(-1) + "px))";
+		walkTransition = window.innerWidth <= 740 ? window.innerWidth/4 : window.innerWidth/5;
+	}
 
 }
 
 function initLandingTestimonials() {
 
+	let testimonialsJson = require('./data/testimonials.json');
 	let testimonialIndex = 0;
 
 	let testimonialElements = document.querySelector("#landing-section > .content > .landing-container-5 > .grid-container > .testimonials > .content");
@@ -871,13 +958,26 @@ function initLandingTestimonials() {
 	let testimonialLeftArrow = document.querySelector("#landing-section > .content > .landing-container-5 > .grid-container > .testimonials > .left-arrow");
 	let testimonialRightArrow = document.querySelector("#landing-section > .content > .landing-container-5 > .grid-container > .testimonials > .right-arrow");
 
+	// Testimonial touch movement.
+	const testimonialSlider = document.querySelector("#landing-section > .content > .landing-container-5 > .grid-container > .testimonials");
+
+	let startX;
+	let clickIsDown = false;
+	let walk = 0;
+	let walkTransition = window.innerWidth/5;
+
+	// Testimonial dots.
+	let testimonialDotsContainer = document.querySelector("#landing-section > .content > .landing-container-5 > .grid-container > .testimonial-dots");
+	let testimonialDots = document.querySelectorAll("#landing-section > .content > .landing-container-5 > .grid-container > .testimonial-dots > .dot");
+
+	// Testimonial animation.
 	let tlTestimonials = new TimelineLite({
 		paused: true,
 		autoRemoveChildren: true
 	});
 
 	let changeTestimonial = (action) => {
-		//console.log(testimonialIndex);
+		console.log(testimonialIndex);
 		if(action === "left") { // If left.
 			if(testimonialIndex <= 0) {
 				testimonialIndex = testimonialsJson.length - 1;
@@ -888,7 +988,7 @@ function initLandingTestimonials() {
 			testimonialStatement.innerHTML = testimonialsJson[testimonialIndex].statement;
 			testimonialClient.innerHTML = testimonialsJson[testimonialIndex].client;
 			testimonialClientDescription.innerHTML = testimonialsJson[testimonialIndex].description;
-		} else { // If right.
+		} else if(action === "right") { // If right.
 			if(testimonialIndex >= (testimonialsJson.length - 1)) {
 				testimonialIndex = 0;
 			} else {
@@ -898,7 +998,16 @@ function initLandingTestimonials() {
 			testimonialStatement.innerHTML = testimonialsJson[testimonialIndex].statement;
 			testimonialClient.innerHTML = testimonialsJson[testimonialIndex].client;
 			testimonialClientDescription.innerHTML = testimonialsJson[testimonialIndex].description;
+		} else { // Action is the index.
+			testimonialStatement.innerHTML = testimonialsJson[action].statement;
+			testimonialClient.innerHTML = testimonialsJson[action].client;
+			testimonialClientDescription.innerHTML = testimonialsJson[action].description;
 		}
+
+		// testimonialStatement.innerHTML = testimonialsJson[action].statement;
+		// testimonialClient.innerHTML = testimonialsJson[action].client;
+		// testimonialClientDescription.innerHTML = testimonialsJson[action].description;
+
 	};
 
 	testimonialStatement.innerHTML = testimonialsJson[testimonialIndex].statement;
@@ -909,6 +1018,10 @@ function initLandingTestimonials() {
 		tlTestimonials.to(testimonialElements, 0.7, {opacity: 0})
 					  .call(() => {
 						changeTestimonial("left")
+						for(let dot of testimonialDots) {
+							dot.classList.remove('active');
+						}
+						testimonialDots[testimonialIndex].classList.add('active');
 					  })
 					  .to(testimonialElements, 0.7, {opacity: 1});
 		tlTestimonials.play();
@@ -918,14 +1031,118 @@ function initLandingTestimonials() {
 		tlTestimonials.to(testimonialElements, 0.7, {opacity: 0})
 					  .call(() => {
 						changeTestimonial("right")
+						for(let dot of testimonialDots) {
+							dot.classList.remove('active');
+						}
+						testimonialDots[testimonialIndex].classList.add('active');
 					  })
 					  .to(testimonialElements, 0.7, {opacity: 1});
 		tlTestimonials.play();
 	});
 
+	// Create testimonial dots.
+	for(let i = 0; i < testimonialsJson.length; i++) {
+		if(i === 0) {
+			testimonialDotsContainer.innerHTML += ("<div class='dot active' testimonial=" + (i+1) + "><div class='graphic'></div></div>");
+		} else {
+			testimonialDotsContainer.innerHTML += ("<div class='dot' testimonial=" + (i+1) + "><div class='graphic'></div></div>");
+		}
+	}
+
+	// Update testimonial dots.
+	testimonialDots = document.querySelectorAll("#landing-section > .content > .landing-container-5 > .grid-container > .testimonial-dots > .dot");
+
+	for(let dot of testimonialDots) {
+		dot.addEventListener("click", (e) => {
+			let testi = $(e.currentTarget).attr('testimonial');
+			if(testimonialIndex === (testi-1)) {
+				// Stay in the same testimonial.
+			} else {
+				testimonialIndex = testi - 1;
+				for(let dot of testimonialDots) {
+					dot.classList.remove('active');
+				}
+				testimonialDots[testimonialIndex].classList.add('active');
+				tlTestimonials.to(testimonialElements, 0.7, {opacity: 0})
+							.call(() => {
+								changeTestimonial(testimonialIndex)
+							})
+							.to(testimonialElements, 0.7, {opacity: 1});
+				tlTestimonials.play();
+			}
+		});
+	}
+
+	testimonialSlider.addEventListener("touchstart", (e) => { // 
+		
+		//console.log("Mouse down.");
+		
+		clickIsDown = true;
+		walk = 0;
+		startX = e.touches[0].screenX;
+
+	});
+
+	testimonialSlider.addEventListener("touchend", () => {
+		
+		//console.log("Mouse up.");
+		
+		clickIsDown = false;
+
+		//console.log("Walk final: " + walk);
+
+		if(walk >= walkTransition) { // Si va hacia la izquierda.
+			tlTestimonials.to(testimonialElements, 0.7, {opacity: 0})
+							.call(() => {
+								changeTestimonial("left")
+								for(let dot of testimonialDots) {
+									dot.classList.remove('active');
+								}
+								testimonialDots[testimonialIndex].classList.add('active');
+							})
+							.to(testimonialElements, 0.7, {opacity: 1});
+			tlTestimonials.play();
+		} else if (walk <= -(walkTransition)) { // Si va hacia la derecha.
+			tlTestimonials.to(testimonialElements, 0.7, {opacity: 0})
+						.call(() => {
+							changeTestimonial("right")
+							for(let dot of testimonialDots) {
+								dot.classList.remove('active');
+							}
+							testimonialDots[testimonialIndex].classList.add('active');
+						})
+						.to(testimonialElements, 0.7, {opacity: 1});
+			tlTestimonials.play();
+		} else { // Si no hay un movimiento suficiente.
+		}
+
+	});
+
+	testimonialSlider.addEventListener("touchmove", (e) => {
+
+		if (!clickIsDown) {
+
+		} else {
+
+			//workWrapper.style.transition = "";
+
+			e.preventDefault();
+			walk = (e.touches[0].screenX - startX);
+			//workWrapper.style.transform = "translateX(calc(50% - " + widthMiddle + "px + " + ((posWrapper*(-1)) + walk) + "px))";
+
+			//console.log(walk);
+
+		}
+		
+	});
+
 }
 
 function initPressPosts() {
+
+	// Press.
+	let pressJson = require('./data/press.json');
+	let booleanNextArticle = false;
 
 	let postsContainer = document.querySelector("#press-section > .content > .posts-container");
 	let postsColumn1 = document.querySelector("#press-section > .content > .posts-container > .column-1");
@@ -955,7 +1172,7 @@ function initPressPosts() {
 		let post = pressJson[i];
 		switch(columnCounter) {
 			case 1:
-				postsColumn1.innerHTML += "<div class='post'><img src=" + post.cover + 
+				postsColumn1.innerHTML += "<div class='post'><img class='lazyload' src='./assets/images/lazyload-image.png' data-src=" + post.cover + 
 				" alt=''><div class='date'>" + post.date + 
 				"</div><div class='title'>" + post.title + 
 				"</div><button postkey='" + i + "'>Read more</button></div>";
@@ -972,7 +1189,7 @@ function initPressPosts() {
 				postCounter++;
 				break;
 			case 2:
-				postsColumn2.innerHTML += "<div class='post'><img src=" + post.cover + 
+				postsColumn2.innerHTML += "<div class='post'><img class='lazyload' src='./assets/images/lazyload-image.png' data-src=" + post.cover + 
 				" alt=''><div class='date'>" + post.date + 
 				"</div><div class='title'>" + post.title + 
 				"</div><button postkey='" + i + "'>Read more</button></div>";
@@ -989,7 +1206,7 @@ function initPressPosts() {
 				postCounter++;
 				break;
 			case 3:
-				postsColumn3.innerHTML += "<div class='post'><img src=" + post.cover + 
+				postsColumn3.innerHTML += "<div class='post'><img class='lazyload' src='./assets/images/lazyload-image.png' data-src=" + post.cover + 
 				" alt=''><div class='date'>" + post.date + 
 				"</div><div class='title'>" + post.title + 
 				"</div><button postkey='" + i + "'>Read more</button></div>";
@@ -1020,7 +1237,7 @@ function initPressPosts() {
 
 	for(let button of readMoreButtons) {
 		button.addEventListener("click", () => {
-			openPressPost(button.getAttribute("postkey"));
+			openPressPost(button.getAttribute("postkey"), pressJson, booleanNextArticle);
 		});
 	}
 
@@ -1086,7 +1303,7 @@ function initPressPosts() {
 	
 			if(postCounter >= pressJson.length) {
 				loadMoreButton.style.display = "none";
-				postsContainer.style.marginBottom = "170rem";
+				//postsContainer.style.marginBottom = "170rem";
 				break;
 			}
 		}
@@ -1095,7 +1312,7 @@ function initPressPosts() {
 
 		for(let button of readMoreButtons) {
 			button.addEventListener("click", () => {
-				openPressPost(button.getAttribute("postkey"));
+				openPressPost(button.getAttribute("postkey"), pressJson, booleanNextArticle);
 			});
 		}
 
@@ -1113,7 +1330,7 @@ function initPressPosts() {
 
 }
 
-function openPressPost(key) {
+function openPressPost(key, pressJson, booleanNextArticle) {
 
 	let post = pressJson[key];
 
@@ -1168,5 +1385,178 @@ function openPressPost(key) {
 			article.style.transform = "translateX(0)";
 		},300);
 	},50);
+
+}
+
+function initLazyLoad() {
+
+	(function (root, factory) {
+		if (typeof exports === "object") {
+			module.exports = factory(root);
+		} else if (typeof define === "function" && define.amd) {
+			define([], factory);
+		} else {
+			root.LazyLoad = factory(root);
+		}
+	}) (typeof global !== "undefined" ? global : this.window || this.global, function (root) {
+	
+		"use strict";
+	
+		if (typeof define === "function" && define.amd){
+			root = window;
+		}
+	
+		const defaults = {
+			src: "data-src",
+			srcset: "data-srcset",
+			selector: ".lazyload",
+			root: null,
+			rootMargin: "0px",
+			threshold: 0
+		};
+	
+		/**
+		* Merge two or more objects. Returns a new object.
+		* @private
+		* @param {Boolean}  deep     If true, do a deep (or recursive) merge [optional]
+		* @param {Object}   objects  The objects to merge together
+		* @returns {Object}          Merged values of defaults and options
+		*/
+		const extend = function ()  {
+	
+			let extended = {};
+			let deep = false;
+			let i = 0;
+			let length = arguments.length;
+	
+			/* Check if a deep merge */
+			if (Object.prototype.toString.call(arguments[0]) === "[object Boolean]") {
+				deep = arguments[0];
+				i++;
+			}
+	
+			/* Merge the object into the extended object */
+			let merge = function (obj) {
+				for (let prop in obj) {
+					if (Object.prototype.hasOwnProperty.call(obj, prop)) {
+						/* If deep merge and property is an object, merge properties */
+						if (deep && Object.prototype.toString.call(obj[prop]) === "[object Object]") {
+							extended[prop] = extend(true, extended[prop], obj[prop]);
+						} else {
+							extended[prop] = obj[prop];
+						}
+					}
+				}
+			};
+	
+			/* Loop through each object and conduct a merge */
+			for (; i < length; i++) {
+				let obj = arguments[i];
+				merge(obj);
+			}
+	
+			return extended;
+		};
+	
+		function LazyLoad(images, options) {
+			this.settings = extend(defaults, options || {});
+			this.images = images || document.querySelectorAll(this.settings.selector);
+			this.observer = null;
+			this.init();
+		}
+	
+		LazyLoad.prototype = {
+			init: function() {
+	
+				/* Without observers load everything and bail out early. */
+				if (!root.IntersectionObserver) {
+					this.loadImages();
+					return;
+				}
+	
+				let self = this;
+				let observerConfig = {
+					root: this.settings.root,
+					rootMargin: this.settings.rootMargin,
+					threshold: [this.settings.threshold]
+				};
+	
+				this.observer = new IntersectionObserver(function(entries) {
+					Array.prototype.forEach.call(entries, function (entry) {
+						if (entry.isIntersecting) {
+							self.observer.unobserve(entry.target);
+							let src = entry.target.getAttribute(self.settings.src);
+							let srcset = entry.target.getAttribute(self.settings.srcset);
+							if ("img" === entry.target.tagName.toLowerCase()) {
+								if (src) {
+									//console.log("Cargó imagen.");
+									entry.target.src = src;
+								}
+								if (srcset) {
+									entry.target.srcset = srcset;
+								}
+							} else {
+								entry.target.style.backgroundImage = "url(" + src + ")";
+							}
+						}
+					});
+				}, observerConfig);
+	
+				Array.prototype.forEach.call(this.images, function (image) {
+					self.observer.observe(image);
+				});
+			},
+	
+			loadAndDestroy: function () {
+				if (!this.settings) { return; }
+				this.loadImages();
+				this.destroy();
+			},
+	
+			loadImages: function () {
+				if (!this.settings) { return; }
+	
+				let self = this;
+				Array.prototype.forEach.call(this.images, function (image) {
+					let src = image.getAttribute(self.settings.src);
+					let srcset = image.getAttribute(self.settings.srcset);
+					if ("img" === image.tagName.toLowerCase()) {
+						if (src) {
+							image.src = src;
+						}
+						if (srcset) {
+							image.srcset = srcset;
+						}
+					} else {
+						image.style.backgroundImage = "url('" + src + "')";
+					}
+				});
+			},
+	
+			destroy: function () {
+				if (!this.settings) { return; }
+				this.observer.disconnect();
+				this.settings = null;
+			}
+		};
+	
+		root.lazyload = function(images, options) {
+			return new LazyLoad(images, options);
+		};
+	
+		if (root.jQuery) {
+			const $ = root.jQuery;
+			$.fn.lazyload = function (options) {
+				options = options || {};
+				options.attribute = options.attribute || "data-src";
+				new LazyLoad($.makeArray(this), options);
+				return this;
+			};
+		}
+	
+		return LazyLoad;
+	});
+	
+	lazyload();
 
 }
