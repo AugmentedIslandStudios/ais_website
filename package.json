@@ -22,7 +22,7 @@
     "gulp-pug": "^3.0.4",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^3.0.1",
-    "pug": "^2.0.0-beta6",
+    "pug": "^3.0.1",
     "uniq": "^1.0.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^1.1.0"
